@@ -8,10 +8,10 @@ As a teacher, I want to add a new exam including the subject, date, room number,
 2. teacher selects a course for a new exam
 3. teacher opens add new exam page
 4. teacher fills in the exam information
-- exam date
-- room number
-- capacity
-- prerequisites (credit)
+    - exam date
+    - room number
+    - capacity
+    - prerequisites (credit)
 5. teacher saves the new exam
 6. the system saves the data to the database
 7. the system notifies enrolled students about the new exam
@@ -63,20 +63,20 @@ As a teacher, I want to edit an existing exam
 ### Responsibilities
 
 #### Interface 
-System shows correctly all exams so teacher can choose which one he/she wants to edit
-Ensure that data are properly projected into screen so the teacher can distiquish between different informations
-User elements will give a notification or any other information that provided data are not valid
+- system shows correctly all exams so teacher can choose which one he/she wants to edit
+- ensure that data are properly projected into screen so the teacher can distiquish between different informations
+- user elements will give a notification or any other information that provided data are not valid
 
 #### Data manipulation
-System has to edit data only for selected exam, other exams have to stay unintacked
-Ensure that only one person can manipulate with exam data in the same time. This prevents overriding data.
-Ensure that the change of value in database will happen only after clicking the save button, not during changing the value.
-Database system cannot accept data which are not valid. 
-Database system has to properly activate triggers when the data are saved.
+- system has to edit data only for selected exam, other exams have to stay unintacked
+- ensure that only one person can manipulate with exam data in the same time. This prevents overriding data.
+- ensure that the change of value in database will happen only after clicking the save button, not during changing the value.
+- database system cannot accept data which are not valid. 
+- database system has to properly activate triggers when the data are saved.
 
 #### Information
-Implement logic which collects data for notification
-System properly parse information into message and send it to only students registered in the exam
+- implement logic which collects data for notification
+- system properly parse information into message and send it to only students registered in the exam
 
 ## 3. Send exam results
 As a teacher, I want to ensure that exam results and statistics are effectively communicated to the students
@@ -91,6 +91,7 @@ As a teacher, I want to ensure that exam results and statistics are effectively 
 7. students are notified about their grades and some basic statistics from the exam
 
 ### Responsibilites
+
 #### User Interface and Navigation
 - Ensure that the web or application interface provides a clear and intuitive navigation path to the exam page.
 - Develop a user interface element, such as a dropdown or list, that allows the teacher to select from registered exams.
@@ -109,8 +110,6 @@ As a teacher, I want to ensure that exam results and statistics are effectively 
 As a teacher, I want to send a message to all students registered on a exam I created so that I can easily communicate new information about the exam to them.
 
 ### Story
-
-<!-- The feature breakdown -->
 1. Teacher navigates to the exam page.
 2. Teacher opens a `message to all registered students` dialog.
 3. Teacher fills in a message form (subject and text of the message).
