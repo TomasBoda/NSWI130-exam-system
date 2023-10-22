@@ -70,13 +70,13 @@ First decomposition into persistence, domain, application and presentation logic
 - adjust notification settings (student & teacher)
 - trigger e-mail and SMS notifications
 
-### 2. Data Requests
+### 3. Data Requests
 - authenticate based on user credentials
 - serve notification requests (create, send, modify)
 - retrive on-demand data (courses, exams, students, notifications)
 - validate data integrity
 
-### 3. User Interface
+### 4. User Interface
 - authentication interface as application's entry point
 - individual pages for student interface
 - individual pages for teacher interface
