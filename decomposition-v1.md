@@ -81,3 +81,64 @@ First decomposition into persistence, domain, application and presentation logic
 - individual pages for student interface
 - individual pages for teacher interface
 - unified UI loading all UI modules together into one usable interface
+
+## Third Decomposition
+
+<table>
+    <tr>
+        <td>Presentation</td>
+        <td>
+            <ul>
+                <li>display list of exams</li>
+                <li>provide page for exam management</li>
+                <li>provide page for grade management</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>display user notifications</li>
+                <li>provide page for notification management</li>
+                <li>real-time chat page</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Business/Application</td>
+        <td>
+            <ul>
+                <li>create new exam</li>
+                <li>remove existing exam</li>
+                <li>update existing exam</li>
+                <li>save student exam results</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>provide real-time chat service</li>
+                <li>send message to specific student</li>
+                <li>provide notification service</li>
+                <li>create new exam notification</li>
+                <li>create exam results notification</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Persistence/Infrastructure</td>
+        <td>
+            <ul>
+                <li>provide database query interface<br>for exam management</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>provide notification persistence</li>
+                <li>provide chat history persistence</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align: center; vertical-align: middle;">Exam Management</td>
+        <td style="text-align: center; vertical-align: middle;">Communication</td>
+    </tr>
+</table>
