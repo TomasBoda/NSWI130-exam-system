@@ -2,7 +2,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
     
     model {
         # software systems
-        examSystem = softwareSystem "ExamSystem" "Menages exams, signing of students up for them and communication between students and teachers." {
+        examSystem = softwareSystem "ExamSystem" "Manages exams, signing of students up for them and communication between students and teachers." {
             HTML = container "Exam Web Application Front-end" "Provides funcionality for student Exam registration and exam administration in a web browser. Its internal structure is based on the MVC pattern implemented using React/Redux." "React/Redux" "Web Front-End"
 
             examWebApp = container "Exam Web Application" "Delivers administration web application front-end to the client's browser."
