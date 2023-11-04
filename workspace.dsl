@@ -43,11 +43,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             authorizationContainer = container "Authorization container" "Authorizes users"
         }
 
-        studentRegister = softwareSystem "StudentRegister" "Stores student's data and provides it to the ExamSystem." "Existing System" {
-            studentRegisterAPI = container "StudentRegister API" "Provides student's data to the ExamSystem." "" "API" 
-        }
-
-        // Actors
         student -> examSystem "Signs up for exams"
         student -> examSystem "Communicates with examiners"
 
@@ -56,7 +51,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         teacher -> examSystem "Communicates with registered students"
         teacher -> examSystem "Sends exam information to registered students"
 
-        // Exam System
         webAppFrontEnd -> restAPI "Send request for data retrieval"
         webAppFrontEnd -> restAPI "Send request for data manipulation"
 
@@ -74,7 +68,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         webAppFrontEnd -> validator "Validate outgoing data"
         restAPI -> validator "Validate incoming data"
 
-        // Front-end
         authUI -> studentUI "Navigates user of type 'Student' to Student UI"
         authUI -> teacherUI "Navigates user of type 'Teacher' to Teacher UI"
 
@@ -82,7 +75,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         restAPI -> teacherUI "Provide teacher data"
         authenticationAPI -> authUI "Provide authentication requests"
 
-        // Back-end
         requestController -> routingController "Send incoming requests to router"
         routingController -> examController "Route incoming exam manipulation requests"
         routingController -> gradeController "Route incoming grade manipulation requests"
@@ -98,12 +90,10 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
     }
 
     views {
-        // DONE
         systemContext examSystem "examSystemSystemContextDiagram" {
             include *
         }
 
-        // TODO
         container examSystem "examSystemSystemContainerDiagram" {
             include *
         }
