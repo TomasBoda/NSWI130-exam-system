@@ -1,8 +1,8 @@
 workspace "ExamSystem Workspace" "This workspace documents the architecture of the ExamSystem system which enables managing of exams, signing up on the exams and communication between students and teachers." {
-    
+
     model {
         # software systems
-        examSystem = softwareSystem "ExamSystem" "Manages exams, signing of students up for them and communication between students and teachers." {
+        examSystem = softwareSystem "ExamSystem" "Manages exams, registering students to exams and communication between students and teachers." {
             HTML = container "Exam Web Application Front-end" "Provides funcionality for student Exam registration and exam administration in a web browser. Its internal structure is based on the MVC pattern implemented using React/Redux." "React/Redux" "Web Front-End"
 
             examWebApp = container "Exam Web Application" "Delivers administration web application front-end to the client's browser."
@@ -22,24 +22,26 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             db = container "Exam database" "Stores the exams and student's registrations." "" "Database"
         }
 
+        authenticationAPI = softwareSystem "Authentication API" "Manages users (students, teacher) and their login credentials for authentication to the exam system"
+
         studentRegister = softwareSystem "StudentRegister" "Stores student's data and provides it to the ExamSystem." "Existing System" {
             studentRegisterAPI = container "StudentRegister API" "Provides student's data to the ExamSystem." "" "API" 
         }
 
         # actors
-        student = person "Student" "Signs up for the exams."
-        teacher = person "Teacher" "Creates exams."
-
+        student = person "Student" "Signs up for exams"
+        teacher = person "Teacher" "Creates and manages exams"
 
         # relationships between users and ExamSystem
-        student -> examSystem "Signs up for exams."
-        student -> examSystem "Communicates with their examiners."
+        student -> examSystem "Signs up for exams"
+        student -> examSystem "Communicates with examiners"
         
-        teacher -> examSystem "Manages exams."
-        teacher -> examSystem "Sends messages to the."
+        teacher -> examSystem "Creates, updates and removes exams"
+        teacher -> examSystem "Sends exam results to students"
+        teacher -> examSystem "Communicates with registered students"
+        teacher -> examSystem "Sends exam information to registered students"
 
         # relationships to/from containers
-
         examWebApp -> HTML "Delivers to the user's web browser"
         adminExamController -> HTML "Delivers data to"
         adminRegistrationController -> HTML "Delivers data to"
@@ -50,7 +52,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         adminExamModel -> db "Reads from and writes to exam data"
         adminRegistrationModel -> db "Reads from and writes to exam data"
         adminRegistrationModel -> studentRegisterAPI "Reads student data from"
-        
 
         # relationships to/from components
         HTML -> adminExamController "Makes API calls to"
