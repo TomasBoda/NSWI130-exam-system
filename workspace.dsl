@@ -1,82 +1,119 @@
 workspace "ExamSystem Workspace" "This workspace documents the architecture of the ExamSystem system which enables managing of exams, signing up on the exams and communication between students and teachers." {
 
     model {
-        # software systems
+        student = person "Student" "Signs up for exams"
+        teacher = person "Teacher" "Creates and manages exams"
+
         examSystem = softwareSystem "ExamSystem" "Manages exams, registering students to exams and communication between students and teachers." {
-            HTML = container "Exam Web Application Front-end" "Provides funcionality for student Exam registration and exam administration in a web browser. Its internal structure is based on the MVC pattern implemented using React/Redux." "React/Redux" "Web Front-End"
-
-            examWebApp = container "Exam Web Application" "Delivers administration web application front-end to the client's browser."
-
-            adminAPI = container "Exam Application Back-end" "Provides the application logic to administer exams and student's registrations in the system via an API."  {
-                    adminRegistrationController = component "Registrations Administration Controller" "Processes requests to manage exam registrations"
-                    adminExamController = component "Exam Administration Controller" "Processes requests to manage exams"
-                    adminExamModel = component "Exam Model" "Represents Exams and persists them in the database"
-                    adminRegistrationModel = component "Registration Model" "Represents Registrations and persists them in the database"
+            webAppFrontEnd = container "Web App Front-end" "Provides user interface to authenticated users" "" "FrontEnd" {
+                authUI = component "Auth UI" "User interface for user authentication"
+                studentUI = component "Student UI" "User interface for students"
+                teacherUI = component "Teacher UI" "User interface for teachers"
             }
 
-            notifier = container "Notifier" "Sends notifications to students and teachers about exam changes and new messages." "" "Notification Service" {
-                notifierController = component "Notifier Controller" "Processes requests to send notifications"
-                notifierModel = component "Notifier Model" "Represents notifications and persists them in the database"
+            restAPI = container "Rest API" "Provides RestAPI endpoints for exam management" "" "BackEnd" {
+                requestController = component "Request Handler" "Handles API requests" "" "RequestController"
+                routingController = component "Routing Controller" "Manage endpoint routing" "" "RoutingController"
+                examController = component "Exam Controller" "Retrieves and manipulates exam data"
+                gradeController = component "Grade Controller" "Manipulates exam grades"
             }
 
-            db = container "Exam database" "Stores the exams and student's registrations." "" "Database"
+            notificationService = container "Notification Service" "Provides endpoints for notification management" "" "NotificationService" {
+                
+            }
+
+            messageService = container "Message Service" "Provides endpoints for student-teacher communication" "" "MessageService" {
+                
+            }
+
+            database = container "Exam Database" "Stores exams, exam registrations and messages" "" "Database" {
+                
+            }
+
+            validator = container "Validator" "Validates data" "" "Validator" {
+
+            }
         }
 
-        authenticationAPI = softwareSystem "Authentication API" "Manages users (students, teacher) and their login credentials for authentication to the exam system"
+        authenticationAPI = softwareSystem "Authentication API" "Manages users (students, teacher) and their login credentials for authentication to the exam system" {
+            authenticationContainer = container "Authentication container" "Authenticates users" {
+                registrationAPI = component "Registration API" "Registers users (student, teacher)"
+                loginAPI = component "Login API" "Validates user credentials and generates auth token"
+            }
+            authorizationContainer = container "Authorization container" "Authorizes users"
+        }
 
         studentRegister = softwareSystem "StudentRegister" "Stores student's data and provides it to the ExamSystem." "Existing System" {
             studentRegisterAPI = container "StudentRegister API" "Provides student's data to the ExamSystem." "" "API" 
         }
 
-        # actors
-        student = person "Student" "Signs up for exams"
-        teacher = person "Teacher" "Creates and manages exams"
-
-        # relationships between users and ExamSystem
+        // Actors
         student -> examSystem "Signs up for exams"
         student -> examSystem "Communicates with examiners"
-        
+
         teacher -> examSystem "Creates, updates and removes exams"
         teacher -> examSystem "Sends exam results to students"
         teacher -> examSystem "Communicates with registered students"
         teacher -> examSystem "Sends exam information to registered students"
 
-        # relationships to/from containers
-        examWebApp -> HTML "Delivers to the user's web browser"
-        adminExamController -> HTML "Delivers data to"
-        adminRegistrationController -> HTML "Delivers data to"
+        // Exam System
+        webAppFrontEnd -> restAPI "Send request for data retrieval"
+        webAppFrontEnd -> restAPI "Send request for data manipulation"
 
-        adminExamController -> adminExamModel "Uses"
-        adminRegistrationController -> adminRegistrationModel "Uses"
+        webAppFrontEnd -> notificationService "Send notification to registered students"
+        webAppFrontEnd -> messageService "Send message to specific user"
 
-        adminExamModel -> db "Reads from and writes to exam data"
-        adminRegistrationModel -> db "Reads from and writes to exam data"
-        adminRegistrationModel -> studentRegisterAPI "Reads student data from"
+        restAPI -> webAppFrontEnd "Provide data to users"
+        restAPI -> webAppFrontEnd "Provide data manipulation endpoints"
 
-        # relationships to/from components
-        HTML -> adminExamController "Makes API calls to"
-        HTML -> adminRegistrationController "Makes API calls to"
-        adminRegistrationController -> notifierController "Sends notifications to"
+        database -> restAPI "Provide data to back-end on demand"
 
+        messageService -> database "Store messages to database"
+        notificationService -> database "Store notifications to database"
 
-        # relationships between external systems and ExamSystem
+        webAppFrontEnd -> validator "Validate outgoing data"
+        restAPI -> validator "Validate incoming data"
+
+        // Front-end
+        authUI -> studentUI "Navigates user of type 'Student' to Student UI"
+        authUI -> teacherUI "Navigates user of type 'Teacher' to Teacher UI"
+
+        restAPI -> studentUI "Provide student data"
+        restAPI -> teacherUI "Provide teacher data"
+        authenticationAPI -> authUI "Provide authentication requests"
+
+        // Back-end
+        requestController -> routingController "Send incoming requests to router"
+        routingController -> examController "Route incoming exam manipulation requests"
+        routingController -> gradeController "Route incoming grade manipulation requests"
+        examController -> requestController "Send handled requests back to handler"
+        gradeController -> requestController "Send handled requests back to handler"
+
+        database -> examController "Provide exam-related data"
+        database -> gradeController "Provide grade-related data"
+        examController -> database "Store exam-related data"
+        gradeController -> database "Store grade-related data"
+
+        webAppFrontEnd -> requestController "Send requests for data retrieval and manipulation"
     }
 
     views {
-
+        // DONE
         systemContext examSystem "examSystemSystemContextDiagram" {
             include *
-            autoLayout lr
         }
 
+        // TODO
         container examSystem "examSystemSystemContainerDiagram" {
             include *
-            autoLayout
         }
 
-        component adminAPI "adminAPISystemComponentDiagram" {
+        component webAppFrontEnd "examSystemWebAppFrontEndDiagram" {
             include *
-            autoLayout lr
+        }
+
+        component restAPI "examSystemWebAppBackEndDiagram" {
+            include *
         }
 
         styles {
@@ -89,19 +126,9 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 background #1168bd
                 color #ffffff
             }
-            element "Existing System" {
-                background #999999
-                color #ffffff
-            }
             element "Container" {
                 background #438dd5
                 color #ffffff
-            }
-            element "Web Browser" {
-                shape WebBrowser
-            }
-            element "Mobile App" {
-                shape MobileDeviceLandscape
             }
             element "Database" {
                 shape Cylinder
@@ -112,6 +139,19 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             }
             element "Failover" {
                 opacity 25
+            }
+
+            element "RequestController" {
+                background #c4c4c4
+            }
+            element "RoutingController" {
+                background #c4c4c4
+            }
+            element "NotificationService" {
+                background #ff8766
+            }
+            element "MessageService" {
+                background #ff8766
             }
         }
     }

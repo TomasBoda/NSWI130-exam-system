@@ -2,61 +2,15 @@
   "id" : 1,
   "name" : "ExamSystem Workspace",
   "description" : "This workspace documents the architecture of the ExamSystem system which enables managing of exams, signing up on the exams and communication between students and teachers.",
-  "lastModifiedDate" : "2023-11-04T20:36:57Z",
+  "lastModifiedDate" : "2023-11-04T21:58:06Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlICJFeGFtU3lzdGVtIFdvcmtzcGFjZSIgIlRoaXMgd29ya3NwYWNlIGRvY3VtZW50cyB0aGUgYXJjaGl0ZWN0dXJlIG9mIHRoZSBFeGFtU3lzdGVtIHN5c3RlbSB3aGljaCBlbmFibGVzIG1hbmFnaW5nIG9mIGV4YW1zLCBzaWduaW5nIHVwIG9uIHRoZSBleGFtcyBhbmQgY29tbXVuaWNhdGlvbiBiZXR3ZWVuIHN0dWRlbnRzIGFuZCB0ZWFjaGVycy4iIHsKCiAgICBtb2RlbCB7CiAgICAgICAgIyBzb2Z0d2FyZSBzeXN0ZW1zCiAgICAgICAgZXhhbVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJFeGFtU3lzdGVtIiAiTWFuYWdlcyBleGFtcywgcmVnaXN0ZXJpbmcgc3R1ZGVudHMgdG8gZXhhbXMgYW5kIGNvbW11bmljYXRpb24gYmV0d2VlbiBzdHVkZW50cyBhbmQgdGVhY2hlcnMuIiB7CiAgICAgICAgICAgIEhUTUwgPSBjb250YWluZXIgIkV4YW0gV2ViIEFwcGxpY2F0aW9uIEZyb250LWVuZCIgIlByb3ZpZGVzIGZ1bmNpb25hbGl0eSBmb3Igc3R1ZGVudCBFeGFtIHJlZ2lzdHJhdGlvbiBhbmQgZXhhbSBhZG1pbmlzdHJhdGlvbiBpbiBhIHdlYiBicm93c2VyLiBJdHMgaW50ZXJuYWwgc3RydWN0dXJlIGlzIGJhc2VkIG9uIHRoZSBNVkMgcGF0dGVybiBpbXBsZW1lbnRlZCB1c2luZyBSZWFjdC9SZWR1eC4iICJSZWFjdC9SZWR1eCIgIldlYiBGcm9udC1FbmQiCgogICAgICAgICAgICBleGFtV2ViQXBwID0gY29udGFpbmVyICJFeGFtIFdlYiBBcHBsaWNhdGlvbiIgIkRlbGl2ZXJzIGFkbWluaXN0cmF0aW9uIHdlYiBhcHBsaWNhdGlvbiBmcm9udC1lbmQgdG8gdGhlIGNsaWVudCdzIGJyb3dzZXIuIgoKICAgICAgICAgICAgYWRtaW5BUEkgPSBjb250YWluZXIgIkV4YW0gQXBwbGljYXRpb24gQmFjay1lbmQiICJQcm92aWRlcyB0aGUgYXBwbGljYXRpb24gbG9naWMgdG8gYWRtaW5pc3RlciBleGFtcyBhbmQgc3R1ZGVudCdzIHJlZ2lzdHJhdGlvbnMgaW4gdGhlIHN5c3RlbSB2aWEgYW4gQVBJLiIgIHsKICAgICAgICAgICAgICAgICAgICBhZG1pblJlZ2lzdHJhdGlvbkNvbnRyb2xsZXIgPSBjb21wb25lbnQgIlJlZ2lzdHJhdGlvbnMgQWRtaW5pc3RyYXRpb24gQ29udHJvbGxlciIgIlByb2Nlc3NlcyByZXF1ZXN0cyB0byBtYW5hZ2UgZXhhbSByZWdpc3RyYXRpb25zIgogICAgICAgICAgICAgICAgICAgIGFkbWluRXhhbUNvbnRyb2xsZXIgPSBjb21wb25lbnQgIkV4YW0gQWRtaW5pc3RyYXRpb24gQ29udHJvbGxlciIgIlByb2Nlc3NlcyByZXF1ZXN0cyB0byBtYW5hZ2UgZXhhbXMiCiAgICAgICAgICAgICAgICAgICAgYWRtaW5FeGFtTW9kZWwgPSBjb21wb25lbnQgIkV4YW0gTW9kZWwiICJSZXByZXNlbnRzIEV4YW1zIGFuZCBwZXJzaXN0cyB0aGVtIGluIHRoZSBkYXRhYmFzZSIKICAgICAgICAgICAgICAgICAgICBhZG1pblJlZ2lzdHJhdGlvbk1vZGVsID0gY29tcG9uZW50ICJSZWdpc3RyYXRpb24gTW9kZWwiICJSZXByZXNlbnRzIFJlZ2lzdHJhdGlvbnMgYW5kIHBlcnNpc3RzIHRoZW0gaW4gdGhlIGRhdGFiYXNlIgogICAgICAgICAgICB9CgogICAgICAgICAgICBub3RpZmllciA9IGNvbnRhaW5lciAiTm90aWZpZXIiICJTZW5kcyBub3RpZmljYXRpb25zIHRvIHN0dWRlbnRzIGFuZCB0ZWFjaGVycyBhYm91dCBleGFtIGNoYW5nZXMgYW5kIG5ldyBtZXNzYWdlcy4iICIiICJOb3RpZmljYXRpb24gU2VydmljZSIgewogICAgICAgICAgICAgICAgbm90aWZpZXJDb250cm9sbGVyID0gY29tcG9uZW50ICJOb3RpZmllciBDb250cm9sbGVyIiAiUHJvY2Vzc2VzIHJlcXVlc3RzIHRvIHNlbmQgbm90aWZpY2F0aW9ucyIKICAgICAgICAgICAgICAgIG5vdGlmaWVyTW9kZWwgPSBjb21wb25lbnQgIk5vdGlmaWVyIE1vZGVsIiAiUmVwcmVzZW50cyBub3RpZmljYXRpb25zIGFuZCBwZXJzaXN0cyB0aGVtIGluIHRoZSBkYXRhYmFzZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGIgPSBjb250YWluZXIgIkV4YW0gZGF0YWJhc2UiICJTdG9yZXMgdGhlIGV4YW1zIGFuZCBzdHVkZW50J3MgcmVnaXN0cmF0aW9ucy4iICIiICJEYXRhYmFzZSIKICAgICAgICB9CgogICAgICAgIHN0dWRlbnRSZWdpc3RlciA9IHNvZnR3YXJlU3lzdGVtICJTdHVkZW50UmVnaXN0ZXIiICJTdG9yZXMgc3R1ZGVudCdzIGRhdGEgYW5kIHByb3ZpZGVzIGl0IHRvIHRoZSBFeGFtU3lzdGVtLiIgIkV4aXN0aW5nIFN5c3RlbSIgewogICAgICAgICAgICBzdHVkZW50UmVnaXN0ZXJBUEkgPSBjb250YWluZXIgIlN0dWRlbnRSZWdpc3RlciBBUEkiICJQcm92aWRlcyBzdHVkZW50J3MgZGF0YSB0byB0aGUgRXhhbVN5c3RlbS4iICIiICJBUEkiIAogICAgICAgIH0KCiAgICAgICAgIyBhY3RvcnMKICAgICAgICBzdHVkZW50ID0gcGVyc29uICJTdHVkZW50IiAiU2lnbnMgdXAgZm9yIGV4YW1zIgogICAgICAgIHRlYWNoZXIgPSBwZXJzb24gIlRlYWNoZXIiICJDcmVhdGVzIGFuZCBtYW5hZ2VzIGV4YW1zIgoKICAgICAgICAjIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiB1c2VycyBhbmQgRXhhbVN5c3RlbQogICAgICAgIHN0dWRlbnQgLT4gZXhhbVN5c3RlbSAiU2lnbnMgdXAgZm9yIGV4YW1zIgogICAgICAgIHN0dWRlbnQgLT4gZXhhbVN5c3RlbSAiQ29tbXVuaWNhdGVzIHdpdGggZXhhbWluZXJzIgogICAgICAgIAogICAgICAgIHRlYWNoZXIgLT4gZXhhbVN5c3RlbSAiQ3JlYXRlcywgdXBkYXRlcyBhbmQgcmVtb3ZlcyBleGFtcyIKICAgICAgICB0ZWFjaGVyIC0+IGV4YW1TeXN0ZW0gIlNlbmRzIGV4YW0gcmVzdWx0cyB0byBzdHVkZW50cyIKICAgICAgICB0ZWFjaGVyIC0+IGV4YW1TeXN0ZW0gIkNvbW11bmljYXRlcyB3aXRoIHJlZ2lzdGVyZWQgc3R1ZGVudHMiCiAgICAgICAgdGVhY2hlciAtPiBleGFtU3lzdGVtICJTZW5kcyBleGFtIGluZm9ybWF0aW9uIHRvIHJlZ2lzdGVyZWQgc3R1ZGVudHMiCgogICAgICAgICMgcmVsYXRpb25zaGlwcyB0by9mcm9tIGNvbnRhaW5lcnMKICAgICAgICBleGFtV2ViQXBwIC0+IEhUTUwgIkRlbGl2ZXJzIHRvIHRoZSB1c2VyJ3Mgd2ViIGJyb3dzZXIiCiAgICAgICAgYWRtaW5FeGFtQ29udHJvbGxlciAtPiBIVE1MICJEZWxpdmVycyBkYXRhIHRvIgogICAgICAgIGFkbWluUmVnaXN0cmF0aW9uQ29udHJvbGxlciAtPiBIVE1MICJEZWxpdmVycyBkYXRhIHRvIgoKICAgICAgICBhZG1pbkV4YW1Db250cm9sbGVyIC0+IGFkbWluRXhhbU1vZGVsICJVc2VzIgogICAgICAgIGFkbWluUmVnaXN0cmF0aW9uQ29udHJvbGxlciAtPiBhZG1pblJlZ2lzdHJhdGlvbk1vZGVsICJVc2VzIgoKICAgICAgICBhZG1pbkV4YW1Nb2RlbCAtPiBkYiAiUmVhZHMgZnJvbSBhbmQgd3JpdGVzIHRvIGV4YW0gZGF0YSIKICAgICAgICBhZG1pblJlZ2lzdHJhdGlvbk1vZGVsIC0+IGRiICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8gZXhhbSBkYXRhIgogICAgICAgIGFkbWluUmVnaXN0cmF0aW9uTW9kZWwgLT4gc3R1ZGVudFJlZ2lzdGVyQVBJICJSZWFkcyBzdHVkZW50IGRhdGEgZnJvbSIKCiAgICAgICAgIyByZWxhdGlvbnNoaXBzIHRvL2Zyb20gY29tcG9uZW50cwogICAgICAgIEhUTUwgLT4gYWRtaW5FeGFtQ29udHJvbGxlciAiTWFrZXMgQVBJIGNhbGxzIHRvIgogICAgICAgIEhUTUwgLT4gYWRtaW5SZWdpc3RyYXRpb25Db250cm9sbGVyICJNYWtlcyBBUEkgY2FsbHMgdG8iCiAgICAgICAgYWRtaW5SZWdpc3RyYXRpb25Db250cm9sbGVyIC0+IG5vdGlmaWVyQ29udHJvbGxlciAiU2VuZHMgbm90aWZpY2F0aW9ucyB0byIKCgogICAgICAgICMgcmVsYXRpb25zaGlwcyBiZXR3ZWVuIGV4dGVybmFsIHN5c3RlbXMgYW5kIEV4YW1TeXN0ZW0KICAgIH0KCiAgICB2aWV3cyB7CgogICAgICAgIHN5c3RlbUNvbnRleHQgZXhhbVN5c3RlbSAiZXhhbVN5c3RlbVN5c3RlbUNvbnRleHREaWFncmFtIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgZXhhbVN5c3RlbSAiZXhhbVN5c3RlbVN5c3RlbUNvbnRhaW5lckRpYWdyYW0iIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBhZG1pbkFQSSAiYWRtaW5BUElTeXN0ZW1Db21wb25lbnREaWFncmFtIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIGNvbG9yICMwODQyN2IKICAgICAgICAgICAgICAgIGZvbnRTaXplIDIyCiAgICAgICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzExNjhiZAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkV4aXN0aW5nIFN5c3RlbSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjOTk5OTk5CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM0MzhkZDUKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJXZWIgQnJvd3NlciIgewogICAgICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIk1vYmlsZSBBcHAiIHsKICAgICAgICAgICAgICAgIHNoYXBlIE1vYmlsZURldmljZUxhbmRzY2FwZQogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkNvbXBvbmVudCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjODViYmYwCiAgICAgICAgICAgICAgICBjb2xvciAjMDAwMDAwCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRmFpbG92ZXIiIHsKICAgICAgICAgICAgICAgIG9wYWNpdHkgMjUKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQo="
+    "structurizr.dsl" : "d29ya3NwYWNlICJFeGFtU3lzdGVtIFdvcmtzcGFjZSIgIlRoaXMgd29ya3NwYWNlIGRvY3VtZW50cyB0aGUgYXJjaGl0ZWN0dXJlIG9mIHRoZSBFeGFtU3lzdGVtIHN5c3RlbSB3aGljaCBlbmFibGVzIG1hbmFnaW5nIG9mIGV4YW1zLCBzaWduaW5nIHVwIG9uIHRoZSBleGFtcyBhbmQgY29tbXVuaWNhdGlvbiBiZXR3ZWVuIHN0dWRlbnRzIGFuZCB0ZWFjaGVycy4iIHsKCiAgICBtb2RlbCB7CiAgICAgICAgc3R1ZGVudCA9IHBlcnNvbiAiU3R1ZGVudCIgIlNpZ25zIHVwIGZvciBleGFtcyIKICAgICAgICB0ZWFjaGVyID0gcGVyc29uICJUZWFjaGVyIiAiQ3JlYXRlcyBhbmQgbWFuYWdlcyBleGFtcyIKCiAgICAgICAgZXhhbVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJFeGFtU3lzdGVtIiAiTWFuYWdlcyBleGFtcywgcmVnaXN0ZXJpbmcgc3R1ZGVudHMgdG8gZXhhbXMgYW5kIGNvbW11bmljYXRpb24gYmV0d2VlbiBzdHVkZW50cyBhbmQgdGVhY2hlcnMuIiB7CiAgICAgICAgICAgIHdlYkFwcEZyb250RW5kID0gY29udGFpbmVyICJXZWIgQXBwIEZyb250LWVuZCIgIlByb3ZpZGVzIHVzZXIgaW50ZXJmYWNlIHRvIGF1dGhlbnRpY2F0ZWQgdXNlcnMiICIiICJGcm9udEVuZCIgewogICAgICAgICAgICAgICAgYXV0aFVJID0gY29tcG9uZW50ICJBdXRoIFVJIiAiVXNlciBpbnRlcmZhY2UgZm9yIHVzZXIgYXV0aGVudGljYXRpb24iCiAgICAgICAgICAgICAgICBzdHVkZW50VUkgPSBjb21wb25lbnQgIlN0dWRlbnQgVUkiICJVc2VyIGludGVyZmFjZSBmb3Igc3R1ZGVudHMiCiAgICAgICAgICAgICAgICB0ZWFjaGVyVUkgPSBjb21wb25lbnQgIlRlYWNoZXIgVUkiICJVc2VyIGludGVyZmFjZSBmb3IgdGVhY2hlcnMiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHJlc3RBUEkgPSBjb250YWluZXIgIlJlc3QgQVBJIiAiUHJvdmlkZXMgUmVzdEFQSSBlbmRwb2ludHMgZm9yIGV4YW0gbWFuYWdlbWVudCIgIiIgIkJhY2tFbmQiIHsKICAgICAgICAgICAgICAgIHJlcXVlc3RDb250cm9sbGVyID0gY29tcG9uZW50ICJSZXF1ZXN0IEhhbmRsZXIiICJIYW5kbGVzIEFQSSByZXF1ZXN0cyIgIiIgIlJlcXVlc3RDb250cm9sbGVyIgogICAgICAgICAgICAgICAgcm91dGluZ0NvbnRyb2xsZXIgPSBjb21wb25lbnQgIlJvdXRpbmcgQ29udHJvbGxlciIgIk1hbmFnZSBlbmRwb2ludCByb3V0aW5nIiAiIiAiUm91dGluZ0NvbnRyb2xsZXIiCiAgICAgICAgICAgICAgICBleGFtQ29udHJvbGxlciA9IGNvbXBvbmVudCAiRXhhbSBDb250cm9sbGVyIiAiUmV0cmlldmVzIGFuZCBtYW5pcHVsYXRlcyBleGFtIGRhdGEiCiAgICAgICAgICAgICAgICBncmFkZUNvbnRyb2xsZXIgPSBjb21wb25lbnQgIkdyYWRlIENvbnRyb2xsZXIiICJNYW5pcHVsYXRlcyBleGFtIGdyYWRlcyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgbm90aWZpY2F0aW9uU2VydmljZSA9IGNvbnRhaW5lciAiTm90aWZpY2F0aW9uIFNlcnZpY2UiICJQcm92aWRlcyBlbmRwb2ludHMgZm9yIG5vdGlmaWNhdGlvbiBtYW5hZ2VtZW50IiAiIiAiTm90aWZpY2F0aW9uU2VydmljZSIgewogICAgICAgICAgICAgICAgCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIG1lc3NhZ2VTZXJ2aWNlID0gY29udGFpbmVyICJNZXNzYWdlIFNlcnZpY2UiICJQcm92aWRlcyBlbmRwb2ludHMgZm9yIHN0dWRlbnQtdGVhY2hlciBjb21tdW5pY2F0aW9uIiAiIiAiTWVzc2FnZVNlcnZpY2UiIHsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICB9CgogICAgICAgICAgICBkYXRhYmFzZSA9IGNvbnRhaW5lciAiRXhhbSBEYXRhYmFzZSIgIlN0b3JlcyBleGFtcywgZXhhbSByZWdpc3RyYXRpb25zIGFuZCBtZXNzYWdlcyIgIiIgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgfQoKICAgICAgICAgICAgdmFsaWRhdG9yID0gY29udGFpbmVyICJWYWxpZGF0b3IiICJWYWxpZGF0ZXMgZGF0YSIgIiIgIlZhbGlkYXRvciIgewoKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgYXV0aGVudGljYXRpb25BUEkgPSBzb2Z0d2FyZVN5c3RlbSAiQXV0aGVudGljYXRpb24gQVBJIiAiTWFuYWdlcyB1c2VycyAoc3R1ZGVudHMsIHRlYWNoZXIpIGFuZCB0aGVpciBsb2dpbiBjcmVkZW50aWFscyBmb3IgYXV0aGVudGljYXRpb24gdG8gdGhlIGV4YW0gc3lzdGVtIiB7CiAgICAgICAgICAgIGF1dGhlbnRpY2F0aW9uQ29udGFpbmVyID0gY29udGFpbmVyICJBdXRoZW50aWNhdGlvbiBjb250YWluZXIiICJBdXRoZW50aWNhdGVzIHVzZXJzIiB7CiAgICAgICAgICAgICAgICByZWdpc3RyYXRpb25BUEkgPSBjb21wb25lbnQgIlJlZ2lzdHJhdGlvbiBBUEkiICJSZWdpc3RlcnMgdXNlcnMgKHN0dWRlbnQsIHRlYWNoZXIpIgogICAgICAgICAgICAgICAgbG9naW5BUEkgPSBjb21wb25lbnQgIkxvZ2luIEFQSSIgIlZhbGlkYXRlcyB1c2VyIGNyZWRlbnRpYWxzIGFuZCBnZW5lcmF0ZXMgYXV0aCB0b2tlbiIKICAgICAgICAgICAgfQogICAgICAgICAgICBhdXRob3JpemF0aW9uQ29udGFpbmVyID0gY29udGFpbmVyICJBdXRob3JpemF0aW9uIGNvbnRhaW5lciIgIkF1dGhvcml6ZXMgdXNlcnMiCiAgICAgICAgfQoKICAgICAgICBzdHVkZW50UmVnaXN0ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiU3R1ZGVudFJlZ2lzdGVyIiAiU3RvcmVzIHN0dWRlbnQncyBkYXRhIGFuZCBwcm92aWRlcyBpdCB0byB0aGUgRXhhbVN5c3RlbS4iICJFeGlzdGluZyBTeXN0ZW0iIHsKICAgICAgICAgICAgc3R1ZGVudFJlZ2lzdGVyQVBJID0gY29udGFpbmVyICJTdHVkZW50UmVnaXN0ZXIgQVBJIiAiUHJvdmlkZXMgc3R1ZGVudCdzIGRhdGEgdG8gdGhlIEV4YW1TeXN0ZW0uIiAiIiAiQVBJIiAKICAgICAgICB9CgogICAgICAgIC8vIEFjdG9ycwogICAgICAgIHN0dWRlbnQgLT4gZXhhbVN5c3RlbSAiU2lnbnMgdXAgZm9yIGV4YW1zIgogICAgICAgIHN0dWRlbnQgLT4gZXhhbVN5c3RlbSAiQ29tbXVuaWNhdGVzIHdpdGggZXhhbWluZXJzIgoKICAgICAgICB0ZWFjaGVyIC0+IGV4YW1TeXN0ZW0gIkNyZWF0ZXMsIHVwZGF0ZXMgYW5kIHJlbW92ZXMgZXhhbXMiCiAgICAgICAgdGVhY2hlciAtPiBleGFtU3lzdGVtICJTZW5kcyBleGFtIHJlc3VsdHMgdG8gc3R1ZGVudHMiCiAgICAgICAgdGVhY2hlciAtPiBleGFtU3lzdGVtICJDb21tdW5pY2F0ZXMgd2l0aCByZWdpc3RlcmVkIHN0dWRlbnRzIgogICAgICAgIHRlYWNoZXIgLT4gZXhhbVN5c3RlbSAiU2VuZHMgZXhhbSBpbmZvcm1hdGlvbiB0byByZWdpc3RlcmVkIHN0dWRlbnRzIgoKICAgICAgICAvLyBFeGFtIFN5c3RlbQogICAgICAgIHdlYkFwcEZyb250RW5kIC0+IHJlc3RBUEkgIlNlbmQgcmVxdWVzdCBmb3IgZGF0YSByZXRyaWV2YWwiCiAgICAgICAgd2ViQXBwRnJvbnRFbmQgLT4gcmVzdEFQSSAiU2VuZCByZXF1ZXN0IGZvciBkYXRhIG1hbmlwdWxhdGlvbiIKCiAgICAgICAgd2ViQXBwRnJvbnRFbmQgLT4gbm90aWZpY2F0aW9uU2VydmljZSAiU2VuZCBub3RpZmljYXRpb24gdG8gcmVnaXN0ZXJlZCBzdHVkZW50cyIKICAgICAgICB3ZWJBcHBGcm9udEVuZCAtPiBtZXNzYWdlU2VydmljZSAiU2VuZCBtZXNzYWdlIHRvIHNwZWNpZmljIHVzZXIiCgogICAgICAgIHJlc3RBUEkgLT4gd2ViQXBwRnJvbnRFbmQgIlByb3ZpZGUgZGF0YSB0byB1c2VycyIKICAgICAgICByZXN0QVBJIC0+IHdlYkFwcEZyb250RW5kICJQcm92aWRlIGRhdGEgbWFuaXB1bGF0aW9uIGVuZHBvaW50cyIKCiAgICAgICAgZGF0YWJhc2UgLT4gcmVzdEFQSSAiUHJvdmlkZSBkYXRhIHRvIGJhY2stZW5kIG9uIGRlbWFuZCIKCiAgICAgICAgbWVzc2FnZVNlcnZpY2UgLT4gZGF0YWJhc2UgIlN0b3JlIG1lc3NhZ2VzIHRvIGRhdGFiYXNlIgogICAgICAgIG5vdGlmaWNhdGlvblNlcnZpY2UgLT4gZGF0YWJhc2UgIlN0b3JlIG5vdGlmaWNhdGlvbnMgdG8gZGF0YWJhc2UiCgogICAgICAgIHdlYkFwcEZyb250RW5kIC0+IHZhbGlkYXRvciAiVmFsaWRhdGUgb3V0Z29pbmcgZGF0YSIKICAgICAgICByZXN0QVBJIC0+IHZhbGlkYXRvciAiVmFsaWRhdGUgaW5jb21pbmcgZGF0YSIKCiAgICAgICAgLy8gRnJvbnQtZW5kCiAgICAgICAgYXV0aFVJIC0+IHN0dWRlbnRVSSAiTmF2aWdhdGVzIHVzZXIgb2YgdHlwZSAnU3R1ZGVudCcgdG8gU3R1ZGVudCBVSSIKICAgICAgICBhdXRoVUkgLT4gdGVhY2hlclVJICJOYXZpZ2F0ZXMgdXNlciBvZiB0eXBlICdUZWFjaGVyJyB0byBUZWFjaGVyIFVJIgoKICAgICAgICByZXN0QVBJIC0+IHN0dWRlbnRVSSAiUHJvdmlkZSBzdHVkZW50IGRhdGEiCiAgICAgICAgcmVzdEFQSSAtPiB0ZWFjaGVyVUkgIlByb3ZpZGUgdGVhY2hlciBkYXRhIgogICAgICAgIGF1dGhlbnRpY2F0aW9uQVBJIC0+IGF1dGhVSSAiUHJvdmlkZSBhdXRoZW50aWNhdGlvbiByZXF1ZXN0cyIKCiAgICAgICAgLy8gQmFjay1lbmQKICAgICAgICByZXF1ZXN0Q29udHJvbGxlciAtPiByb3V0aW5nQ29udHJvbGxlciAiU2VuZCBpbmNvbWluZyByZXF1ZXN0cyB0byByb3V0ZXIiCiAgICAgICAgcm91dGluZ0NvbnRyb2xsZXIgLT4gZXhhbUNvbnRyb2xsZXIgIlJvdXRlIGluY29taW5nIGV4YW0gbWFuaXB1bGF0aW9uIHJlcXVlc3RzIgogICAgICAgIHJvdXRpbmdDb250cm9sbGVyIC0+IGdyYWRlQ29udHJvbGxlciAiUm91dGUgaW5jb21pbmcgZ3JhZGUgbWFuaXB1bGF0aW9uIHJlcXVlc3RzIgogICAgICAgIGV4YW1Db250cm9sbGVyIC0+IHJlcXVlc3RDb250cm9sbGVyICJTZW5kIGhhbmRsZWQgcmVxdWVzdHMgYmFjayB0byBoYW5kbGVyIgogICAgICAgIGdyYWRlQ29udHJvbGxlciAtPiByZXF1ZXN0Q29udHJvbGxlciAiU2VuZCBoYW5kbGVkIHJlcXVlc3RzIGJhY2sgdG8gaGFuZGxlciIKCiAgICAgICAgZGF0YWJhc2UgLT4gZXhhbUNvbnRyb2xsZXIgIlByb3ZpZGUgZXhhbS1yZWxhdGVkIGRhdGEiCiAgICAgICAgZGF0YWJhc2UgLT4gZ3JhZGVDb250cm9sbGVyICJQcm92aWRlIGdyYWRlLXJlbGF0ZWQgZGF0YSIKICAgICAgICBleGFtQ29udHJvbGxlciAtPiBkYXRhYmFzZSAiU3RvcmUgZXhhbS1yZWxhdGVkIGRhdGEiCiAgICAgICAgZ3JhZGVDb250cm9sbGVyIC0+IGRhdGFiYXNlICJTdG9yZSBncmFkZS1yZWxhdGVkIGRhdGEiCgogICAgICAgIHdlYkFwcEZyb250RW5kIC0+IHJlcXVlc3RDb250cm9sbGVyICJTZW5kIHJlcXVlc3RzIGZvciBkYXRhIHJldHJpZXZhbCBhbmQgbWFuaXB1bGF0aW9uIgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICAvLyBET05FCiAgICAgICAgc3lzdGVtQ29udGV4dCBleGFtU3lzdGVtICJleGFtU3lzdGVtU3lzdGVtQ29udGV4dERpYWdyYW0iIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICAvLyBUT0RPCiAgICAgICAgY29udGFpbmVyIGV4YW1TeXN0ZW0gImV4YW1TeXN0ZW1TeXN0ZW1Db250YWluZXJEaWFncmFtIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IHdlYkFwcEZyb250RW5kICJleGFtU3lzdGVtV2ViQXBwRnJvbnRFbmREaWFncmFtIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IHJlc3RBUEkgImV4YW1TeXN0ZW1XZWJBcHBCYWNrRW5kRGlhZ3JhbSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgICAgY29sb3IgIzA4NDI3YgogICAgICAgICAgICAgICAgZm9udFNpemUgMjIKICAgICAgICAgICAgICAgIHNoYXBlIFBlcnNvbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIlNvZnR3YXJlIFN5c3RlbSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMTE2OGJkCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM0MzhkZDUKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDb21wb25lbnQiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzg1YmJmMAogICAgICAgICAgICAgICAgY29sb3IgIzAwMDAwMAogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkZhaWxvdmVyIiB7CiAgICAgICAgICAgICAgICBvcGFjaXR5IDI1CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlJlcXVlc3RDb250cm9sbGVyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNjNGM0YzQKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJSb3V0aW5nQ29udHJvbGxlciIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjYzRjNGM0CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiTm90aWZpY2F0aW9uU2VydmljZSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjZmY4NzY2CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiTWVzc2FnZVNlcnZpY2UiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI2ZmODc2NgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9Cg=="
   },
   "configuration" : { },
   "model" : {
     "people" : [ {
-      "id" : "16",
-      "tags" : "Element,Person",
-      "properties" : {
-        "structurizr.dsl.identifier" : "teacher"
-      },
-      "name" : "Teacher",
-      "description" : "Creates and manages exams",
-      "relationships" : [ {
-        "id" : "21",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "dfc126cb-d262-45be-a19c-693f1a33e750"
-        },
-        "sourceId" : "16",
-        "destinationId" : "1",
-        "description" : "Communicates with registered students"
-      }, {
-        "id" : "19",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "835eb709-009b-430a-b73f-0af69187dda7"
-        },
-        "sourceId" : "16",
-        "destinationId" : "1",
-        "description" : "Creates, updates and removes exams"
-      }, {
-        "id" : "20",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "68e169bf-bf1e-4633-a1d0-1d98369d2d7a"
-        },
-        "sourceId" : "16",
-        "destinationId" : "1",
-        "description" : "Sends exam results to students"
-      }, {
-        "id" : "22",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "05f5dd16-f6eb-48eb-bd58-425703f78aa4"
-        },
-        "sourceId" : "16",
-        "destinationId" : "1",
-        "description" : "Sends exam information to registered students"
-      } ],
-      "location" : "Unspecified"
-    }, {
-      "id" : "15",
+      "id" : "1",
       "tags" : "Element,Person",
       "properties" : {
         "structurizr.dsl.identifier" : "student"
@@ -64,28 +18,515 @@
       "name" : "Student",
       "description" : "Signs up for exams",
       "relationships" : [ {
-        "id" : "18",
+        "id" : "25",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "24c5f2df-8d7a-433d-87c2-1a46e587f609"
+          "structurizr.dsl.identifier" : "a33306f3-f505-4415-b2d9-5d3988c927ca"
         },
-        "sourceId" : "15",
-        "destinationId" : "1",
+        "sourceId" : "1",
+        "destinationId" : "3",
         "description" : "Communicates with examiners"
       }, {
-        "id" : "17",
+        "id" : "24",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "1198a133-0091-45e1-a0b5-55f653e45408"
+          "structurizr.dsl.identifier" : "e2101302-70d7-4fe5-a198-eb448d7e0014"
         },
-        "sourceId" : "15",
-        "destinationId" : "1",
+        "sourceId" : "1",
+        "destinationId" : "3",
         "description" : "Signs up for exams"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "teacher"
+      },
+      "name" : "Teacher",
+      "description" : "Creates and manages exams",
+      "relationships" : [ {
+        "id" : "29",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "898e908a-3e15-4b26-b004-06d5e0b426c3"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Sends exam information to registered students"
+      }, {
+        "id" : "26",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1ec043aa-c55e-4f3a-824d-dca0bc755f07"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Creates, updates and removes exams"
+      }, {
+        "id" : "28",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "f5b5fa8c-10d4-41ec-a5b2-46ed48f4a51d"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Communicates with registered students"
+      }, {
+        "id" : "27",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "53c394bf-4f1f-4e2e-8584-72a14685edda"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Sends exam results to students"
       } ],
       "location" : "Unspecified"
     } ],
     "softwareSystems" : [ {
-      "id" : "13",
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "examsystem"
+      },
+      "name" : "ExamSystem",
+      "description" : "Manages exams, registering students to exams and communication between students and teachers.",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "8",
+        "tags" : "Element,Container,BackEnd",
+        "properties" : {
+          "structurizr.dsl.identifier" : "restapi"
+        },
+        "name" : "Rest API",
+        "description" : "Provides RestAPI endpoints for exam management",
+        "relationships" : [ {
+          "id" : "43",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d65ea6c3-156f-4d4a-a450-b00d4445b739"
+          },
+          "sourceId" : "8",
+          "destinationId" : "6",
+          "description" : "Provide student data"
+        }, {
+          "id" : "40",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5cc40a78-0f97-4806-ad67-c4214c8fcff9"
+          },
+          "sourceId" : "8",
+          "destinationId" : "16",
+          "description" : "Validate incoming data"
+        }, {
+          "id" : "44",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "973b3863-b9f8-43ce-b6f6-da605910e8b4"
+          },
+          "sourceId" : "8",
+          "destinationId" : "7",
+          "description" : "Provide teacher data"
+        }, {
+          "id" : "56",
+          "sourceId" : "8",
+          "destinationId" : "15",
+          "description" : "Store exam-related data",
+          "linkedRelationshipId" : "55"
+        }, {
+          "id" : "35",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bc0be60e-8f5d-40bc-8b9a-6aa744b18ad5"
+          },
+          "sourceId" : "8",
+          "destinationId" : "4",
+          "description" : "Provide data manipulation endpoints"
+        }, {
+          "id" : "34",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "192cb3a3-91f5-48d5-91e9-14f087a450e2"
+          },
+          "sourceId" : "8",
+          "destinationId" : "4",
+          "description" : "Provide data to users"
+        } ],
+        "components" : [ {
+          "id" : "12",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "gradecontroller"
+          },
+          "name" : "Grade Controller",
+          "description" : "Manipulates exam grades",
+          "relationships" : [ {
+            "id" : "57",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2725e6b2-a879-4c11-b07e-d18e16913f34"
+            },
+            "sourceId" : "12",
+            "destinationId" : "15",
+            "description" : "Store grade-related data"
+          }, {
+            "id" : "52",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "aac41965-f7f5-4a8a-9315-4149bfb587df"
+            },
+            "sourceId" : "12",
+            "destinationId" : "9",
+            "description" : "Send handled requests back to handler"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "11",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "examcontroller"
+          },
+          "name" : "Exam Controller",
+          "description" : "Retrieves and manipulates exam data",
+          "relationships" : [ {
+            "id" : "55",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6599dea3-0232-417f-8c05-d55752464e18"
+            },
+            "sourceId" : "11",
+            "destinationId" : "15",
+            "description" : "Store exam-related data"
+          }, {
+            "id" : "51",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6ce557d3-d5d6-4bc6-ad7d-88ff9a284fab"
+            },
+            "sourceId" : "11",
+            "destinationId" : "9",
+            "description" : "Send handled requests back to handler"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "9",
+          "tags" : "Element,Component,RequestController",
+          "properties" : {
+            "structurizr.dsl.identifier" : "requestcontroller"
+          },
+          "name" : "Request Handler",
+          "description" : "Handles API requests",
+          "relationships" : [ {
+            "id" : "48",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7fe1d99c-d950-485a-b249-b645654ed558"
+            },
+            "sourceId" : "9",
+            "destinationId" : "10",
+            "description" : "Send incoming requests to router"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "10",
+          "tags" : "Element,Component,RoutingController",
+          "properties" : {
+            "structurizr.dsl.identifier" : "routingcontroller"
+          },
+          "name" : "Routing Controller",
+          "description" : "Manage endpoint routing",
+          "relationships" : [ {
+            "id" : "50",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "cd233132-3b2e-47c9-8769-d1da7b2bb419"
+            },
+            "sourceId" : "10",
+            "destinationId" : "12",
+            "description" : "Route incoming grade manipulation requests"
+          }, {
+            "id" : "49",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "a5e7dcdd-0929-434e-a488-dc663ab5138d"
+            },
+            "sourceId" : "10",
+            "destinationId" : "11",
+            "description" : "Route incoming exam manipulation requests"
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container,FrontEnd",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webappfrontend"
+        },
+        "name" : "Web App Front-end",
+        "description" : "Provides user interface to authenticated users",
+        "relationships" : [ {
+          "id" : "33",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "7b632bc0-413e-4eda-84e5-2666e51c4512"
+          },
+          "sourceId" : "4",
+          "destinationId" : "14",
+          "description" : "Send message to specific user"
+        }, {
+          "id" : "32",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e07730eb-904b-49ee-bbdd-a1393dc08bb1"
+          },
+          "sourceId" : "4",
+          "destinationId" : "13",
+          "description" : "Send notification to registered students"
+        }, {
+          "id" : "58",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ed887145-bcd1-434b-b078-867188efcd6b"
+          },
+          "sourceId" : "4",
+          "destinationId" : "9",
+          "description" : "Send requests for data retrieval and manipulation"
+        }, {
+          "id" : "30",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "07cb0f38-2d3e-4f6a-9598-a13d9e723655"
+          },
+          "sourceId" : "4",
+          "destinationId" : "8",
+          "description" : "Send request for data retrieval"
+        }, {
+          "id" : "39",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "457b323b-d596-4400-b6a7-402da015ddee"
+          },
+          "sourceId" : "4",
+          "destinationId" : "16",
+          "description" : "Validate outgoing data"
+        }, {
+          "id" : "31",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3cdd5c36-a6cf-48b3-9a5c-bbae02c894e0"
+          },
+          "sourceId" : "4",
+          "destinationId" : "8",
+          "description" : "Send request for data manipulation"
+        } ],
+        "components" : [ {
+          "id" : "7",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "teacherui"
+          },
+          "name" : "Teacher UI",
+          "description" : "User interface for teachers",
+          "documentation" : { }
+        }, {
+          "id" : "6",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "studentui"
+          },
+          "name" : "Student UI",
+          "description" : "User interface for students",
+          "documentation" : { }
+        }, {
+          "id" : "5",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authui"
+          },
+          "name" : "Auth UI",
+          "description" : "User interface for user authentication",
+          "relationships" : [ {
+            "id" : "41",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6c8c74c9-5e86-457e-a582-32a72f0fff50"
+            },
+            "sourceId" : "5",
+            "destinationId" : "6",
+            "description" : "Navigates user of type 'Student' to Student UI"
+          }, {
+            "id" : "42",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ac879d5c-d69d-48b0-a646-a41e357485bb"
+            },
+            "sourceId" : "5",
+            "destinationId" : "7",
+            "description" : "Navigates user of type 'Teacher' to Teacher UI"
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "13",
+        "tags" : "Element,Container,NotificationService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "notificationservice"
+        },
+        "name" : "Notification Service",
+        "description" : "Provides endpoints for notification management",
+        "relationships" : [ {
+          "id" : "38",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "fd62a172-f5c9-4fc3-af28-142dcedf3eb8"
+          },
+          "sourceId" : "13",
+          "destinationId" : "15",
+          "description" : "Store notifications to database"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "14",
+        "tags" : "Element,Container,MessageService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "messageservice"
+        },
+        "name" : "Message Service",
+        "description" : "Provides endpoints for student-teacher communication",
+        "relationships" : [ {
+          "id" : "37",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "4ef0c1ad-46bd-4daf-8f2b-5f2fa0cfa6f8"
+          },
+          "sourceId" : "14",
+          "destinationId" : "15",
+          "description" : "Store messages to database"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "16",
+        "tags" : "Element,Container,Validator",
+        "properties" : {
+          "structurizr.dsl.identifier" : "validator"
+        },
+        "name" : "Validator",
+        "description" : "Validates data",
+        "documentation" : { }
+      }, {
+        "id" : "15",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "Exam Database",
+        "description" : "Stores exams, exam registrations and messages",
+        "relationships" : [ {
+          "id" : "54",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3f779ccd-eb37-41f8-8205-5bd214a014e4"
+          },
+          "sourceId" : "15",
+          "destinationId" : "12",
+          "description" : "Provide grade-related data"
+        }, {
+          "id" : "53",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a85e58d8-06da-4c3e-8ca2-89cd35ea011c"
+          },
+          "sourceId" : "15",
+          "destinationId" : "11",
+          "description" : "Provide exam-related data"
+        }, {
+          "id" : "36",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "68803ca2-8a3d-4b5f-84e4-2b0933941215"
+          },
+          "sourceId" : "15",
+          "destinationId" : "8",
+          "description" : "Provide data to back-end on demand"
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "17",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "authenticationapi"
+      },
+      "name" : "Authentication API",
+      "description" : "Manages users (students, teacher) and their login credentials for authentication to the exam system",
+      "relationships" : [ {
+        "id" : "46",
+        "sourceId" : "17",
+        "destinationId" : "4",
+        "description" : "Provide authentication requests",
+        "linkedRelationshipId" : "45"
+      }, {
+        "id" : "45",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2c58fe24-03f9-4186-b722-adb5fa64a86d"
+        },
+        "sourceId" : "17",
+        "destinationId" : "5",
+        "description" : "Provide authentication requests"
+      }, {
+        "id" : "47",
+        "sourceId" : "17",
+        "destinationId" : "3",
+        "description" : "Provide authentication requests",
+        "linkedRelationshipId" : "45"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "21",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "authorizationcontainer"
+        },
+        "name" : "Authorization container",
+        "description" : "Authorizes users",
+        "documentation" : { }
+      }, {
+        "id" : "18",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "authenticationcontainer"
+        },
+        "name" : "Authentication container",
+        "description" : "Authenticates users",
+        "components" : [ {
+          "id" : "20",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "loginapi"
+          },
+          "name" : "Login API",
+          "description" : "Validates user credentials and generates auth token",
+          "documentation" : { }
+        }, {
+          "id" : "19",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "registrationapi"
+          },
+          "name" : "Registration API",
+          "description" : "Registers users (student, teacher)",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "22",
       "tags" : "Element,Software System,Existing System",
       "properties" : {
         "structurizr.dsl.identifier" : "studentregister"
@@ -94,299 +535,13 @@
       "description" : "Stores student's data and provides it to the ExamSystem.",
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "14",
+        "id" : "23",
         "tags" : "Element,Container,API",
         "properties" : {
           "structurizr.dsl.identifier" : "studentregisterapi"
         },
         "name" : "StudentRegister API",
         "description" : "Provides student's data to the ExamSystem.",
-        "documentation" : { }
-      } ],
-      "documentation" : { }
-    }, {
-      "id" : "1",
-      "tags" : "Element,Software System",
-      "properties" : {
-        "structurizr.dsl.identifier" : "examsystem"
-      },
-      "name" : "ExamSystem",
-      "description" : "Manages exams, registering students to exams and communication between students and teachers.",
-      "relationships" : [ {
-        "id" : "36",
-        "sourceId" : "1",
-        "destinationId" : "14",
-        "description" : "Reads student data from",
-        "linkedRelationshipId" : "32"
-      }, {
-        "id" : "37",
-        "sourceId" : "1",
-        "destinationId" : "13",
-        "description" : "Reads student data from",
-        "linkedRelationshipId" : "32"
-      } ],
-      "location" : "Unspecified",
-      "containers" : [ {
-        "id" : "3",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "examwebapp"
-        },
-        "name" : "Exam Web Application",
-        "description" : "Delivers administration web application front-end to the client's browser.",
-        "relationships" : [ {
-          "id" : "23",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "3d904505-f2fc-4f83-9764-6a8fef1b3258"
-          },
-          "sourceId" : "3",
-          "destinationId" : "2",
-          "description" : "Delivers to the user's web browser"
-        } ],
-        "documentation" : { }
-      }, {
-        "id" : "12",
-        "tags" : "Element,Container,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "db"
-        },
-        "name" : "Exam database",
-        "description" : "Stores the exams and student's registrations.",
-        "documentation" : { }
-      }, {
-        "id" : "4",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "adminapi"
-        },
-        "name" : "Exam Application Back-end",
-        "description" : "Provides the application logic to administer exams and student's registrations in the system via an API.",
-        "relationships" : [ {
-          "id" : "30",
-          "sourceId" : "4",
-          "destinationId" : "12",
-          "description" : "Reads from and writes to exam data",
-          "linkedRelationshipId" : "29"
-        }, {
-          "id" : "44",
-          "sourceId" : "4",
-          "destinationId" : "9",
-          "description" : "Sends notifications to",
-          "linkedRelationshipId" : "41"
-        }, {
-          "id" : "25",
-          "sourceId" : "4",
-          "destinationId" : "2",
-          "description" : "Delivers data to",
-          "linkedRelationshipId" : "24"
-        }, {
-          "id" : "43",
-          "sourceId" : "4",
-          "destinationId" : "10",
-          "description" : "Sends notifications to",
-          "linkedRelationshipId" : "41"
-        }, {
-          "id" : "34",
-          "sourceId" : "4",
-          "destinationId" : "14",
-          "description" : "Reads student data from",
-          "linkedRelationshipId" : "32"
-        }, {
-          "id" : "35",
-          "sourceId" : "4",
-          "destinationId" : "13",
-          "description" : "Reads student data from",
-          "linkedRelationshipId" : "32"
-        } ],
-        "components" : [ {
-          "id" : "8",
-          "tags" : "Element,Component",
-          "properties" : {
-            "structurizr.dsl.identifier" : "adminregistrationmodel"
-          },
-          "name" : "Registration Model",
-          "description" : "Represents Registrations and persists them in the database",
-          "relationships" : [ {
-            "id" : "32",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "d173ae47-6659-45c7-992b-85ed941e6b4c"
-            },
-            "sourceId" : "8",
-            "destinationId" : "14",
-            "description" : "Reads student data from"
-          }, {
-            "id" : "33",
-            "sourceId" : "8",
-            "destinationId" : "13",
-            "description" : "Reads student data from",
-            "linkedRelationshipId" : "32"
-          }, {
-            "id" : "31",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "e0dfcf32-000a-4f95-a434-6d73817713fd"
-            },
-            "sourceId" : "8",
-            "destinationId" : "12",
-            "description" : "Reads from and writes to exam data"
-          } ],
-          "documentation" : { }
-        }, {
-          "id" : "6",
-          "tags" : "Element,Component",
-          "properties" : {
-            "structurizr.dsl.identifier" : "adminexamcontroller"
-          },
-          "name" : "Exam Administration Controller",
-          "description" : "Processes requests to manage exams",
-          "relationships" : [ {
-            "id" : "27",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "3ca778e6-79c2-43c0-8cbf-0f62c43eab03"
-            },
-            "sourceId" : "6",
-            "destinationId" : "7",
-            "description" : "Uses"
-          }, {
-            "id" : "24",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "42a3711e-2df5-475d-aa4c-7e7e9d0963b3"
-            },
-            "sourceId" : "6",
-            "destinationId" : "2",
-            "description" : "Delivers data to"
-          } ],
-          "documentation" : { }
-        }, {
-          "id" : "5",
-          "tags" : "Element,Component",
-          "properties" : {
-            "structurizr.dsl.identifier" : "adminregistrationcontroller"
-          },
-          "name" : "Registrations Administration Controller",
-          "description" : "Processes requests to manage exam registrations",
-          "relationships" : [ {
-            "id" : "28",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "416ed13b-16da-4fef-a04e-797bf15d9c61"
-            },
-            "sourceId" : "5",
-            "destinationId" : "8",
-            "description" : "Uses"
-          }, {
-            "id" : "41",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "a6a6814d-3c65-4155-8625-431792fdaa4c"
-            },
-            "sourceId" : "5",
-            "destinationId" : "10",
-            "description" : "Sends notifications to"
-          }, {
-            "id" : "26",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "00ee91b0-c478-4112-883d-44fd2b3f3157"
-            },
-            "sourceId" : "5",
-            "destinationId" : "2",
-            "description" : "Delivers data to"
-          }, {
-            "id" : "42",
-            "sourceId" : "5",
-            "destinationId" : "9",
-            "description" : "Sends notifications to",
-            "linkedRelationshipId" : "41"
-          } ],
-          "documentation" : { }
-        }, {
-          "id" : "7",
-          "tags" : "Element,Component",
-          "properties" : {
-            "structurizr.dsl.identifier" : "adminexammodel"
-          },
-          "name" : "Exam Model",
-          "description" : "Represents Exams and persists them in the database",
-          "relationships" : [ {
-            "id" : "29",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "8920a55e-7de9-419a-b868-89fd10773ae6"
-            },
-            "sourceId" : "7",
-            "destinationId" : "12",
-            "description" : "Reads from and writes to exam data"
-          } ],
-          "documentation" : { }
-        } ],
-        "documentation" : { }
-      }, {
-        "id" : "2",
-        "tags" : "Element,Container,Web Front-End",
-        "properties" : {
-          "structurizr.dsl.identifier" : "html"
-        },
-        "name" : "Exam Web Application Front-end",
-        "description" : "Provides funcionality for student Exam registration and exam administration in a web browser. Its internal structure is based on the MVC pattern implemented using React/Redux.",
-        "relationships" : [ {
-          "id" : "39",
-          "sourceId" : "2",
-          "destinationId" : "4",
-          "description" : "Makes API calls to",
-          "linkedRelationshipId" : "38"
-        }, {
-          "id" : "38",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "7eeabd66-3c42-412f-9ed6-3ef743bab500"
-          },
-          "sourceId" : "2",
-          "destinationId" : "6",
-          "description" : "Makes API calls to"
-        }, {
-          "id" : "40",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "f98f6a7c-0c25-421a-8e17-9dfd78fa04da"
-          },
-          "sourceId" : "2",
-          "destinationId" : "5",
-          "description" : "Makes API calls to"
-        } ],
-        "technology" : "React/Redux",
-        "documentation" : { }
-      }, {
-        "id" : "9",
-        "tags" : "Element,Container,Notification Service",
-        "properties" : {
-          "structurizr.dsl.identifier" : "notifier"
-        },
-        "name" : "Notifier",
-        "description" : "Sends notifications to students and teachers about exam changes and new messages.",
-        "components" : [ {
-          "id" : "11",
-          "tags" : "Element,Component",
-          "properties" : {
-            "structurizr.dsl.identifier" : "notifiermodel"
-          },
-          "name" : "Notifier Model",
-          "description" : "Represents notifications and persists them in the database",
-          "documentation" : { }
-        }, {
-          "id" : "10",
-          "tags" : "Element,Component",
-          "properties" : {
-            "structurizr.dsl.identifier" : "notifiercontroller"
-          },
-          "name" : "Notifier Controller",
-          "description" : "Processes requests to send notifications",
-          "documentation" : { }
-        } ],
         "documentation" : { }
       } ],
       "documentation" : { }
@@ -397,195 +552,315 @@
     "systemContextViews" : [ {
       "key" : "examSystemSystemContextDiagram",
       "order" : 1,
-      "softwareSystemId" : "1",
+      "softwareSystemId" : "3",
       "dimensions" : {
-        "width" : 2300,
-        "height" : 1637
-      },
-      "automaticLayout" : {
-        "implementation" : "Graphviz",
-        "rankDirection" : "LeftRight",
-        "rankSeparation" : 300,
-        "nodeSeparation" : 300,
-        "edgeSeparation" : 0,
-        "vertices" : false
+        "width" : 1600,
+        "height" : 2239
       },
       "enterpriseBoundaryVisible" : true,
       "elements" : [ {
         "id" : "1",
-        "x" : 899,
-        "y" : 950
+        "x" : 1015,
+        "y" : 70
       }, {
-        "id" : "13",
-        "x" : 1649,
-        "y" : 950
+        "id" : "2",
+        "x" : 60,
+        "y" : 165
       }, {
-        "id" : "15",
-        "x" : 199,
-        "y" : 200
-      }, {
-        "id" : "16",
-        "x" : 199,
-        "y" : 900
-      } ],
-      "relationships" : [ {
-        "id" : "18",
-        "vertices" : [ {
-          "x" : 657,
-          "y" : 857
-        } ]
+        "id" : "3",
+        "x" : 640,
+        "y" : 1145
       }, {
         "id" : "17",
+        "x" : 600,
+        "y" : 1690
+      } ],
+      "relationships" : [ {
+        "id" : "29",
         "vertices" : [ {
-          "x" : 865,
-          "y" : 642
+          "x" : 280,
+          "y" : 1055
         } ]
       }, {
-        "id" : "37"
-      }, {
-        "id" : "22",
+        "id" : "28",
         "vertices" : [ {
-          "x" : 761,
-          "y" : 1250
+          "x" : 635,
+          "y" : 795
         } ]
       }, {
-        "id" : "21",
+        "id" : "27",
         "vertices" : [ {
-          "x" : 761,
-          "y" : 950
+          "x" : 100,
+          "y" : 1170
         } ]
       }, {
-        "id" : "20",
+        "id" : "26",
         "vertices" : [ {
-          "x" : 761,
-          "y" : 1400
+          "x" : 810,
+          "y" : 340
         } ]
       }, {
-        "id" : "19",
+        "id" : "25",
         "vertices" : [ {
-          "x" : 761,
-          "y" : 800
+          "x" : 1200,
+          "y" : 720
         } ]
+      }, {
+        "id" : "24",
+        "vertices" : [ {
+          "x" : 1490,
+          "y" : 900
+        } ]
+      }, {
+        "id" : "47"
       } ]
     } ],
     "containerViews" : [ {
       "key" : "examSystemSystemContainerDiagram",
       "order" : 2,
-      "softwareSystemId" : "1",
-      "automaticLayout" : {
-        "implementation" : "Graphviz",
-        "rankDirection" : "TopBottom",
-        "rankSeparation" : 300,
-        "nodeSeparation" : 300,
-        "edgeSeparation" : 0,
-        "vertices" : false
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 3890,
+        "height" : 2000
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "elements" : [ {
-        "id" : "12",
-        "x" : 0,
-        "y" : 0
-      }, {
         "id" : "13",
-        "x" : 0,
-        "y" : 0
+        "x" : 125,
+        "y" : 950
       }, {
-        "id" : "2",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "3",
-        "x" : 0,
-        "y" : 0
+        "id" : "14",
+        "x" : 3175,
+        "y" : 1290
       }, {
         "id" : "4",
-        "x" : 0,
-        "y" : 0
+        "x" : 995,
+        "y" : 395
       }, {
-        "id" : "9",
-        "x" : 0,
-        "y" : 0
+        "id" : "15",
+        "x" : 815,
+        "y" : 1460
+      }, {
+        "id" : "16",
+        "x" : 3040,
+        "y" : 565
+      }, {
+        "id" : "17",
+        "x" : 2715,
+        "y" : 35
+      }, {
+        "id" : "8",
+        "x" : 1740,
+        "y" : 975
       } ],
       "relationships" : [ {
-        "id" : "25"
+        "id" : "40",
+        "vertices" : [ {
+          "x" : 3270,
+          "y" : 1145
+        } ]
       }, {
-        "id" : "35"
+        "id" : "32",
+        "vertices" : [ {
+          "x" : 300,
+          "y" : 575
+        } ]
       }, {
-        "id" : "23"
+        "id" : "31",
+        "vertices" : [ {
+          "x" : 1665,
+          "y" : 885
+        } ]
       }, {
-        "id" : "44"
+        "id" : "30",
+        "vertices" : [ {
+          "x" : 1050,
+          "y" : 985
+        } ]
       }, {
-        "id" : "30"
+        "id" : "37",
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 1615
+        } ]
+      }, {
+        "id" : "36",
+        "vertices" : [ {
+          "x" : 1810,
+          "y" : 1375
+        } ]
+      }, {
+        "id" : "35",
+        "vertices" : [ {
+          "x" : 1315,
+          "y" : 880
+        } ]
+      }, {
+        "id" : "34",
+        "vertices" : [ {
+          "x" : 705,
+          "y" : 1100
+        } ]
+      }, {
+        "id" : "33",
+        "vertices" : [ {
+          "x" : 2455,
+          "y" : 1030
+        } ]
+      }, {
+        "id" : "56",
+        "vertices" : [ {
+          "x" : 1290,
+          "y" : 1285
+        } ]
+      }, {
+        "id" : "46"
+      }, {
+        "id" : "38"
       }, {
         "id" : "39"
       } ]
     } ],
     "componentViews" : [ {
-      "key" : "adminAPISystemComponentDiagram",
+      "key" : "examSystemWebAppFrontEndDiagram",
       "order" : 3,
-      "automaticLayout" : {
-        "implementation" : "Graphviz",
-        "rankDirection" : "LeftRight",
-        "rankSeparation" : 300,
-        "nodeSeparation" : 300,
-        "edgeSeparation" : 0,
-        "vertices" : false
+      "paperSize" : "A5_Landscape",
+      "dimensions" : {
+        "width" : 2480,
+        "height" : 1748
       },
       "containerId" : "4",
       "externalContainerBoundariesVisible" : true,
       "elements" : [ {
-        "id" : "12",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "2",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "13",
-        "x" : 0,
-        "y" : 0
-      }, {
         "id" : "5",
-        "x" : 0,
-        "y" : 0
+        "x" : 535,
+        "y" : 600
+      }, {
+        "id" : "17",
+        "x" : 30,
+        "y" : 80
       }, {
         "id" : "6",
-        "x" : 0,
-        "y" : 0
+        "x" : 1220,
+        "y" : 1145
       }, {
         "id" : "7",
-        "x" : 0,
-        "y" : 0
+        "x" : 1385,
+        "y" : 120
       }, {
         "id" : "8",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "9",
-        "x" : 0,
-        "y" : 0
+        "x" : 1975,
+        "y" : 995
       } ],
       "relationships" : [ {
-        "id" : "29"
+        "id" : "41",
+        "vertices" : [ {
+          "x" : 1425,
+          "y" : 935
+        } ]
       }, {
-        "id" : "28"
+        "id" : "42",
+        "vertices" : [ {
+          "x" : 1440,
+          "y" : 685
+        } ]
       }, {
-        "id" : "27"
+        "id" : "43"
       }, {
-        "id" : "26"
+        "id" : "44",
+        "vertices" : [ {
+          "x" : 2205,
+          "y" : 515
+        } ]
       }, {
-        "id" : "40"
+        "id" : "45",
+        "vertices" : [ {
+          "x" : 255,
+          "y" : 755
+        } ]
+      } ]
+    }, {
+      "key" : "examSystemWebAppBackEndDiagram",
+      "order" : 4,
+      "dimensions" : {
+        "width" : 3317,
+        "height" : 2011
+      },
+      "containerId" : "8",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 315,
+        "y" : 1445
       }, {
-        "id" : "24"
+        "id" : "12",
+        "x" : 1845,
+        "y" : 1230
       }, {
-        "id" : "42"
+        "id" : "15",
+        "x" : 2667,
+        "y" : 1419
       }, {
-        "id" : "33"
+        "id" : "4",
+        "x" : 2635,
+        "y" : 135
       }, {
-        "id" : "31"
+        "id" : "9",
+        "x" : 625,
+        "y" : 145
       }, {
-        "id" : "38"
+        "id" : "10",
+        "x" : 1705,
+        "y" : 455
+      } ],
+      "relationships" : [ {
+        "id" : "50"
+      }, {
+        "id" : "51",
+        "vertices" : [ {
+          "x" : 605,
+          "y" : 895
+        } ]
+      }, {
+        "id" : "52",
+        "vertices" : [ {
+          "x" : 1305,
+          "y" : 720
+        } ]
+      }, {
+        "id" : "53",
+        "vertices" : [ {
+          "x" : 1780,
+          "y" : 1840
+        } ]
+      }, {
+        "id" : "54",
+        "vertices" : [ {
+          "x" : 2795,
+          "y" : 1050
+        } ]
+      }, {
+        "id" : "55",
+        "vertices" : [ {
+          "x" : 1965,
+          "y" : 1670
+        } ]
+      }, {
+        "id" : "57",
+        "vertices" : [ {
+          "x" : 2545,
+          "y" : 1320
+        } ]
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "48"
+      }, {
+        "id" : "49",
+        "vertices" : [ {
+          "x" : 1290,
+          "y" : 1305
+        } ]
       } ]
     } ],
     "configuration" : {
@@ -601,19 +876,9 @@
           "background" : "#1168bd",
           "color" : "#ffffff"
         }, {
-          "tag" : "Existing System",
-          "background" : "#999999",
-          "color" : "#ffffff"
-        }, {
           "tag" : "Container",
           "background" : "#438dd5",
           "color" : "#ffffff"
-        }, {
-          "tag" : "Web Browser",
-          "shape" : "WebBrowser"
-        }, {
-          "tag" : "Mobile App",
-          "shape" : "MobileDeviceLandscape"
         }, {
           "tag" : "Database",
           "shape" : "Cylinder"
@@ -624,11 +889,23 @@
         }, {
           "tag" : "Failover",
           "opacity" : 25
+        }, {
+          "tag" : "RequestController",
+          "background" : "#c4c4c4"
+        }, {
+          "tag" : "RoutingController",
+          "background" : "#c4c4c4"
+        }, {
+          "tag" : "NotificationService",
+          "background" : "#ff8766"
+        }, {
+          "tag" : "MessageService",
+          "background" : "#ff8766"
         } ]
       },
       "terminology" : { },
       "metadataSymbols" : "SquareBrackets",
-      "lastSavedView" : "examSystemSystemContextDiagram"
+      "lastSavedView" : "examSystemSystemContainerDiagram"
     }
   }
 }
