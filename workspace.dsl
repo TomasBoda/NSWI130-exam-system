@@ -25,7 +25,10 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             }
 
             messageService = container "Message Service" "Provides endpoints for student-teacher communication" "" "MessageService" {
-                
+                notificationRequester = component "Notification Requester" "Requests from notification service to send notification about sent message"
+                messageController = component "Message Controller" "Handles preparing data for the UI and preparing data to send the message"
+                messageModel = component "Message Model" "Handles getting and storing data from the database"
+                messageSender = component "Message Sender" "Sends the message to the requested user"
             }
 
             database = container "Exam Database" "Stores exams, exam registrations and messages" "" "Database" {
@@ -94,26 +97,49 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         userNotificationManager -> notificationController "Sets up the settings for its behavior, uses for sending new messages"
         notificationController -> database "Store outgoing notifications in database"
         teacherUI -> userNotificationManager "Send notifications to students, modify notification settings"
+        
+        messageService -> notificationService "Request to send notification"
+        notificationRequester -> notificationService "Requests to send notification"
+        messageModel -> database "Stores message data"
+        database -> messageModel "Gets message data"
+        messageModel -> messageController "Sends raw message data"
+        messageController -> messageModel "Requests to store data to the database"
+        messageController -> messageSender "Gives message data to send to user"
+        messageSender -> notificationRequester "Request to send notification about the sent message"
+        webAppFrontEnd -> messageController "Provides UI for the user to request to send a message"
+        messageController -> webAppFrontEnd "Sends prepared message data to show to user"
+        messageSender -> student "Sends message"
+        messageSender -> teacher "Sends message"
         }
 
     views {
         systemContext examSystem "examSystemSystemContextDiagram" {
             include *
+            autoLayout lr
         }
 
         container examSystem "examSystemSystemContainerDiagram" {
             include *
+            autoLayout lr
         }
 
         component webAppFrontEnd "examSystemWebAppFrontEndDiagram" {
             include *
+            autoLayout lr
         }
 
         component restAPI "examSystemWebAppBackEndDiagram" {
             include *
+            autoLayout lr
         }
         component notificationService "examSystemNotifierDiagram"{
             include *
+            autoLayout lr
+        }
+        
+        component messageService "examSystemMessagerDiagram" {
+            include *
+            autoLayout lr
         }
 
         styles {
