@@ -92,7 +92,9 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         
         notificationController -> notificationHandler "Uses for actual sending of notifications"
         userNotificationManager -> notificationController "Sets up the settings for its behavior, uses for sending new messages"
-    }
+        notificationController -> database "Store outgoing notifications in database"
+        teacherUI -> userNotificationManager "Send notifications to students, modify notification settings"
+        }
 
     views {
         systemContext examSystem "examSystemSystemContextDiagram" {
