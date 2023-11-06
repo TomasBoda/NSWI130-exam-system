@@ -19,7 +19,9 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             }
 
             notificationService = container "Notification Service" "Provides endpoints for notification management" "" "NotificationService" {
-                
+                userNotificationManager = component "User Notification Manager UI" "Provides the user with the ability to set user settings and create notifications"
+                notificationController = component "Notification Controller" "Handles the notifications bussiness logic"
+                notificationHandler = component "Notification Handler" "Sends the notification messages and emails"
             }
 
             messageService = container "Message Service" "Provides endpoints for student-teacher communication" "" "MessageService" {
@@ -87,6 +89,9 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         gradeController -> database "Store grade-related data"
 
         webAppFrontEnd -> requestController "Send requests for data retrieval and manipulation"
+        
+        notificationController -> notificationHandler "Uses for actual sending of notifications"
+        userNotificationManager -> notificationController "Sets up the settings for its behavior, uses for sending new messages"
     }
 
     views {
@@ -103,6 +108,9 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         }
 
         component restAPI "examSystemWebAppBackEndDiagram" {
+            include *
+        }
+        component notificationService "examSystemNotifierDiagram"{
             include *
         }
 
