@@ -115,25 +115,31 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
     views {
         systemContext examSystem "examSystemSystemContextDiagram" {
             include *
+            autoLayout lr
         }
 
         container examSystem "examSystemSystemContainerDiagram" {
             include *
+            autoLayout lr
         }
 
         component webAppFrontEnd "examSystemWebAppFrontEndDiagram" {
             include *
+            autoLayout lr
         }
 
         component restAPI "examSystemWebAppBackEndDiagram" {
             include *
+            autoLayout lr
         }
         component notificationService "examSystemNotifierDiagram"{
             include *
+            autoLayout lr
         }
         
         component messageService "examSystemMessagerDiagram" {
             include *
+            autoLayout lr
         }
 
         styles {
