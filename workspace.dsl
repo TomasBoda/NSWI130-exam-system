@@ -30,18 +30,30 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 validator = component "Data Validator" "Provides data validation and integrity"
 
                 // handles auth API requests
-                auth_controller = component "Auth Controller" "Handles user authentication" "" "AuthController"
+                auth_controller = component "Auth Controller" "Handles user authentication" "" "AuthController" {
+                    tags "Controller"
+                }
                 // handles exam API requests
-                exam_controller = component "Exam Controller" "Handles exam-related requests" "" "ExamController"
+                exam_controller = component "Exam Controller" "Handles exam-related requests" "" "ExamController" {
+                    tags "Controller"
+                }
                 // handles grade API requests
-                grade_controller = component "Grade Controller" "Handles grade-related requests" "" "GradeController"
+                grade_controller = component "Grade Controller" "Handles grade-related requests" "" "GradeController" {
+                    tags "Controller"
+                }
                 // handles notification API requests
-                notification_controller = component "Notification Controller" "Handles notification-related requests" "" "NotificationController"
+                notification_controller = component "Notification Controller" "Handles notification-related requests" "" "NotificationController" {
+                    tags "Controller"
+                }
                 // handles message API requests
-                message_controller = component "Message Controller" "Handles message-related requests" "" "MessageController"
+                message_controller = component "Message Controller" "Handles message-related requests" "" "MessageController" {
+                    tags "Controller"
+                }
             } 
 
             notification_service = container "Notification Service" "Provides notification management" "" "NotificationService" {
+                tags "Service"
+
                 // handles manual notification requests from UI (teacher wants to manually send a message)
                 notification_request_handler = component "Request Handler" "Handles notification requests"
                 // listens to database changes for notification sending
@@ -53,6 +65,8 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             }
 
             message_service = container "Message Service" "Provides student-teacher communication" "" "MessageService" {
+                tags "Service"
+
                 // handles message API requests
                 message_request_handler = component "Request Handler" "Handles message requests"
                 // emits the message to WebSocket provided in API Gateway
@@ -60,27 +74,30 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             }
 
             database = container "Database" "Provides data persistence" "" "Database" {
-                
+                tags "Database"
             }
         }
 
         auth_service = softwareSystem "Auth Service" "Handles user authentication and authorization" {
+            tags "External"
+
             authentication_service = container "Authentication Service" "Provides user authentication" {
                 register_controller = component "Register Controller" "Handles user registration"
                 login_controller = component "Login Controller" "Handles user login"
             }
             authorization_service = container "Authorization Service" "Handles user authorization"
-            auth_database = container "Auth Database" "Provides auth data persistance" "" "AuthDatabase"
+            auth_database = container "Auth Database" "Provides auth data persistance" "" "AuthDatabase" {
+                tags "Database"
+            }
         }
 
+        // Actors
         student -> exam_system "Signs up for exams"
         student -> exam_system "Sends messages to teachers"
 
         teacher -> exam_system "Manages exams"
         teacher -> exam_system "Sends exam results to students"
         teacher -> exam_system "Sends messages to students"
-
-        // ----------------------------------------------------------------------
 
         // API Gateway
         request_controller -> routing_controller "Transmits API requests"
@@ -193,6 +210,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 fontSize 22
                 shape Person
             }
+
             element "Software System" {
                 background #1168bd
                 color #ffffff
@@ -201,47 +219,24 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 background #438dd5
                 color #ffffff
             }
-            element "Database" {
-                shape Cylinder
-            }
-            element "AuthDatabase" {
-                shape Cylinder
-            }
+            
             element "Component" {
-                background #85bbf0
+                background #c4c4c4
                 color #000000
             }
-            element "Failover" {
-                opacity 25
-            }
 
-            element "RequestController" {
-                background #c4c4c4
+            element "Service" {
+                background #d4655d
             }
-            element "RoutingController" {
-                background #c4c4c4
+            element "Database" {
+                shape Cylinder
+                background #30469c
             }
-            element "NotificationService" {
-                background #ff8766
+            element "Controller" {
+                background  #57b586
             }
-            element "MessageService" {
-                background #ff8766
-            }
-
-            element "ExamController" {
-                background  #54c48c
-            }
-            element "GradeController" {
-                background  #54c48c
-            }
-            element "AuthController" {
-                background  #54c48c
-            }
-            element "NotificationController" {
-                background  #54c48c
-            }
-            element "MessageController" {
-                background  #54c48c
+            element "External" {
+                background  #636363
             }
         }
     }
