@@ -74,11 +74,11 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         }
 
         student -> exam_system "Signs up for exams"
-        student -> exam_system "Sends message to teachers"
+        student -> exam_system "Sends messages to teachers"
 
         teacher -> exam_system "Manages exams"
         teacher -> exam_system "Sends exam results to students"
-        teacher -> exam_system "Sends message to students"
+        teacher -> exam_system "Sends messages to students"
 
         // ----------------------------------------------------------------------
 
@@ -91,67 +91,66 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         routing_controller -> notification_controller "Transmits notification-related requests"
 
         // Rest API
-        rest_api -> api_gateway "Send back processed data"
+        rest_api -> api_gateway "Sends processed data"
 
         auth_controller -> auth_service "Transmits auth-related requests"
         auth_service -> auth_controller "Sends auth-related data"
         auth_controller -> request_controller "Sends auth-related data"
 
-        exam_controller -> database_query_interface "Sends exam-related data"
+        exam_controller -> database_query_interface "Sends exam-related queries"
         database_query_interface -> exam_controller "Sends exam-related data"
         exam_controller -> request_controller "Sends exam-related data"
 
-        grade_controller -> database_query_interface "Sends grade-related data"
+        grade_controller -> database_query_interface "Sends grade-related queries"
         database_query_interface -> grade_controller "Sends grade-related data"
         grade_controller -> request_controller "Sends grade-related data"
 
         notification_controller -> notification_request_handler "Transmits notification-related requests"
 
         message_controller -> message_request_handler "Transmits message-related requests"
-        message_controller -> web_socket_controller "Send data to WebSocket"
+        message_controller -> web_socket_controller "Sends data to the WebSocket"
 
-        database_query_interface -> database "Send request queries"
-        database -> database_query_interface "Send queried data"
+        database_query_interface -> database "Sends queries"
+        database -> database_query_interface "Sends queried data"
 
-        database_query_interface -> validator "Send back validated data"
-        validator -> database_query_interface "Send data for validation"
+        database_query_interface -> validator "Sends data for validation"
+        validator -> database_query_interface "Sends validated data"
 
         // User Interface
-        ui -> request_controller "Send data request"
-        request_controller -> ui "Send requested data"
+        ui -> request_controller "Sends requests for data"
+        request_controller -> ui "Sends requested data"
 
         auth_ui -> student_ui "Navigates user of type 'Student' to Student UI"
         auth_ui -> teacher_ui "Navigates user of type 'Teacher' to Teacher UI"
 
         auth_ui -> request_controller "Sends auth requests"
-        request_controller -> auth_ui -> "Sends back auth-related data"
+        request_controller -> auth_ui -> "Sends auth-related data"
 
         student_ui -> request_controller "Sends data requests"
-        request_controller -> student_ui "Sends back requested data"
+        request_controller -> student_ui "Sends requested data"
 
         teacher_ui -> request_controller "Sends data requests"
-        request_controller -> teacher_ui "Sends back requested data"
+        request_controller -> teacher_ui "Sends requested data"
 
-        student_ui -> web_socket_controller "Subscribe to messages via WebSocket"
-        teacher_ui -> web_socket_controller "Subscribe to messages via WebSocket"
-        web_socket_controller -> student_ui "Sends back message data"
-        web_socket_controller -> teacher_ui "Send back message data"
+        student_ui -> web_socket_controller "Subscribes to messages via WebSocket"
+        teacher_ui -> web_socket_controller "Subscribes to messages via WebSocket"
+        web_socket_controller -> student_ui "Sends message data"
+        web_socket_controller -> teacher_ui "Sends message data"
 
         // Notification Service
-        database_listener -> database "Subscribe to database data changes"
-        database -> database_listener "Emits data changes logs"
+        database_listener -> database "Subscribes to database data changes"
+        database -> database_listener "Emits data change logs"
 
         notification_request_handler -> notification_handler "Transmits notification data"
         database_listener -> notification_handler "Transmits notification data"
 
-        notification_handler -> database "Send notification data"
-        notification_handler -> notification_emitter "Send prepared notification item"
+        notification_handler -> database "Sends notification data"
+        notification_handler -> notification_emitter "Sends prepared notification item"
 
         // Message Service
-        message_request_handler -> database "Send message data"
-        database -> message_request_handler -> "Send back message data"
-        message_request_handler -> message_emitter "Emit message"
-        message_emitter -> web_socket_controller "Send message item to Web Socket"
+        message_request_handler -> database "Sends messages data"
+        message_request_handler -> message_emitter "Emits messages"
+        message_emitter -> web_socket_controller "Sends message items to the Web Socket"
     }
 
     views {
