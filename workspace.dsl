@@ -166,17 +166,15 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
 
         component api_gateway "examSystemApiGatewayDiagram" {
             include *
-            autoLayout lr
         }
 
         component rest_api "examSystemRestApiDiagram" {
             include *
-            autoLayout lr
         }
 
         component ui "examSystemUiDiagram" {
             include *
-            autoLayout lr
+            
         }
 
         component notification_service "examSystemNotificationServiceDiagram" {
