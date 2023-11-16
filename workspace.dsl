@@ -5,7 +5,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         teacher = person "Teacher" "Creates and manages exams"
 
         exam_system = softwareSystem "Exam System" "Provides exam management and communication" {
-            ui = container "User Interface" "Provides user interface" "" "FrontEnd" {
+            ui = container "User Interface" "Provides user interface" {
                 // UI for authentication
                 auth_ui = component "Auth UI" "User interface for user authentication"
                 // UI for students
@@ -16,42 +16,42 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
 
             api_gateway = container "API Gateway" "Provides Rest API endpoints" "" "BackEnd" {
                 // handles requests from UI
-                request_controller = component "Request Handler" "Handles API requests" "" "RequestController"
+                request_controller = component "Request Handler" "Handles API requests"
                 // routes requests from UI to Rest API
-                routing_controller = component "Routing Controller" "Handles API endpoint routing" "" "RoutingController"
+                routing_controller = component "Routing Controller" "Handles API endpoint routing"
                 // handles real-time messaging using WebSocket
-                web_socket_controller = component "WebSocket" "Provides WebSocket for real-time message handling" "" "WebSocketController"
+                web_socket_controller = component "WebSocket" "Provides WebSocket for real-time message handling"
             }
 
-            rest_api = container "Rest API" "Handles Rest API endpoints" "" "RestAPI" {
+            rest_api = container "Rest API" "Handles Rest API endpoints" {
                 // provides interface to query the database
                 database_query_interface = component "Database Query Interface" "Handles database queries"
                 // validates the integrity of data provided to database
                 validator = component "Data Validator" "Provides data validation and integrity"
 
                 // handles auth API requests
-                auth_controller = component "Auth Controller" "Handles user authentication" "" "AuthController" {
+                auth_controller = component "Auth Controller" "Handles user authentication" {
                     tags "Controller"
                 }
                 // handles exam API requests
-                exam_controller = component "Exam Controller" "Handles exam-related requests" "" "ExamController" {
+                exam_controller = component "Exam Controller" "Handles exam-related requests" {
                     tags "Controller"
                 }
                 // handles grade API requests
-                grade_controller = component "Grade Controller" "Handles grade-related requests" "" "GradeController" {
+                grade_controller = component "Grade Controller" "Handles grade-related requests" {
                     tags "Controller"
                 }
                 // handles notification API requests
-                notification_controller = component "Notification Controller" "Handles notification-related requests" "" "NotificationController" {
+                notification_controller = component "Notification Controller" "Handles notification-related requests" {
                     tags "Controller"
                 }
                 // handles message API requests
-                message_controller = component "Message Controller" "Handles message-related requests" "" "MessageController" {
+                message_controller = component "Message Controller" "Handles message-related requests" {
                     tags "Controller"
                 }
             } 
 
-            notification_service = container "Notification Service" "Provides notification management" "" "NotificationService" {
+            notification_service = container "Notification Service" "Provides notification management" {
                 tags "Service"
 
                 // handles manual notification requests from UI (teacher wants to manually send a message)
@@ -64,7 +64,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 notification_emitter = component "Notification Emitter" "Emits notification"
             }
 
-            message_service = container "Message Service" "Provides student-teacher communication" "" "MessageService" {
+            message_service = container "Message Service" "Provides student-teacher communication"{
                 tags "Service"
 
                 // handles message API requests
@@ -73,7 +73,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 message_emitter = component "Message Emitter" "Emits message"
             }
 
-            database = container "Database" "Provides data persistence" "" "Database" {
+            database = container "Database" "Provides data persistence" {
                 tags "Database"
             }
         }
@@ -86,7 +86,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 login_controller = component "Login Controller" "Handles user login"
             }
             authorization_service = container "Authorization Service" "Handles user authorization"
-            auth_database = container "Auth Database" "Provides auth data persistance" "" "AuthDatabase" {
+            auth_database = container "Auth Database" "Provides auth data persistance" {
                 tags "Database"
             }
         }
@@ -149,10 +149,10 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         teacher_ui -> request_controller "Sends data requests"
         request_controller -> teacher_ui "Sends requested data"
 
-        student_ui -> web_socket_controller "Subscribes to messages via WebSocket"
-        teacher_ui -> web_socket_controller "Subscribes to messages via WebSocket"
-        web_socket_controller -> student_ui "Sends message data"
-        web_socket_controller -> teacher_ui "Sends message data"
+        student_ui -> api_gateway "Subscribes to messages via WebSocket"
+        teacher_ui -> api_gateway "Subscribes to messages via WebSocket"
+        api_gateway -> student_ui "Sends message data"
+        api_gateway -> teacher_ui "Sends message data"
 
         // Notification Service
         database_listener -> database "Subscribes to database data changes"
@@ -191,7 +191,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
 
         component ui "examSystemUiDiagram" {
             include *
-            
         }
 
         component notification_service "examSystemNotificationServiceDiagram" {
