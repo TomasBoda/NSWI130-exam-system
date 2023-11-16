@@ -91,7 +91,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         routing_controller -> notification_controller "Transmits notification-related requests"
 
         // Rest API
-        rest_api -> api_gateway "Sends processed data"
+        rest_api -> request_controller "Sends processed data"
 
         auth_controller -> auth_service "Transmits auth-related requests"
         auth_service -> auth_controller "Sends auth-related data"
