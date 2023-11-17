@@ -150,6 +150,11 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         teacher_ui -> request_controller "Sends data requests"
         request_controller -> teacher_ui "Sends requested data"
 
+        student_ui -> web_socket_controller "Subscribes to messages via WebSocket"
+        teacher_ui -> web_socket_controller "Subscribes to messages via WebSocket"
+        web_socket_controller -> student_ui "Sends message data"
+        web_socket_controller -> teacher_ui "Sends message data"
+
         student_ui -> api_gateway "Subscribes to messages via WebSocket"
         teacher_ui -> api_gateway "Subscribes to messages via WebSocket"
         api_gateway -> student_ui "Sends message data"
