@@ -106,6 +106,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         routing_controller -> exam_controller "Transmits exam-related requests"
         routing_controller -> grade_controller "Transmits grade-related requests"
         routing_controller -> notification_controller "Transmits notification-related requests"
+        routing_controller -> message_controller "Transmits message-related requests"
 
         // Rest API
         rest_api -> request_controller "Sends processed data"
