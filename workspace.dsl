@@ -4,140 +4,207 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         student = person "Student" "Signs up for exams"
         teacher = person "Teacher" "Creates and manages exams"
 
-        examSystem = softwareSystem "ExamSystem" "Manages exams, registering students to exams and communication between students and teachers." {
-            webAppFrontEnd = container "Web App Front-end" "Provides user interface to authenticated users" "" "FrontEnd" {
-                authUI = component "Auth UI" "User interface for user authentication"
-                studentUI = component "Student UI" "User interface for students"
-                teacherUI = component "Teacher UI" "User interface for teachers"
+        exam_system = softwareSystem "Exam System" "Provides exam management and communication" {
+            ui = container "User Interface" "Provides user interface" {
+                // UI for authentication
+                auth_ui = component "Auth UI" "User interface for user authentication"
+                // UI for students
+                student_ui = component "Student UI" "User interface for students"
+                // UI for teachers
+                teacher_ui = component "Teacher UI" "User interface for teachers"
             }
 
-            restAPI = container "Rest API" "Provides RestAPI endpoints for exam management" "" "BackEnd" {
-                requestController = component "Request Handler" "Handles API requests" "" "RequestController"
-                routingController = component "Routing Controller" "Manage endpoint routing" "" "RoutingController"
-                examController = component "Exam Controller" "Retrieves and manipulates exam data"
-                gradeController = component "Grade Controller" "Manipulates exam grades"
+            api_gateway = container "API Gateway" "Provides Rest API endpoints" "" "BackEnd" {
+                // handles requests from UI
+                request_controller = component "Request Handler" "Handles API requests"
+                // routes requests from UI to Rest API
+                routing_controller = component "Routing Controller" "Handles API endpoint routing"
+                // handles real-time messaging using WebSocket
+                web_socket_controller = component "WebSocket" "Provides WebSocket for real-time message handling"
             }
 
-            notificationService = container "Notification Service" "Provides endpoints for notification management" "" "NotificationService" {
-                userNotificationManager = component "User Notification Manager UI" "Provides the user with the ability to set user settings and create notifications"
-                notificationController = component "Notification Controller" "Handles the notifications bussiness logic"
-                notificationHandler = component "Notification Handler" "Sends the notification messages and emails"
+            rest_api = container "Rest API" "Handles Rest API endpoints" {
+                // provides interface to query the database
+                database_query_interface = component "Database Query Interface" "Handles database queries"
+                // validates the integrity of data provided to database
+                validator = component "Data Validator" "Provides data validation and integrity"
+
+                // handles auth API requests
+                auth_controller = component "Auth Controller" "Handles user authentication" {
+                    tags "Controller"
+                }
+                // handles exam API requests
+                exam_controller = component "Exam Controller" "Handles exam-related requests" {
+                    tags "Controller"
+                }
+                // handles grade API requests
+                grade_controller = component "Grade Controller" "Handles grade-related requests" {
+                    tags "Controller"
+                }
+                // handles notification API requests
+                notification_controller = component "Notification Controller" "Handles notification-related requests" {
+                    tags "Controller"
+                }
+                // handles message API requests
+                message_controller = component "Message Controller" "Handles message-related requests" {
+                    tags "Controller"
+                }
+            } 
+
+            notification_service = container "Notification Service" "Provides notification management" {
+                tags "Service"
+
+                // handles manual notification requests from UI (teacher wants to manually send a message)
+                notification_request_handler = component "Request Handler" "Handles notification requests"
+                // listens to database changes for notification sending
+                database_listener = component "Database Listener" "Listens to database data changes"
+                // handles notifications (processing, model)
+                notification_handler = component "Notification Handler" "Handles notifications"
+                // emits the notification to e.g. e-mail, SMS, ...
+                notification_emitter = component "Notification Emitter" "Emits notification"
             }
 
-            messageService = container "Message Service" "Provides endpoints for student-teacher communication" "" "MessageService" {
-                notificationRequester = component "Notification Requester" "Requests from notification service to send notification about sent message"
-                messageController = component "Message Controller" "Handles preparing data for the UI and preparing data to send the message"
-                messageModel = component "Message Model" "Handles getting and storing data from the database"
-                messageSender = component "Message Sender" "Sends the message to the requested user"
+            message_service = container "Message Service" "Provides student-teacher communication"{
+                tags "Service"
+
+                // handles message API requests
+                message_request_handler = component "Request Handler" "Handles message requests"
+                // emits the message to WebSocket provided in API Gateway
+                message_emitter = component "Message Emitter" "Emits message"
             }
 
-            database = container "Exam Database" "Stores exams, exam registrations and messages" "" "Database" {
-                
-            }
-
-            validator = container "Validator" "Validates data" "" "Validator" {
-
+            database = container "Database" "Provides data persistence" {
+                tags "Database"
             }
         }
 
-        authenticationAPI = softwareSystem "Authentication API" "Manages users (students, teacher) and their login credentials for authentication to the exam system" {
-            authenticationContainer = container "Authentication container" "Authenticates users" {
-                registrationAPI = component "Registration API" "Registers users (student, teacher)"
-                loginAPI = component "Login API" "Validates user credentials and generates auth token"
+        auth_service = softwareSystem "Auth Service" "Handles user authentication and authorization" {
+            tags "External"
+
+            authentication_service = container "Authentication Service" "Provides user authentication" {
+                register_controller = component "Register Controller" "Handles user registration"
+                login_controller = component "Login Controller" "Handles user login"
             }
-            authorizationContainer = container "Authorization container" "Authorizes users"
+            authorization_service = container "Authorization Service" "Handles user authorization"
+            auth_database = container "Auth Database" "Provides auth data persistance" {
+                tags "Database"
+            }
         }
 
-        student -> examSystem "Signs up for exams"
-        student -> examSystem "Communicates with examiners"
+        // Actors
+        student -> exam_system "Signs up for exams"
+        student -> exam_system "Sends messages to teachers"
 
-        teacher -> examSystem "Creates, updates and removes exams"
-        teacher -> examSystem "Sends exam results to students"
-        teacher -> examSystem "Communicates with registered students"
-        teacher -> examSystem "Sends exam information to registered students"
+        teacher -> exam_system "Manages exams"
+        teacher -> exam_system "Sends exam results to students"
+        teacher -> exam_system "Sends messages to students"
 
-        webAppFrontEnd -> restAPI "Send request for data retrieval"
-        webAppFrontEnd -> restAPI "Send request for data manipulation"
+        // API Gateway
+        request_controller -> routing_controller "Transmits API requests"
+        routing_controller -> rest_api "Transmits routed API requests to corresponding controllers"
+        routing_controller -> auth_controller "Transmits auth-related requests"
+        routing_controller -> exam_controller "Transmits exam-related requests"
+        routing_controller -> grade_controller "Transmits grade-related requests"
+        routing_controller -> notification_controller "Transmits notification-related requests"
+        routing_controller -> message_controller "Transmits message-related requests"
 
-        webAppFrontEnd -> notificationService "Send notification to registered students"
-        webAppFrontEnd -> messageService "Send message to specific user"
+        // Rest API
+        rest_api -> request_controller "Sends processed data"
 
-        restAPI -> webAppFrontEnd "Provide data to users"
-        restAPI -> webAppFrontEnd "Provide data manipulation endpoints"
+        auth_controller -> auth_service "Transmits auth-related requests"
+        auth_service -> auth_controller "Sends auth-related data"
+        auth_controller -> request_controller "Sends auth-related data"
 
-        database -> restAPI "Provide data to back-end on demand"
+        exam_controller -> database_query_interface "Sends exam-related queries"
+        database_query_interface -> exam_controller "Sends exam-related data"
+        exam_controller -> request_controller "Sends exam-related data"
 
-        messageService -> database "Store messages to database"
-        notificationService -> database "Store notifications to database"
+        grade_controller -> database_query_interface "Sends grade-related queries"
+        database_query_interface -> grade_controller "Sends grade-related data"
+        grade_controller -> request_controller "Sends grade-related data"
 
-        webAppFrontEnd -> validator "Validate outgoing data"
-        restAPI -> validator "Validate incoming data"
+        notification_controller -> notification_request_handler "Transmits notification-related requests"
 
-        authUI -> studentUI "Navigates user of type 'Student' to Student UI"
-        authUI -> teacherUI "Navigates user of type 'Teacher' to Teacher UI"
+        message_controller -> message_request_handler "Transmits message-related requests"
+        message_controller -> web_socket_controller "Sends data to the WebSocket"
 
-        restAPI -> studentUI "Provide student data"
-        restAPI -> teacherUI "Provide teacher data"
-        authenticationAPI -> authUI "Provide authentication requests"
+        database_query_interface -> database "Sends queries"
+        database -> database_query_interface "Sends queried data"
 
-        requestController -> routingController "Send incoming requests to router"
-        routingController -> examController "Route incoming exam manipulation requests"
-        routingController -> gradeController "Route incoming grade manipulation requests"
-        examController -> requestController "Send handled requests back to handler"
-        gradeController -> requestController "Send handled requests back to handler"
+        database_query_interface -> validator "Sends data for validation"
+        validator -> database_query_interface "Sends validated data"
 
-        database -> examController "Provide exam-related data"
-        database -> gradeController "Provide grade-related data"
-        examController -> database "Store exam-related data"
-        gradeController -> database "Store grade-related data"
+        // User Interface
+        ui -> request_controller "Sends requests for data"
+        request_controller -> ui "Sends requested data"
 
-        webAppFrontEnd -> requestController "Send requests for data retrieval and manipulation"
-        
-        notificationController -> notificationHandler "Uses for actual sending of notifications"
-        userNotificationManager -> notificationController "Sets up the settings for its behavior, uses for sending new messages"
-        notificationController -> database "Store outgoing notifications in database"
-        teacherUI -> userNotificationManager "Send notifications to students, modify notification settings"
-        
-        messageService -> notificationService "Request to send notification"
-        notificationRequester -> notificationService "Requests to send notification"
-        messageModel -> database "Stores message data"
-        database -> messageModel "Gets message data"
-        messageModel -> messageController "Sends raw message data"
-        messageController -> messageModel "Requests to store data to the database"
-        messageController -> messageSender "Gives message data to send to user"
-        messageSender -> notificationRequester "Request to send notification about the sent message"
-        webAppFrontEnd -> messageController "Provides UI for the user to request to send a message"
-        messageController -> webAppFrontEnd "Sends prepared message data to show to user"
-        messageSender -> student "Sends message"
-        messageSender -> teacher "Sends message"
-        }
+        auth_ui -> student_ui "Navigates user of type 'Student' to Student UI"
+        auth_ui -> teacher_ui "Navigates user of type 'Teacher' to Teacher UI"
+
+        auth_ui -> request_controller "Sends auth requests"
+        request_controller -> auth_ui -> "Sends auth-related data"
+
+        student_ui -> request_controller "Sends data requests"
+        request_controller -> student_ui "Sends requested data"
+
+        teacher_ui -> request_controller "Sends data requests"
+        request_controller -> teacher_ui "Sends requested data"
+
+        student_ui -> web_socket_controller "Subscribes to messages via WebSocket"
+        teacher_ui -> web_socket_controller "Subscribes to messages via WebSocket"
+        web_socket_controller -> student_ui "Sends message data"
+        web_socket_controller -> teacher_ui "Sends message data"
+
+        student_ui -> api_gateway "Subscribes to messages via WebSocket"
+        teacher_ui -> api_gateway "Subscribes to messages via WebSocket"
+        api_gateway -> student_ui "Sends message data"
+        api_gateway -> teacher_ui "Sends message data"
+
+        // Notification Service
+        database_listener -> database "Subscribes to database data changes"
+        database -> database_listener "Emits data change logs"
+
+        notification_request_handler -> notification_handler "Transmits notification data"
+        database_listener -> notification_handler "Transmits notification data"
+
+        notification_handler -> database "Sends notification data"
+        notification_handler -> notification_emitter "Sends prepared notification item"
+
+        // Message Service
+        message_request_handler -> database "Sends messages data"
+        message_request_handler -> message_emitter "Emits messages"
+        message_emitter -> web_socket_controller "Sends message items to the Web Socket"
+    }
 
     views {
-        systemContext examSystem "examSystemSystemContextDiagram" {
+        systemContext exam_system "examSystemSystemContextDiagram" {
             include *
             autoLayout lr
         }
 
-        container examSystem "examSystemSystemContainerDiagram" {
+        container exam_system "examSystemContainerDiagram" {
             include *
             autoLayout lr
         }
 
-        component webAppFrontEnd "examSystemWebAppFrontEndDiagram" {
+        component api_gateway "examSystemApiGatewayDiagram" {
+            include *
+        }
+
+        component rest_api "examSystemRestApiDiagram" {
+            include *
+        }
+
+        component ui "examSystemUiDiagram" {
+            include *
+        }
+
+        component notification_service "examSystemNotificationServiceDiagram" {
             include *
             autoLayout lr
         }
 
-        component restAPI "examSystemWebAppBackEndDiagram" {
-            include *
-            autoLayout lr
-        }
-        component notificationService "examSystemNotifierDiagram"{
-            include *
-            autoLayout lr
-        }
-        
-        component messageService "examSystemMessagerDiagram" {
+        component message_service "examSystemMessageServiceDiagram" {
             include *
             autoLayout lr
         }
@@ -148,6 +215,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 fontSize 22
                 shape Person
             }
+
             element "Software System" {
                 background #1168bd
                 color #ffffff
@@ -156,28 +224,24 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 background #438dd5
                 color #ffffff
             }
-            element "Database" {
-                shape Cylinder
-            }
+            
             element "Component" {
-                background #85bbf0
+                background #c4c4c4
                 color #000000
             }
-            element "Failover" {
-                opacity 25
-            }
 
-            element "RequestController" {
-                background #c4c4c4
+            element "Service" {
+                background #d4655d
             }
-            element "RoutingController" {
-                background #c4c4c4
+            element "Database" {
+                shape Cylinder
+                background #30469c
             }
-            element "NotificationService" {
-                background #ff8766
+            element "Controller" {
+                background  #57b586
             }
-            element "MessageService" {
-                background #ff8766
+            element "External" {
+                background  #636363
             }
         }
     }
