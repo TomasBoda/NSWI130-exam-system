@@ -174,6 +174,102 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         message_request_handler -> database "Sends messages data"
         message_request_handler -> message_emitter "Emits messages"
         message_emitter -> web_socket_controller "Sends message items to the Web Socket"
+
+
+
+		////////////////
+
+		springPetClinic = softwaresystem "Spring PetClinic" "Allows employees to view and manage information regarding the veterinarians, the clients, and their pets." {
+            webApplication = container "Server side of application" "Allows users to do tasks and see results in graphical form" "" {
+                tags "Application"
+            }
+
+			clientSide = container "Client side of application" "Allows employees to view and manage information regarding the veterinarians, the clients, and their pets.2" "" {
+                tags "Application2"
+            }
+
+			AuthSide = container "Auth side of application" "Allows employees to view and manage information regarding the veterinarians, the clients, and their pets.2" "Java and Spring Boot2" {
+                tags "Application2"
+            }
+
+            database30 = container "Database" "Stores information regarding the veterinarians, the clients, and their pets." "Relational database schema" {
+                tags "Database"
+            }
+        }
+
+        webApplication -> database30 "Reads from and writes to"
+
+        live = deploymentEnvironment "Live" {
+
+            deploymentNode "Whole architecture" {
+                tags "Amazon Web Services - Cloud"
+
+                    elb = infrastructureNode "Load Balancer" {
+                        description "Automatically distributes incoming application traffic, prevents server overwhelm during peak traffic"
+                        tags "Amazon Web Services - Elastic Load Balancing"
+                    }
+					
+					elb3 = infrastructureNode "Communication via Web browser" {
+                        description "Enables internet communication between client and server, they are in different locations"
+                        tags "Amazon Web Services - Elastic Load Balancing"
+                    }
+
+
+
+					deploymentNode "Non visible to user" {
+                        tags "Amazon Web Services - Auto Scalisdfng"
+
+						elb2 = infrastructureNode "API of Authorization server" {
+							description "External endpoint for authorization" 
+							tags "Amazon Web Services - Elastic Load Balancing2"
+						}
+
+						deploymentNode "External server" {
+							tags "Amazon Web Services - RDS MySQL instance"
+
+							AuthSideInstance = containerInstance AuthSide
+							}
+
+
+						deploymentNode "On premise server" {
+							tags "Amazon Web Services - Auto Scaling"
+
+							deploymentNode "Server" {
+								tags "Amazon Web Services - EC2"
+
+								webApplicationInstance = containerInstance webApplication
+								}
+
+								deploymentNode "MySQL" {
+									tags "Amazon Web Services - RDS MySQL instance"
+
+									databaseInstance = containerInstance database30
+								}
+						
+                    	}
+
+						
+                    }
+
+                    
+                        deploymentNode "Web browser" {
+                            tags "Amazon Web Services - RDS MySQL instancesdf"
+
+                            clientSideInstance = containerInstance clientSide
+                        }
+                	
+            	}
+
+			clientSideInstance -> elb3 "Sends requests"		
+			elb3 -> clientSideInstance "Receive graphical representation of resuts"		
+			elb3 -> elb "Forwards requests"
+            elb -> webApplicationInstance "Forwards requests"
+			webApplicationInstance -> elb3 "Forward data"
+
+			//AuthSide -> elb2 "proc jkao"
+			webApplicationInstance -> elb2 "Requests for authorization"
+
+        }
     }
 
     views {
@@ -207,6 +303,19 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         component message_service "examSystemMessageServiceDiagram" {
             include *
             autoLayout lr
+        }
+
+		///////////////
+
+		deployment springPetClinic "Live" "AmazonWebServicesDeployment" {
+            include *
+            autolayout lr
+
+            animation {
+                elb
+                webApplicationInstance
+                databaseInstance
+            }
         }
 
         styles {
