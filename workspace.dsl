@@ -165,6 +165,76 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         message_database -> message_request_handler "Sends back message data"
         message_request_handler -> message_emitter "Emits messages"
         message_emitter -> web_socket_controller "Sends message items to the Web Socket"
+
+        live = deploymentEnvironment "Live" {
+            deploymentNode "Client Computer" {
+                deploymentNode "Web Browser" {
+                    spa = infrastructureNode "Single Page Application" {
+                        description "Provides exam system functionality via web browser"
+                    }
+                }
+            }
+
+            deploymentNode "Whole architecture" {
+                
+                deploymentNode "Backend Server" {
+                    lbNode = infrastructureNode "Load Balancer" {
+                        description "Balances incoming calls"
+                    }
+
+                    apiNode = infrastructureNode "Rest API Infrastructure" {
+                        description "Provides Rest API endpoints"
+                    }
+
+                    deploymentNode "Database Enviroment" {
+                        databaseNode = infrastructureNode "Database" {
+                            tags "Database"
+                            description "Provides data persistence"
+                        }
+
+                        messageDatabaseNode = infrastructureNode "Message Database" {
+                            tags "Database"
+                            description "Provides message history persistence"
+                        }
+                    }
+                }
+
+                deploymentNode "Service Infrastructure" {
+                    notificationNode = infrastructureNode "Notification Service" {
+                        description "Provides notification handler"
+                    }
+
+                    messageNode = infrastructureNode "Message Service" {
+                        description "Provides message handler"
+                    }
+                }
+
+                deploymentNode "Auth Server" {
+                    authNode = infrastructureNode "Auth Service" {
+                        description "Provides authentication and authorization functionality"
+                    }
+                }	
+            }
+
+            apiNode -> authNode "Sends auth requests"
+            authNode -> apiNode "Sends back auth data"
+
+            spa -> lbNode "Calls API requests"
+            apiNode -> spa "Sends back requested data"
+            lbNode -> apiNode "Forwards API requests"
+
+            apiNode -> databaseNode "Sends data to persist"
+            apiNode -> messageDatabaseNode "Sends message history"
+
+            databaseNode -> apiNode "Sends back requested data"
+            messageDatabaseNode -> apiNode "Sends back message data"
+
+            apiNode -> notificationNode "Request notification"
+            notificationNode -> databaseNode "Subscribe to data changes"
+
+            messageNode -> messageDatabaseNode "Store message data"
+            messageDatabaseNode -> messageNode "Send back message history"
+        }
     }
 
     views {
@@ -175,7 +245,6 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
 
         container exam_system "examSystemContainerDiagram" {
             include *
-            //autoLayout lr
         }
 
         component api_gateway "examSystemApiGatewayDiagram" {
@@ -198,6 +267,10 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         component message_service "examSystemMessageServiceDiagram" {
             include *
             autoLayout lr
+        }
+
+        deployment exam_system "Live" "AmazonWebServicesDeployment" {
+            include *
         }
 
         styles {
@@ -227,6 +300,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             element "Database" {
                 shape Cylinder
                 background #30469c
+                color #ffffff
             }
             element "Controller" {
                 background  #57b586
