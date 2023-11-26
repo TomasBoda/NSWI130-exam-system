@@ -29,24 +29,12 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
                 // validates the integrity of data provided to database
                 validator = component "Data Validator" "Provides data validation and integrity"
 
-                // handles auth API requests
-                auth_controller = component "Auth Controller" "Handles user authentication" {
-                    tags "Controller"
-                }
                 // handles exam API requests
                 exam_controller = component "Exam Controller" "Handles exam-related requests" {
                     tags "Controller"
                 }
                 // handles grade API requests
                 grade_controller = component "Grade Controller" "Handles grade-related requests" {
-                    tags "Controller"
-                }
-                // handles notification API requests
-                notification_controller = component "Notification Controller" "Handles notification-related requests" {
-                    tags "Controller"
-                }
-                // handles message API requests
-                message_controller = component "Message Controller" "Handles message-related requests" {
                     tags "Controller"
                 }
             } 
@@ -76,6 +64,10 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
             database = container "Database" "Provides data persistence" {
                 tags "Database"
             }
+
+            message_database = container "Message Database" "Provides message history persistance" {
+                tags "Database"
+            }
         }
 
         auth_service = softwareSystem "Auth Service" "Handles user authentication and authorization" {
@@ -102,18 +94,16 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         // API Gateway
         request_controller -> routing_controller "Transmits API requests"
         routing_controller -> rest_api "Transmits routed API requests to corresponding controllers"
-        routing_controller -> auth_controller "Transmits auth-related requests"
+        routing_controller -> auth_service "Trasmits auth-related requests"
         routing_controller -> exam_controller "Transmits exam-related requests"
         routing_controller -> grade_controller "Transmits grade-related requests"
-        routing_controller -> notification_controller "Transmits notification-related requests"
-        routing_controller -> message_controller "Transmits message-related requests"
+        routing_controller -> notification_service "Transmits notification-related requests"
+        routing_controller -> message_service "Transmits message-related requests"
 
         // Rest API
         rest_api -> request_controller "Sends processed data"
 
-        auth_controller -> auth_service "Transmits auth-related requests"
-        auth_service -> auth_controller "Sends auth-related data"
-        auth_controller -> request_controller "Sends auth-related data"
+        auth_service -> routing_controller "Sends back auth-related data"
 
         exam_controller -> database_query_interface "Sends exam-related queries"
         database_query_interface -> exam_controller "Sends exam-related data"
@@ -123,10 +113,10 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         database_query_interface -> grade_controller "Sends grade-related data"
         grade_controller -> request_controller "Sends grade-related data"
 
-        notification_controller -> notification_request_handler "Transmits notification-related requests"
+        api_gateway -> notification_request_handler "Transmits notification-related requests"
 
-        message_controller -> message_request_handler "Transmits message-related requests"
-        message_controller -> web_socket_controller "Sends data to the WebSocket"
+        api_gateway -> message_request_handler "Transmits message-related requests"
+        web_socket_controller -> message_service "Sends data to the WebSocket"
 
         database_query_interface -> database "Sends queries"
         database -> database_query_interface "Sends queried data"
@@ -171,7 +161,8 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
         notification_handler -> notification_emitter "Sends prepared notification item"
 
         // Message Service
-        message_request_handler -> database "Sends messages data"
+        message_request_handler -> message_database "Sends message data"
+        message_database -> message_request_handler "Sends back message data"
         message_request_handler -> message_emitter "Emits messages"
         message_emitter -> web_socket_controller "Sends message items to the Web Socket"
     }
@@ -184,7 +175,7 @@ workspace "ExamSystem Workspace" "This workspace documents the architecture of t
 
         container exam_system "examSystemContainerDiagram" {
             include *
-            autoLayout lr
+            //autoLayout lr
         }
 
         component api_gateway "examSystemApiGatewayDiagram" {
