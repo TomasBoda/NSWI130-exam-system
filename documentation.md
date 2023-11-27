@@ -42,7 +42,7 @@ by a specific controller.
 #### Access to database
 
 To provide data integrity and validity writing into the database is done via the Query interface. Parameters are checked by the data validator and then executed
-the database
+the database. Only general data are checked, for example student/teachers IDs etc. - not data validity
 
 #### Controllers
 
@@ -56,18 +56,6 @@ Every request related to exam management - create an exam, change date, choose a
 
 Every request related to grading
 
-##### Message controller
-
-Accept requests for message service
-
-##### Auth controller
-
-Accept requests for auth service
-
-##### Notification controller
-
-Accept requests for notification service
-
 ## Non-core services
 
 ### Descriptions
@@ -77,13 +65,12 @@ for another system if they will be implemented in the future
 
 ### Message service
 
-This program should send messages which are done by students or teachers. Messages can be announcements, information about what the 
-exam content will look like and what to prepare. People see these messages as email messages and also in the UI of the application
+Teachers and students can communicate in real time about exams etc. For example asking and answering questions.
 
 
 ### Notification service
 
-This program also sends messages but they are automated. For example, when the time of an exam is changed, enrolled students should be notified. The message of these
+This program sends automated notifications. For example, when the time of an exam is changed, enrolled students should be notified. The message of these
 changes is generic and can be sent automatically. This service will spectate the database and when a certain change is spotted, 
 it will automatically generate and send a notification. Notification can be also triggered by a real person when a simple message is needed to notify.
 
