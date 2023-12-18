@@ -1,19 +1,14 @@
-Performance
-Scenario 1
-Source
+# Performance
+## Scenario 1
+### Source
 Security Manager
-
-Stimulus
+### Stimulus
 1000 requests per second
-
-Artifact
+### Artifact
 Logger
-
-Response
+### Response
 All request must be processed for the sake of the security
-
-Measure
+### Measure
 5s downtime
-
-Modification to the system
+#### Modification to the system
 Having one or more backup servers that will start working if the main server is overloaded with requests
