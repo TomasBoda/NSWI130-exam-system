@@ -1,13 +1,13 @@
 # Modifiability
 
 ## Scenario 1
-The team is considering adding new functionality to the `Building Manager` module.
+The team is considering editing an existing functionality to the `Building Manager` module.
 
 ### Stimulus
-The team is considering adding a new type of buildings into the `Building Manager` module and its corresponding functionality.
+The team is considering editing an existing type of buildings in the `Building Manager` module and its corresponding functionality.
 
 ### Artifact
-The team needs to add the desired business logic to the `Building Manager` module, but the `Database Manager` module needs to be changed as well to handle new types of data in the database.
+The team needs to edit the desired business logic in the `Building Manager` module, but the `Database Manager` module needs to be changed as well to handle new types of data in the database.
 
 ### Response
 Fortunately, both the `Building Manager` and the `Database Manager` are in the same module, since the software system architecture is built upon standalone modules based on their business logic and semantics, so only the part of the team responsible for managing buildings is concerned with this change.
