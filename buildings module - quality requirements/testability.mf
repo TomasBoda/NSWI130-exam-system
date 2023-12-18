@@ -1,0 +1,19 @@
+# Testability
+## Scenario 1
+### Source
+Tester
+### Stimulus
+Sends a requests to the Building Manager.
+### Artifact
+Building Manager, Statistical Analyzer
+### Environment
+Building Manager, Statistical Analyzer, Tester manually fetches data from the analyzer using its API(intercepts the raw response to the Dashboard)
+### Response
+Tester can see the raw data of the response
+### Measure
+Since Building Manager provides an API, it should be easy to send the requests. Tester can easily compare the expected output with the actual output.
+Any mistake in the system can be easily found if tester has correctly prepared data. Analyzer is dependent on the manager to provide the data.
+#### Modification to the system
+Provide API for the Analyzer to better input the data -> better testability and easier extendability.
+
+
