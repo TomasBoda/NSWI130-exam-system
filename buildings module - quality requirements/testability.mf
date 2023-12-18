@@ -16,4 +16,19 @@ Any mistake in the system can be easily found if tester has correctly prepared d
 #### Modification to the system
 Provide API for the Analyzer to better input the data -> better testability and easier extendability.
 
+## Scenario 2
+### Source
+Tester
+### Stimulus
+Sends a request to add new equipment to the Equipment Manager.
+### Artifact
+Equipment Manager, Database
+### Environment
+Equipment Manager, Database, Logger
+### Response
+Tester can see the equipment in the database or in case of an error, the logger can be used to find the problem.
+### Measure
+Tester can easily send the request to the public API of the Equipment Manager and can easily see if the equipment was correctly added to the database.
+#### Modification to the system
+None needed. Request can be easily sent to the API, if the system works correctly the equipment can be easily seen in the database and in case of an error, the logger can be used to find the problem.
 
