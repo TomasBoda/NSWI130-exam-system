@@ -91,18 +91,20 @@ Performance and availability will be increased, since logging could affect perfo
 #### Modification to the system
 There will be 2 databases - database for logs, technical updates..., database for actual data users need
 
+
 # Testability
 ## Scenario 1
+We want to test if the statistical analyzer correctly calculates the statistics.
 ### Source
 Tester
 ### Stimulus
-Sends a requests to the Building Manager.
+Sends requests to the Building Manager with some data.
 ### Artifact
 Building Manager, Statistical Analyzer
 ### Environment
-Building Manager, Statistical Analyzer, Tester manually fetches data from the analyzer using its API(intercepts the raw response to the Dashboard)
+Building Manager, Statistical Analyzer, Tester manually fetches data from the analyzer using its API (intercepts the raw response to the Dashboard)
 ### Response
-Tester can see the raw data of the response
+Tester can see the raw data from the intercepted response.
 ### Measure
 Since Building Manager provides an API, it should be easy to send the requests. Tester can easily compare the expected output with the actual output.
 Any mistake in the system can be easily found if tester has correctly prepared data. Analyzer is dependent on the manager to provide the data.
@@ -121,7 +123,7 @@ Equipment Manager, Database, Logger
 ### Response
 Tester can see the equipment in the database or in case of an error, the logger can be used to find the problem.
 ### Measure
-Tester can easily send the request to the public API of the Equipment Manager and can easily see if the equipment was correctly added to the database.
+Tester can easily send the request to the public API of the Equipment Manager and can easily see if the equipment was correctly added to the database. Error should be quite easily findable using the logger.
 #### Modification to the system
 None needed. Request can be easily sent to the API, if the system works correctly the equipment can be easily seen in the database and in case of an error, the logger can be used to find the problem.
 
