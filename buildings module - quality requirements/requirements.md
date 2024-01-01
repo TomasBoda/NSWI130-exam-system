@@ -29,9 +29,21 @@ Logger
 ### Response
 All request must be processed for the sake of the security
 ### Measure
-5s downtime
+With an average latency of 1 sec
 #### Modification to the system
 Having one or more backup servers that will start working if the main server is overloaded with requests
+
+## Scenario 2
+### Source
+Building Manager
+### Stimulus
+100 requests per second
+### Artifact
+Logger
+### Response
+All request must be processed
+### Measure
+With an average latency of 0.5 sec
 
 # Scalability
 ## Scenario 1
