@@ -1,22 +1,28 @@
 # Modifiability
 
 ## Scenario 1
-The team is considering editing an existing functionality to the `Building Manager` module.
-
+### Source
+Developer of the system
 ### Stimulus
-The team is considering editing an existing type of buildings in the `Building Manager` module and its corresponding functionality.
-
+Add new attribute to the building model
 ### Artifact
-The team needs to edit the desired business logic in the `Building Manager` module, but the `Database Manager` module needs to be changed as well to handle new types of data in the database.
-
+Building Manager
 ### Response
-Fortunately, both the `Building Manager` and the `Database Manager` are in the same module, since the software system architecture is built upon standalone modules based on their business logic and semantics, so only the part of the team responsible for managing buildings is concerned with this change.
-
+The database schema is modified, Building Editor and Building Viewer is extended by the new attribute and corresponding functionality is implemented
 ### Measure
-Other modules will not be affected by the new functionality in the `Buidling Manager` module. The only thing what would be affected is the UI, but that is only a minor addition which needs to be handled in most cases of new functionalities.
+3 man-days to implement
 
-### Modification to the system
-The system would only need to modify the appropriate `Building Manager` module and the UI to display the changes.
+## Scenario 2
+### Source
+Developer of the system
+### Stimulus
+Add new user role
+### Artifact
+Security Manager, Building Manager, Equipment Manager
+### Response
+The database schema is modified, the Security Manager is extended by the new user role and the Building Manager and Equipment Manager containers are extended by the new authorization rules for requesting data
+### Measure
+8 man-days to implement
 
 # Performance
 ## Scenario 1
