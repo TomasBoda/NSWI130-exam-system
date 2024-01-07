@@ -1,0 +1,175 @@
+<mxfile host="65bd71144e">
+    <diagram id="97e7ll5PLdZZj_EilyIp" name="Page-1">
+        <mxGraphModel dx="823" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" style="" parent="0"/>
+                <mxCell id="88" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="410" y="30" width="1710" height="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="group" parent="88" vertex="1" connectable="0">
+                    <mxGeometry width="1710" height="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Equipment Management&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#333333;fontColor=#ffffff;strokeColor=#FFFFFF;spacingBottom=15;verticalAlign=bottom;" parent="77" vertex="1">
+                    <mxGeometry x="794.4300000000001" width="389.31" height="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Authentication &amp;amp; Authorization&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#333333;fontColor=#ffffff;strokeColor=#FFFFFF;verticalAlign=bottom;" parent="77" vertex="1">
+                    <mxGeometry x="1192.75" width="389.31" height="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Room Reservation&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#333333;fontColor=#ffffff;strokeColor=#FFFFFF;verticalAlign=bottom;spacingBottom=47;" parent="77" vertex="1">
+                    <mxGeometry x="393.12" width="389.31" height="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot; color=&quot;#ffffff&quot;&gt;Building Management &amp;amp; Editing&lt;br&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#333333;verticalAlign=bottom;" parent="77" vertex="1">
+                    <mxGeometry width="380.2" height="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="" style="group" parent="77" vertex="1" connectable="0">
+                    <mxGeometry x="-385" y="54" width="2095" height="1064.53" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry y="352.15" width="2090" height="302.65" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="5" width="2090" height="302.65" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" parent="76" vertex="1">
+                    <mxGeometry x="15.245098039215684" y="765.9952941176471" width="2079.754901960784" height="302.64705882352945" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;font-size: 22px;&quot;&gt;User Interface&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1A1A1A;fontSize=22;spacingTop=7;" parent="76" vertex="1">
+                    <mxGeometry x="420.0041176470586" y="20.00058823529418" width="1516.2745098039213" height="259.4117647058824" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;b&gt;Fault notifier&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="1201.67" y="380" width="348.33" height="91.69" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;strokeWidth=6;fontSize=18;" parent="76" source="60" target="60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Success/fault&lt;br&gt;notification" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="1210.0000000000002" y="391.69" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;b&gt;Security&lt;/b&gt;" style="whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="1587.945294117647" y="378.3129411764706" width="348.3333333333333" height="259.4117647058824" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;b style=&quot;font-size: 23px;&quot;&gt;Statistical analyzer&lt;/b&gt;" style="whiteSpace=wrap;html=1;fontSize=23;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="410" y="492.82" width="1140" height="133.18" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="Up-to-date information" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;direction=west;" parent="76" vertex="1">
+                    <mxGeometry x="730" y="536.15" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="Notify personell" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="1420.0000000000002" y="391.69" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Provide reports for users&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="1190" y="526.3" width="135" height="89.85" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="Store current user state" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="1702.11" y="476" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="User/person authorization" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="1610" y="556" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="Display edit history" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="580" y="196" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Confirmation for dangerous operations" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="710" y="26" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Table w/ equipment and its faults and repair costs" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="865" y="156" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="Display faulty equipment to maintenance team members" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="710" y="156" width="140" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Logger&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="396.28" y="925" width="1563.72" height="124.09" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Collect data from other modules&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="950" y="536.15" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Database Manager&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="76" vertex="1">
+                    <mxGeometry x="410" y="380" width="700" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Validation" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="625.54" y="415" width="84.46" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Up-to-date information" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="410" y="410" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="Sanitization" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="530" y="391.69" width="84.46" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Audit log" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="1235.0000000000002" y="936" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="Monitoring" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="710.0000000000002" y="936" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="User flow log" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;shadow=1;" parent="76" vertex="1">
+                    <mxGeometry x="1650" y="956" width="119.12" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Equipment repository&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;shadow=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;horizontal=1;verticalAlign=top;" parent="76" vertex="1">
+                    <mxGeometry x="1185.84" y="776" width="380" height="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Fetch Supplier data" style="ellipse;whiteSpace=wrap;html=1;shadow=1;fontSize=14;" parent="76" vertex="1">
+                    <mxGeometry x="1440" y="816" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="Fetch available resources" style="ellipse;whiteSpace=wrap;html=1;shadow=1;fontSize=14;" parent="76" vertex="1">
+                    <mxGeometry x="1201.67" y="813" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Building &amp;amp; room repository&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;shadow=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;horizontal=1;verticalAlign=top;" parent="76" vertex="1">
+                    <mxGeometry x="400" y="776" width="750" height="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;User repository&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;shadow=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;horizontal=1;verticalAlign=top;" parent="76" vertex="1">
+                    <mxGeometry x="1580" y="776" width="380" height="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Fetch user permissions&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="1600" y="819" width="110" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Fetch user credentials&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="1795" y="806" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;b&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;Presentation&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="25.490000000000002" y="4.709999999999998" width="329.51" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;b&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;Business/ Application&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="25.490000000000002" y="358.48" width="329.51" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Manage permission restriction&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;shadow=1;" parent="76" vertex="1">
+                    <mxGeometry x="1785" y="551" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Persistence/&lt;br&gt;Infrastructure&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1A1A1A;" parent="76" vertex="1">
+                    <mxGeometry x="25.739999999999995" y="776" width="329.26" height="288.53" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Request user authentication" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="460" y="189.94000000000003" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Display notification" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="460" y="109.94" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Auto-complete" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="460" y="29.939999999999998" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Request data from database" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="580" y="29.47" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="Display whether an error occured" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="76" vertex="1">
+                    <mxGeometry x="580" y="109.47" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="Fetch/Save building/room data" style="ellipse;whiteSpace=wrap;html=1;shadow=1;fontSize=20;" parent="76" vertex="1">
+                    <mxGeometry x="620" y="811" width="260" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="User/person authentification" style="ellipse;whiteSpace=wrap;html=1;" parent="76" vertex="1">
+                    <mxGeometry x="1600" y="410" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="Show user data" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="88" vertex="1">
+                    <mxGeometry x="1250" y="170" width="121.76" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="ISIC card integration" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="88" vertex="1">
+                    <mxGeometry x="1430" y="530" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="Display login &lt;br&gt;screen" style="ellipse;whiteSpace=wrap;html=1;" parent="88" vertex="1">
+                    <mxGeometry x="1410" y="170" width="130" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

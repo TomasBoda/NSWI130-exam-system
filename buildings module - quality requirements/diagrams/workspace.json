@@ -1,0 +1,2180 @@
+{
+  "id" : 1,
+  "name" : "Buildings",
+  "description" : "This workspace documents the architecture of the Buildings part of Student Information System which is used to manage the school's buildings",
+  "lastModifiedDate" : "2023-12-18T11:39:40Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJCdWlsZGluZ3MiICJUaGlzIHdvcmtzcGFjZSBkb2N1bWVudHMgdGhlIGFyY2hpdGVjdHVyZSBvZiB0aGUgQnVpbGRpbmdzIHBhcnQgb2YgU3R1ZGVudCBJbmZvcm1hdGlvbiBTeXN0ZW0gd2hpY2ggaXMgdXNlZCB0byBtYW5hZ2UgdGhlIHNjaG9vbCdzIGJ1aWxkaW5ncyIgewogICBtb2RlbCB7CiAgICAgICMgU29mdHdhcmUgc3lzdGVtcwogICAgICBidWlsZGluZ3MgPSBzb2Z0d2FyZVN5c3RlbSAiQnVpbGRpbmdzIiAiVGhlIEJ1aWxkaW5ncyBzb2Z0d2FyZSBzeXN0ZW0gaXMgcmVzcG9uc2libGUgZm9yIG1hbmFnaW5nIHRoZSBzY2hvb2wncyBidWlsZGluZ3MsIHRoZWlyIHJvb21zIGFuZCBlcXVpcG1lbnQuIiB7CiAgICAgICAgIAogICAgICAgICAjIEZyb250LWVuZCBjb250YWluZXJzCiAgICAgICAgIGRhc2hib2FyZCA9IGNvbnRhaW5lciAiRGFzaGJvYXJkIiAiVGhlIFVJIGRhc2hib2FyZCBmb3IgdGhlIEJ1aWxkaW5ncyBzeXN0ZW0uIiB7CiAgICAgICAgICAgIHdlYlVJID0gY29tcG9uZW50ICJXZWIgQXBwbGljYXRpb24gVUkiICJBbGxvd3MgdXNlcnMgdG8gbWFuYWdlIHRoZSBzY2hvb2wncyBidWlsZGluZ3MsIHJvb21zIGFuZCBlcXVpcG1lbnQuIiAgICAgICAgICAKICAgICAgICAgfQoKICAgICAgICAgIyBCYWNrLWVuZCBjb250YWluZXJzCiAgICAgICAgIGJ1aWxkaW5nTWFuYWdlciA9IGNvbnRhaW5lciAiQnVpbGRpbmcgTWFuYWdlciIgIkhhbmRsZXMgYnVzaW5lc3MgbG9naWMgYXJvdW5kIGJ1aWxkaW5ncyBhbmQgcm9vbXMgd2l0aGluIHRoZW0sIGluY2x1ZGluZyByb29tIHJlc2VydmF0aW9ucy4iIHsKICAgICAgICAgICAgYnVpbGRpbmdWaWV3ZXIgPSBjb21wb25lbnQgIkJ1aWxkaW5nIFZpZXdlciIgIkhhbmRsZXMgYnVpbGRpbmcgZGF0YSB0byBiZSBzdWl0YWJsZSBmb3IgZGlzcGxheWluZy4iCiAgICAgICAgICAgIGJ1aWxkaW5nRWRpdG9yID0gY29tcG9uZW50ICJCdWlsZGluZyBFZGl0b3IiICJIYW5kbGVzIGJ1aWxkaW5nIGFkZGluZy9lZGl0aW5nIGFuZCByb29tIGFkZGluZy9lZGl0aW5nLiIKICAgICAgICAgICAgcm9vbVJlc2VydmVyID0gY29tcG9uZW50ICJSb29tIFJlc2VydmVyIiAiSGFuZGxlcyBsb2dpYyBhcm91bmQgcm9vbSByZXNlcnZhdGlvbnMuIgogICAgICAgICAgICBidWlsZGluZ01hbmFnZXJEYXRhYmFzZU1hbmFnZXIgPSBjb21wb25lbnQgIkRhdGFiYXNlIE1hbmFnZXIiICJGZXRjaGVzIGFuZCB1cGRhdGVzIGRhdGEgYWJvdXQgYnVpbGRpbmdzIGFuZCByb29tcyBpbiB0aGVtLCB2YWxpZGF0ZXMgYW5kIHNhbml0aXplcyBpdC4iCiAgICAgICAgICAgIGJ1aWxkaW5nTWFuYWdlckFQSSA9IGNvbXBvbmVudCAiUHVibGljIEFQSSIgIlByb3ZpZGVzIGFuIEFQSSBmb3IgdXNhZ2UgYnkgb3RoZXIgY29udGFpbmVycy4iCiAgICAgICAgIH0KCiAgICAgICAgIGVxdWlwbWVudE1hbmFnZXIgPSBjb250YWluZXIgIkVxdWlwbWVudCBNYW5hZ2VyIiAiSGFuZGxlcyBidXNpbmVzcyBsb2dpYyBhcm91bmQgZXF1aXBtZW50LCBpbmNsdWRpbmcgYWRkaW5nL2VkaXRpbmcgYW5kIGZhdWx0IHJlcG9ydGluZy4iIHsKICAgICAgICAgICAgZXF1aXBtZW50Vmlld2VyID0gY29tcG9uZW50ICJFcXVpcG1lbnQgVmlld2VyIiAiSGFuZGxlcyBlcXVpcG1lbnQgZGF0YSB0byBiZSBzdWl0YWJsZSBmb3IgZGlzcGxheWluZy4iCiAgICAgICAgICAgIGVxdWlwbWVudEVkaXRvciA9IGNvbXBvbmVudCAiRXF1aXBtZW50IEVkaXRvciIgIkhhbmRsZXMgZXF1aXBtZW50IGFkZGluZy9lZGl0aW5nIGFuZCBmYXVsdCByZXBvcnRpbmcuIgogICAgICAgICAgICBlcXVpcG1lbnRGYXVsdE5vdGlmaWVyID0gY29tcG9uZW50ICJFcXVpcG1lbnQgRmF1bHQgTm90aWZpZXIiICJFcXVpcG1lbnQgRmF1bHQgTm90aWZpZXIgaXMgcmVzcG9uc2libGUgZm9yIG5vdGlmeWluZyB0aGUgbWFpbnRlbmFuY2UgdGVhbSBhYm91dCBmYXVsdHkgZXF1aXBtZW50LiIKICAgICAgICAgICAgZXF1aXBtZW50TWFuYWdlckRhdGFiYXNlTWFuYWdlciA9IGNvbXBvbmVudCAiRGF0YWJhc2UgTWFuYWdlciIgIkZldGNoZXMgYW5kIHVwZGF0ZXMgZGF0YSBhYm91dCBlcXVpcG1lbnQsIHZhbGlkYXRlcyBhbmQgc2FuaXRpemVzIGl0LiIKICAgICAgICAgICAgZXF1aXBtZW50TWFuYWdlckFQSSA9IGNvbXBvbmVudCAiUHVibGljIEFQSSIgIlByb3ZpZGVzIGFuIEFQSSBmb3IgdXNhZ2UgYnkgb3RoZXIgY29udGFpbmVycy4iCiAgICAgICAgIH0KICAgICAgICAgCiAgICAgICAgIHNlY3VyaXR5TWFuYWdlciA9IGNvbnRhaW5lciAiU2VjdXJpdHkgTWFuYWdlciIgIlNlY3VyaXR5IE1hbmFnZXIgaXMgcmVzcG9uc2libGUgZm9yIGF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3JpemF0aW9uIG9mIHVzZXJzIGFuZCB0aGVpciBhY3Rpb25zLiIgewogICAgICAgICAgICBhdXRoZW50aWNhdG9yID0gY29tcG9uZW50ICJBdXRoZW50aWNhdG9yIiAiQXV0aGVudGljYXRvciBpcyByZXNwb25zaWJsZSBmb3IgYXV0aGVudGljYXRpbmcgdXNlcnMuIgogICAgICAgICAgICBhdXRob3JpemF0b3IgPSBjb21wb25lbnQgIkF1dGhvcml6YXRvciIgIkF1dGhvcml6YXRvciBpcyByZXNwb25zaWJsZSBmb3IgZ2l2aW5nIHJpZ2h0cyB0byB1c2VycyBiYXNlZCBvbiB0aGVpciByb2xlIGluIHRoZSBzeXN0ZW0uIgogICAgICAgICAgICB1c2VyRGF0YWJhc2VNYW5hZ2VyID0gY29tcG9uZW50ICJVc2VyIERhdGFiYXNlIE1hbmFnZXIiICJGZXRjaGVzIGRhdGEgYWJvdXQgdXNlcnMgZnJvbSB0aGUgZGF0YWJhc2UsIHZhbGlkYXRlcyBhbmQgc2FuaXRpemVzIGl0LiIKICAgICAgICAgICAgc2VjdXJpdHlNYW5hZ2VyQVBJID0gY29tcG9uZW50ICJQdWJsaWMgQVBJIiAiUHJvdmlkZXMgYW4gQVBJIGZvciB1c2FnZSBieSBvdGhlciBjb250YWluZXJzLiIKICAgICAgICAgfQogICAgICAgICAKICAgICAgICAgc3RhdGlzdGljYWxBbmFseXplciA9IGNvbnRhaW5lciAiU3RhdGlzdGljYWwgQW5hbHl6ZXIiICJTdGF0aXN0aWNhbCBBbmFseXplciBpcyByZXNwb25zaWJsZSBmb3IgYW5hbHl6aW5nIHRoZSBkYXRhIGFuZCBwcm92aWRpbmcgc3RhdGlzdGljcy4iCiAgICAgICAgIAogICAgICAgICBsb2dnZXIgPSBjb250YWluZXIgIkxvZ2dlciIgIkxvZ2dlciBsb2dzIGFwcGxpY2F0aW9uIGV2ZW50cyBhbmQga2VlcHMgdGhlbSBhcyBwZXJzaXN0ZW50IGRhdGEuIiB7CiAgICAgICAgICAgIGV2ZW50U25pZmZlciA9IGNvbXBvbmVudCAiRXZlbnQgU25pZmZlciIgIldhdGNoZXMgZm9yIGV2ZW50cyBhbmQgc2VuZHMgdGhlbSB0byB0aGUgbG9nZ2VyLiIKICAgICAgICAgICAgZXZlbnRMb2dnZXIgPSBjb21wb25lbnQgIkV2ZW50IExvZ2dlciIgIlNlbmRzIGV2ZW50IGxvZ3MgdG8gdGhlIGRhdGFiYXNlLiIKICAgICAgICAgfQogICAgICAgICAKICAgICAgICAgIyBkYXRhYmFzZSBjb250YWluZXJzCiAgICAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJEYXRhYmFzZSIgIlRoZSBkYXRhYmFzZSBpcyB1c2VkIHRvIHN0b3JlIGluZm9ybWF0aW9uIGFib3V0IGJ1aWxkaW5ncywgcm9vbXMgYW5kIGVxdWlwbWVudC4iICIiICJEYXRhYmFzZSIKICAgICAgICAgCiAgICAgICAgICFkb2NzIGRvY3MKICAgICAgfQogICAgICAKICAgICAgIyBzdGFrZWhvbGRlcnMKICAgICAgdGVhY2hlciA9IHBlcnNvbiAiVGVhY2hlciIgIkEgdGVhY2hlciB3aG8gdXNlcyB0aGUgc2Nob29sJ3MgZmFjaWxpdGllcy4iCiAgICAgIG1haW50ZW5hbmNlID0gcGVyc29uICJNYWludGVuYW5jZSB0ZWFtIG1lbWJlciIgIkEgbWFpbnRlbmFuY2UgbWVtYmVyIHdobyBtYW5hZ2VzIHRoZSBzY2hvb2wncyBmYWNpbGl0aWVzLiIKICAgICAgCiAgICAgICMgU3lzdGVtQ29udGV4dCByZWxhdGlvbnNoaXBzCiAgICAgICMjIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiB1c2VycyBhbmQgQnVpbGRpbmdzIHN5c3RlbQogICAgICB0ZWFjaGVyIC0+IGJ1aWxkaW5ncyAiUmVzZXJ2ZXMgcm9vbXMgZm9yIHRlYWNoaW5nIGFuZCBleGFtaW5hdGlvbnMsIHNldHMgcm9vbSBzY2hlZHVsZXMsIHJlcG9ydHMgZmF1bHR5IGVxdWlwbWVudC4iCiAgICAgIG1haW50ZW5hbmNlIC0+IGJ1aWxkaW5ncyAiTWFuYWdlcyB0aGUgYnVpbGRpbmdzLCByb29tcyBhbmQgZXF1aXBtZW50LiIKICAgICAgYnVpbGRpbmdzIC0+IG1haW50ZW5hbmNlICJTZW5kcyBub3RpZmljYXRpb25zIGFib3V0IGZhdWx0eSBlcXVpcG1lbnQuIgoKICAgICAgIyBDb250YWluZXIgcmVsYXRpb25zaGlwcwogICAgICAjIyByZWxhdGlvbnNoaXBzIGJldHdlZW4gY29udGFpbmVycwogICAgICBkYXNoYm9hcmQgLT4gYnVpbGRpbmdNYW5hZ2VyICJEaXNwbGF5cyBidWlsZGluZyBhbmQgcm9vbSBtYW5hZ2VtZW50IHNlcnZpY2VzLCBhbGxvd3MgdXNlciBpbnB1dC4iCiAgICAgIGRhc2hib2FyZCAtPiBlcXVpcG1lbnRNYW5hZ2VyICJEaXNwbGF5cyBlcXVpcG1lbnQgbWFuYWdlbWVudCBzZXJ2aWNlcywgYWxsb3dzIHVzZXIgaW5wdXQuIgogICAgICBkYXNoYm9hcmQgLT4gc2VjdXJpdHlNYW5hZ2VyICJVc2VzIHNlY3VyaXR5IHNlcnZpY2VzLiIgIkpTT04vSFRUUCIKCiAgICAgIGRhc2hib2FyZCAtPiBsb2dnZXIgIlNlbmRzIFVJIGludGVyYWN0aW9uIGFjdGl2aXR5LiIgIkpTT04vSFRUUCIKICAgICAgZXF1aXBtZW50TWFuYWdlciAtPiBsb2dnZXIgIlNlbmRzIGVxdWlwbWVudCBtYW5hZ2VtZW50IGFjdGl2aXR5LiIgIkpTT04vSFRUUCIKICAgICAgYnVpbGRpbmdNYW5hZ2VyIC0+IGxvZ2dlciAiU2VuZHMgYnVpbGRpbmcgYW5kIHJvb20gbWFuYWdlbWVudCBhY3Rpdml0eS4iICJKU09OL0hUVFAiCiAgICAgIHNlY3VyaXR5TWFuYWdlciAtPiBsb2dnZXIgIlNlbmRzIHNlY3VyaXR5IGFjdGl2aXR5LiIgIkpTT04vSFRUUCIKICAgICAgICAgICAgCiAgICAgICMjIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiB1c2VycyBhbmQgY29udGFpbmVycwogICAgICB0ZWFjaGVyIC0+IGRhc2hib2FyZCAiSW50ZXJhY3RzIHdpdGggdGhlIHN5c3RlbSB0aHJvdWdoIFVJLiIKICAgICAgbWFpbnRlbmFuY2UgLT4gZGFzaGJvYXJkICJJbnRlcmFjdHMgd2l0aCB0aGUgc3lzdGVtIHRocm91Z2ggVUkuIgogICAgICBlcXVpcG1lbnRNYW5hZ2VyIC0+IG1haW50ZW5hbmNlICJOb3RpZmllcyBtYWludGVuYW5jZSBtZW1iZXIgb2YgZmF1bHQuIgogICAgICAKICAgICAgIyBDb21wb25lbnQgcmVsYXRpb25zaGlwcwogICAgICAjIyByZWxhdGlvbnNoaXBzIGJldHdlZW4gY29tcG9uZW50cwogICAgICB3ZWJVSSAtPiBidWlsZGluZ01hbmFnZXIgIlNlbmRzIHVzZXIgaW5wdXQgdG8gYmUgaGFuZGxlZCBieSBidXNpbmVzcyBsb2dpYy4iICJKU09OL0hUVFAiCiAgICAgIHdlYlVJIC0+IGVxdWlwbWVudE1hbmFnZXIgIlNlbmRzIHVzZXIgaW5wdXQgdG8gYmUgaGFuZGxlZCBieSBidXNpbmVzcyBsb2dpYy4iICJKU09OL0hUVFAiCiAgICAgIHdlYlVJIC0+IHNlY3VyaXR5TWFuYWdlciAiRmV0Y2hlcyB1c2VyIGluZm9ybWF0aW9uIGZyb20gdGhlIHNlY3VyaXR5IG1hbmFnZXIuIiAiSlNPTi9IVFRQIgogICAgICB3ZWJVSSAtPiBzdGF0aXN0aWNhbEFuYWx5emVyICJGZXRjaGVzIHN0YXRpc3RpY3MuIiAiSlNPTi9IVFRQIgogICAgICB3ZWJVSSAtPiBsb2dnZXIgIkxvZ3MgdXNlciBhY3Rpdml0eS4iICJKU09OL0hUVFAiCiAgIAogICAgICBidWlsZGluZ01hbmFnZXJBUEkgLT4gYnVpbGRpbmdFZGl0b3IgIkFjY2Vzc2VzIGZ1bmN0aW9uYWxpdGllcyBvZiB0aGUgZWRpdG9yLiIKICAgICAgYnVpbGRpbmdNYW5hZ2VyQVBJIC0+IGJ1aWxkaW5nVmlld2VyICJBY2Nlc3NlcyBmdW5jdGlvbmFsaXRpZXMgb2YgdGhlIHZpZXdlci4iCiAgICAgIGJ1aWxkaW5nTWFuYWdlckFQSSAtPiByb29tUmVzZXJ2ZXIgIkFjY2Vzc2VzIGZ1bmN0aW9uYWxpdGllcyBvZiB0aGUgcm9vbSByZXNlcnZlci4iCiAgICAgIGJ1aWxkaW5nVmlld2VyIC0+IGJ1aWxkaW5nTWFuYWdlckRhdGFiYXNlTWFuYWdlciAiRmV0Y2hlcyBkYXRhIGFib3V0IGJ1aWxkaW5ncyBhbmQgcm9vbXMgaW4gdGhlbS4iCiAgICAgIGJ1aWxkaW5nRWRpdG9yIC0+IGJ1aWxkaW5nTWFuYWdlckRhdGFiYXNlTWFuYWdlciAiRmV0Y2hlcyBhbmQgdXBkYXRlcyBkYXRhIGFib3V0IGJ1aWxkaW5ncyBhbmQgcm9vbXMgaW4gdGhlbS4iCiAgICAgIHJvb21SZXNlcnZlciAtPiBidWlsZGluZ01hbmFnZXJEYXRhYmFzZU1hbmFnZXIgIkZldGNoZXMgYW5kIHVwZGF0ZXMgZGF0YSBhYm91dCByb29tIHJlc2VydmF0aW9ucy4iCgogICAgICBlcXVpcG1lbnRNYW5hZ2VyQVBJIC0+IGVxdWlwbWVudEVkaXRvciAiQWNjZXNzZXMgZnVuY3Rpb25hbGl0aWVzIG9mIHRoZSBlZGl0b3IuIgogICAgICBlcXVpcG1lbnRNYW5hZ2VyQVBJIC0+IGVxdWlwbWVudFZpZXdlciAiQWNjZXNzZXMgZnVuY3Rpb25hbGl0aWVzIG9mIHRoZSB2aWV3ZXIuIgogICAgICBlcXVpcG1lbnRNYW5hZ2VyQVBJIC0+IGVxdWlwbWVudEZhdWx0Tm90aWZpZXIgIkFjY2Vzc2VzIGZ1bmN0aW9uYWxpdGllcyBvZiB0aGUgZmF1bHQgbm90aWZpZXIuIgogICAgICBlcXVpcG1lbnRWaWV3ZXIgLT4gZXF1aXBtZW50TWFuYWdlckRhdGFiYXNlTWFuYWdlciAiRmV0Y2hlcyBkYXRhIGFib3V0IGVxdWlwbWVudC4iCiAgICAgIGVxdWlwbWVudEVkaXRvciAtPiBlcXVpcG1lbnRNYW5hZ2VyRGF0YWJhc2VNYW5hZ2VyICJGZXRjaGVzIGFuZCB1cGRhdGVzIGRhdGEgYWJvdXQgZXF1aXBtZW50LiIKICAgICAgZXF1aXBtZW50RmF1bHROb3RpZmllciAtPiBlcXVpcG1lbnRNYW5hZ2VyRGF0YWJhc2VNYW5hZ2VyICJGZXRjaGVzIGFuZCB1cGRhdGVzIGRhdGEgYWJvdXQgZXF1aXBtZW50IGZhdWx0cy4iCiAgICAgIGVxdWlwbWVudEZhdWx0Tm90aWZpZXIgLT4gZGFzaGJvYXJkICJTZW5kcyBub3RpZmljYXRpb25zIGFib3V0IGZhdWx0eSBlcXVpcG1lbnQgdG8gYmUgZGlzcGxheWVkLiIgIkpTT04vSFRUUCIKCiAgICAgIHNlY3VyaXR5TWFuYWdlckFQSSAtPiBhdXRoZW50aWNhdG9yICJBY2Nlc3NlcyBmdW5jdGlvbmFsaXRpZXMgb2YgdGhlIGF1dGhlbnRpY2F0b3IuIgogICAgICBhdXRoZW50aWNhdG9yIC0+IHVzZXJEYXRhYmFzZU1hbmFnZXIgIkZldGNoZXMgdXNlcnMgZnJvbSB0aGUgZGF0YWJhc2UuIiAiSlNPTi9IVFRQIgogICAgICBhdXRoZW50aWNhdG9yIC0+IGF1dGhvcml6YXRvciAiU2VuZHMgYXV0aG9yaXphdGlvbiByZXF1ZXN0cy4iCiAgICAgIGF1dGhvcml6YXRvciAtPiB1c2VyRGF0YWJhc2VNYW5hZ2VyICJGZXRjaGVzIHVzZXIgcmlnaHRzIGZyb20gdGhlIGRhdGFiYXNlLiIgIkpTT04vSFRUUCIKCiAgICAgIGJ1aWxkaW5nTWFuYWdlckRhdGFiYXNlTWFuYWdlciAtPiBkYXRhYmFzZSAiQXBwbGllcyBxdWVyaWVzIG9uIHRoZSBkYXRhYmFzZSBhbmQgZmV0Y2hlcyByZXN1bHRzLiIgIlNRTC9UQ1AiCiAgICAgIGJ1aWxkaW5nTWFuYWdlckRhdGFiYXNlTWFuYWdlciAtPiBzdGF0aXN0aWNhbEFuYWx5emVyICJTZW5kcyBkYXRhIGZvciBzdGF0aXN0aWNhbCBhbmFseXNpcy4iICJKU09OL0hUVFAiCiAgICAgIGJ1aWxkaW5nTWFuYWdlciAtPiBldmVudFNuaWZmZXIgIlNlbmRzIGV2ZW50cyB0byB0aGUgbG9nZ2VyLiIgIkpTT04vSFRUUCIKICAgICAgCiAgICAgIGVxdWlwbWVudE1hbmFnZXJEYXRhYmFzZU1hbmFnZXIgLT4gZGF0YWJhc2UgIkFwcGxpZXMgcXVlcmllcyBvbiB0aGUgZGF0YWJhc2UgYW5kIGZldGNoZXMgcmVzdWx0cy4iICJTUUwvVENQIgogICAgICBlcXVpcG1lbnRNYW5hZ2VyRGF0YWJhc2VNYW5hZ2VyIC0+IHN0YXRpc3RpY2FsQW5hbHl6ZXIgIlNlbmRzIGRhdGEgZm9yIHN0YXRpc3RpY2FsIGFuYWx5c2lzLiIgIkpTT04vSFRUUCIKICAgICAgZXF1aXBtZW50TWFuYWdlciAtPiBldmVudFNuaWZmZXIgIlNlbmRzIGV2ZW50cyB0byB0aGUgbG9nZ2VyLiIgIkpTT04vSFRUUCIKCiAgICAgIHVzZXJEYXRhYmFzZU1hbmFnZXIgLT4gZGF0YWJhc2UgIkFwcGxpZXMgcXVlcmllcyBvbiB0aGUgZGF0YWJhc2UgYW5kIGZldGNoZXMgcmVzdWx0cy4iICJTUUwvVENQIgogICAgICB1c2VyRGF0YWJhc2VNYW5hZ2VyIC0+IHN0YXRpc3RpY2FsQW5hbHl6ZXIgIlNlbmRzIGRhdGEgZm9yIHN0YXRpc3RpY2FsIGFuYWx5c2lzLiIgIkpTT04vSFRUUCIKICAgICAgc2VjdXJpdHlNYW5hZ2VyIC0+IGV2ZW50U25pZmZlciAiU2VuZHMgZXZlbnRzIHRvIHRoZSBsb2dnZXIuIiAiSlNPTi9IVFRQIgogICAgICAKICAgICAgc3RhdGlzdGljYWxBbmFseXplciAtPiBkYXNoYm9hcmQgIlNlbmRzIHN0YXRpc3RpY3MgdG8gYmUgZGlzcGxheWVkLiIgIkpTT04vSFRUUCIKCiAgICAgIGV2ZW50U25pZmZlciAtPiBldmVudExvZ2dlciAiU2VuZHMgZXZlbnRzIHRvIGJlIGxvZ2dlZC4iICJKU09OL0hUVFAiCiAgICAgIGV2ZW50TG9nZ2VyIC0+IGRhdGFiYXNlICJTZW5kcyBsb2dzIHRvIGJlIHN0b3JlZCBpbiB0aGUgZGF0YWJhc2UuIiAiU1FML1RDUCIKCgogICAgICAjIERlcGxveW1lbnQgZW52aXJvbm1lbnQKICAgICAgZGVwbG95bWVudEVudmlyb25tZW50ICJQcm9kdWN0aW9uIiAgICB7CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJVc2VyJ3Mgd2ViIGJyb3dzZXIiICIiICJIVE1MIDUiICAgIHsKICAgICAgICAgICAgICAgZGFzaGJvYXJkSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBkYXNoYm9hcmQKICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQnVpbGRpbmdzIG1vZHVsZSIgIiIgIiIgICB7CiAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBcHBsaWNhdGlvbiBTZXJ2ZXIiICIiICJTVVNFIExpbnV4IEVudGVycHJpc2UgMTUiICAgewogICAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiV2ViIHNlcnZlciIgIiIgIkFwYWNoZSBUb21jYXQgMTAuMS4xNSIgIHsKICAgICAgICAgICAgICAgICAgICAgZXF1aXBtZW50TWFuYWdlckluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2UgZXF1aXBtZW50TWFuYWdlcgogICAgICAgICAgICAgICAgICAgICBidWlsZGluZ01hbmFnZXJJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIGJ1aWxkaW5nTWFuYWdlcgogICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJTZWN1cml0eSBzZXJ2ZXIiICIiICJBcGFjaGUgVG9tY2F0IDEwLjEuMTUiICB7CiAgICAgICAgICAgICAgICAgICAgIHNlY3VyaXR5TWFuYWdlckluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2Ugc2VjdXJpdHlNYW5hZ2VyCiAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlN0YXRpc3RpY2FsIFNlcnZlciIgIiIgIlNVU0UgTGludXggRW50ZXJwcmlzZSAxNSIgICB7CiAgICAgICAgICAgICAgICAgICAgIHN0YXRpc3RpY2FsQW5hbHl6ZXJJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHN0YXRpc3RpY2FsQW5hbHl6ZXIKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEYXRhYmFzZSBTZXJ2ZXIiICIiICJTVVNFIExpbnV4IEVudGVycHJpc2UgMTUiICAgewogICAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiUmVsYXRpb25hbCBEQiBzZXJ2ZXIiICIiICJPcmFjbGUgMTkuMS4wIiB7CiAgICAgICAgICAgICAgICAgICAgIGRhdGFiYXNlSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBkYXRhYmFzZQogICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJMb2cgc3RvcmFnZSIgIiIgIkVsYXN0aWNzZWFyY2ggNy4xMyIgIHsKICAgICAgICAgICAgICAgICAgICAgbG9nZ2VySW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBsb2dnZXIKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIAogICB9CiAgIAogICB2aWV3cyB7CgogICAgICBzeXN0ZW1Db250ZXh0IGJ1aWxkaW5ncyAiU3lzdGVtQ29udGV4dFZpZXciIHsKICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgfQoKICAgICAgY29udGFpbmVyIGJ1aWxkaW5ncyAiQ29udGFpbmVyVmlldyIgewogICAgICAgICBpbmNsdWRlICoKICAgICAgICAgYXV0b0xheW91dAogICAgICB9CgogICAgICBjb21wb25lbnQgZGFzaGJvYXJkICJEYXNoYm9hcmRDb21wb25lbnRWaWV3IiB7CiAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KICAgICAgCiAgICAgIGNvbXBvbmVudCBidWlsZGluZ01hbmFnZXIgIkJ1aWxkaW5nTWFuYWdlckNvbXBvbmVudFZpZXciIHsKICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgfQoKICAgICAgY29tcG9uZW50IGVxdWlwbWVudE1hbmFnZXIgIkVxdWlwbWVudE1hbmFnZXJDb21wb25lbnRWaWV3IiB7CiAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KCiAgICAgIGNvbXBvbmVudCBzZWN1cml0eU1hbmFnZXIgIlNlY3VyaXR5TWFuYWdlckNvbXBvbmVudFZpZXciIHsKICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgfQogICAgICAKICAgICAgY29tcG9uZW50IGxvZ2dlciAiTG9nZ2VyQ29tcG9uZW50VmlldyIgewogICAgICAgICBpbmNsdWRlICoKICAgICAgICAgYXV0b0xheW91dAogICAgICB9CgogICAgICBkZXBsb3ltZW50IGJ1aWxkaW5ncyAiUHJvZHVjdGlvbiIgIkRlcGxveW1lbnRWaWV3IiB7CiAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KCiAgICAgIGR5bmFtaWMgYnVpbGRpbmdzICJSZWdpc3RlcmluZ0FuZEVkaXRpbmdSb29tc0FuZEJ1aWxkaW5ncyIgewogICAgICAgICBtYWludGVuYW5jZSAtPiBkYXNoYm9hcmQgIk1haW50ZW5hbmNlIG1lbWJlciByZWdpc3RlcnMgYSBuZXcgYnVpbGRpbmciCiAgICAgICAgIGRhc2hib2FyZCAtPiBsb2dnZXIgIlVJIGludGVyYWN0aW9uIGFjdGl2aXR5IGlzIGxvZ2dlZCIKICAgICAgICAgZGFzaGJvYXJkIC0+IGJ1aWxkaW5nTWFuYWdlciAiSW5mb3JtYXRpb24gYWJvdXQgdGhlIGJ1aWxkaW5nIGlzIHNlbnQgdG8gdGhlIGJ1aWxkaW5nIG1hbmFnZXIiCiAgICAgICAgIGJ1aWxkaW5nTWFuYWdlciAtPiBsb2dnZXIgIkJ1aWxkaW5nIGFuZCByb29tIG1hbmFnZW1lbnQgYWRkaW5nL2VkaXRpbmcgYWN0aXZpdHkgaXMgbG9nZ2VkIgogICAgICAgICBidWlsZGluZ01hbmFnZXIgLT4gZGF0YWJhc2UgIkFkZGl0aW9ucyBtYWRlIGFyZSBzYXZlZCBpbiB0aGUgZGF0YWJhc2UiCiAgICAgICAgIAogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KCiAgICAgIGR5bmFtaWMgYnVpbGRpbmdzICJGYXVsdEV2aWRlbmNlQW5kUmVwb3J0aW5nIiB7CiAgICAgICAgIHRlYWNoZXIgLT4gZGFzaGJvYXJkICJUZWFjaGVyIHJlcG9ydHMgZmF1bHR5IGVxdWlwbWVudCIKICAgICAgICAgZGFzaGJvYXJkIC0+IGVxdWlwbWVudE1hbmFnZXIgIkluZm9ybWF0aW9uIGFib3V0IHRoZSBmYXVsdCBpcyBzZW50IHRvIHRoZSBlcXVpcG1lbnQgbWFuYWdlciIKICAgICAgICAgZXF1aXBtZW50TWFuYWdlciAtPiBsb2dnZXIgIkVxdWlwbWVudCBhY3Rpdml0eSBpcyBsb2dnZWQiCiAgICAgICAgIGVxdWlwbWVudE1hbmFnZXIgLT4gZGF0YWJhc2UgIlVwZGF0ZXMgbWFkZSBieSB0aGUgdXNlciBhcmUgc2F2ZWQgaW4gdGhlIGRhdGFiYXNlIgogICAgICAgICBlcXVpcG1lbnRNYW5hZ2VyIC0+IGRhc2hib2FyZCAiRmF1bHR5IGVxdWlwbWVudCBpcyByZXBvcnRlZCB0byBtYWludGVuYW5jZSIKICAgICAgICAgbWFpbnRlbmFuY2UgLT4gZGFzaGJvYXJkICJNYWludGVuYW5jZSBtZW1iZXIgdmlld3Mgd2hhdCBlcXVpcG1lbnQgbmVlZHMgdG8gYmUgZml4ZWQiCiAgICAgICAgIAogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KCiAgICAgIGR5bmFtaWMgYnVpbGRpbmdzICJSb29tUmVzZXJ2YXRpb25zIiB7CiAgICAgICAgIHRlYWNoZXIgLT4gZGFzaGJvYXJkICJUZWFjaGVyIHJlc2VydmVzIGEgcm9vbSIKICAgICAgICAgZGFzaGJvYXJkIC0+IGJ1aWxkaW5nTWFuYWdlciAiSW5mb3JtYXRpb24gYWJvdXQgdGhlIHJlc2VydmF0aW9uIGlzIHNlbnQgdG8gdGhlIHJvb20gcmVzZXJ2ZXIiCiAgICAgICAgIGRhc2hib2FyZCAtPiBsb2dnZXIgIlVJIGludGVyYWN0aW9uIGFjdGl2aXR5IGlzIGxvZ2dlZCIKICAgICAgICAgYnVpbGRpbmdNYW5hZ2VyIC0+IGxvZ2dlciAiUm9vbSBtYW5hZ2VtZW50IGFjdGl2aXR5IGlzIGxvZ2dlZCIKICAgICAgICAgYnVpbGRpbmdNYW5hZ2VyIC0+IGRhdGFiYXNlICJSb29tIHJlc2VydmF0aW9ucyBtYWRlIGFyZSBzYXZlZCBpbiB0aGUgZGF0YWJhc2UiCiAgICAgICAgIAogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KCiAgICAgIGR5bmFtaWMgYnVpbGRpbmdzICJTdGF0aXN0aWNhbFJlcG9ydHMiIHsgICAgICAgICAKICAgICAgICAgZGFzaGJvYXJkIC0+IHN0YXRpc3RpY2FsQW5hbHl6ZXIgIlVzZXIgc2VsZWN0cyB3aGljaCBraW5kIG9mIHN0YXRpc3RpY3MgdG8gdmlldyIKICAgICAgICAgc3RhdGlzdGljYWxBbmFseXplciAtPiBkYXNoYm9hcmQgIkFuYWx5emVyIGNvbXB1dGVzIHN0YXRpc3RpY3MgYW5kIHNlbmRzIHRoZW0gdG8gdGhlIGRhc2hib2FyZCIKICAgICAgICAgYnVpbGRpbmdNYW5hZ2VyIC0+IHN0YXRpc3RpY2FsQW5hbHl6ZXIgIkFuYWx5emVyIGZldGNoZXMgZGF0YSBmcm9tIHRoZSBkYXRhYmFzZSIKICAgICAgICAgZXF1aXBtZW50TWFuYWdlciAtPiBzdGF0aXN0aWNhbEFuYWx5emVyICJBbmFseXplciBmZXRjaGVzIGRhdGEgZnJvbSB0aGUgZGF0YWJhc2UiCiAgICAgICAgIHNlY3VyaXR5TWFuYWdlciAtPiBzdGF0aXN0aWNhbEFuYWx5emVyICJBbmFseXplciBmZXRjaGVzIGRhdGEgZnJvbSB0aGUgZGF0YWJhc2UiCiAgICAgICAgIGRhc2hib2FyZCAtPiBsb2dnZXIgIlVJIGludGVyYWN0aW9uIGFjdGl2aXR5IGlzIGxvZ2dlZCAoZS5nLiBtb3N0IHZpZXdlZCBidWlsZGluZykiCiAgICAgICAgIAogICAgICAgICBhdXRvTGF5b3V0CiAgICAgIH0KCgogICAgICBkeW5hbWljIGJ1aWxkaW5ncyAiTG9naW5TeXN0ZW1SaWdodHNEaWZmZXJlbnRpYXRpb24iIHsgICAgICAgCiAgICAgICAgIHRlYWNoZXIgLT4gZGFzaGJvYXJkICJUZWFjaGVyIGxvZ3MgaW4iCiAgICAgICAgIG1haW50ZW5hbmNlIC0+IGRhc2hib2FyZCAiTWFpbnRlbmFuY2UgbG9ncyBpbiIKICAgICAgICAgZGFzaGJvYXJkIC0+IGxvZ2dlciAiVUkgaW50ZXJhY3Rpb24gYWN0aXZpdHkgaXMgbG9nZ2VkIgogICAgICAgICBkYXNoYm9hcmQgLT4gc2VjdXJpdHlNYW5hZ2VyICJEYXNoYm9hcmQgc2VuZHMgbG9naW4gcmVxdWVzdCIKICAgICAgICAgc2VjdXJpdHlNYW5hZ2VyIC0+IGRhc2hib2FyZCAiRGFzaGJvYXJkIHJlY2VpdmVzIHVzZXIgaW5mb3JtYXRpb24iCiAgICAgICAgIHNlY3VyaXR5TWFuYWdlciAtPiBsb2dnZXIgIlNlY3VyaXR5IGFjdGl2aXR5IGlzIGxvZ2dlZCIKCiAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgfQoKICAgICAgdGhlbWUgZGVmYXVsdAoKICAgICAgc3R5bGVzIHsKICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgIGJhY2tncm91bmQgIzMyY2QzMgogICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgIH0KICAgICAgICAgCiAgICAgICAgIGVsZW1lbnQgIkRhdGFiYXNlIiAgewogICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICBiYWNrZ3JvdW5kICM4MDgwODAKICAgICAgICAgfQoKICAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgIGJhY2tncm91bmQgIzYzY2QzMgogICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgIH0KCiAgICAgICAgIGVsZW1lbnQgIkNvbXBvbmVudCIgewogICAgICAgICAgICBiYWNrZ3JvdW5kICM5MmNkMzIKICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICB9CiAgICAgICAgIAogICAgICAgICBlbGVtZW50ICJFeGlzdGluZyBTeXN0ZW0iIHsKICAgICAgICAgICAgYmFja2dyb3VuZCAjOTk5OTk5CiAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgfQoKICAgICAgICAgZWxlbWVudCAiV2ViIEZyb250LUVuZCIgIHsKICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICB9CgogICAgICAgICBlbGVtZW50ICJJbmZyYXN0cnVjdHVyZSIgIHsKICAgICAgICAgICAgc2hhcGUgUGlwZQogICAgICAgICB9CgogICAgICAgICBlbGVtZW50ICJMb2dpYyIgIHsKICAgICAgICAgICAgc2hhcGUgQ29tcG9uZW50CiAgICAgICAgIH0KCiAgICAgICAgIGVsZW1lbnQgIk1vZGVsIiAgewogICAgICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgIH0KCiAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgfQoKICAgICAgICAgZWxlbWVudCAiUHVibGljIiB7CiAgICAgICAgICAgIGJhY2tncm91bmQgIzk5OTk5OQogICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgIH0KCiAgICAgICAgIGVsZW1lbnQgIkdvdiIgewogICAgICAgICAgICBiYWNrZ3JvdW5kICMwMDY0MDAKICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICB9CiAgICAgIH0KICAgfQp9Cg=="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "27",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "maintenance"
+      },
+      "name" : "Maintenance team member",
+      "description" : "A maintenance member who manages the school's facilities.",
+      "relationships" : [ {
+        "id" : "29",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "af50e358-49bc-43c9-a0b8-9b2060b750f8"
+        },
+        "sourceId" : "27",
+        "destinationId" : "1",
+        "description" : "Manages the buildings, rooms and equipment."
+      }, {
+        "id" : "39",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "d5243c8e-ba94-4563-98e5-45b9fac3b45a"
+        },
+        "sourceId" : "27",
+        "destinationId" : "2",
+        "description" : "Interacts with the system through UI."
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "26",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "teacher"
+      },
+      "name" : "Teacher",
+      "description" : "A teacher who uses the school's facilities.",
+      "relationships" : [ {
+        "id" : "38",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "b885d310-067b-449f-a943-37dfeec76ca4"
+        },
+        "sourceId" : "26",
+        "destinationId" : "2",
+        "description" : "Interacts with the system through UI."
+      }, {
+        "id" : "28",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "3eca3a72-f261-42e9-b417-6c06577889bd"
+        },
+        "sourceId" : "26",
+        "destinationId" : "1",
+        "description" : "Reserves rooms for teaching and examinations, sets room schedules, reports faulty equipment."
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "1",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "buildings"
+      },
+      "name" : "Buildings",
+      "description" : "The Buildings software system is responsible for managing the school's buildings, their rooms and equipment.",
+      "relationships" : [ {
+        "id" : "30",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "6343260f-e58a-49ab-a17f-adee8274eeb1"
+        },
+        "sourceId" : "1",
+        "destinationId" : "27",
+        "description" : "Sends notifications about faulty equipment."
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "10",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "equipmentmanager"
+        },
+        "name" : "Equipment Manager",
+        "description" : "Handles business logic around equipment, including adding/editing and fault reporting.",
+        "relationships" : [ {
+          "id" : "35",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "49d97390-9b99-40c6-a993-4f52ba6556bc"
+          },
+          "sourceId" : "10",
+          "destinationId" : "22",
+          "description" : "Sends equipment management activity.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "73",
+          "sourceId" : "10",
+          "destinationId" : "21",
+          "description" : "Sends data for statistical analysis.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "72"
+        }, {
+          "id" : "40",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "06ba6a13-f43e-4de5-bf0b-a3022e0721c5"
+          },
+          "sourceId" : "10",
+          "destinationId" : "27",
+          "description" : "Notifies maintenance member of fault."
+        }, {
+          "id" : "60",
+          "sourceId" : "10",
+          "destinationId" : "2",
+          "description" : "Sends notifications about faulty equipment to be displayed.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "59"
+        }, {
+          "id" : "71",
+          "sourceId" : "10",
+          "destinationId" : "25",
+          "description" : "Applies queries on the database and fetches results.",
+          "technology" : "SQL/TCP",
+          "linkedRelationshipId" : "70"
+        }, {
+          "id" : "74",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "12c29d74-8ccf-4b49-a19c-d2afd5762235"
+          },
+          "sourceId" : "10",
+          "destinationId" : "23",
+          "description" : "Sends events to the logger.",
+          "technology" : "JSON/HTTP"
+        } ],
+        "components" : [ {
+          "id" : "15",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "equipmentmanagerapi"
+          },
+          "name" : "Public API",
+          "description" : "Provides an API for usage by other containers.",
+          "relationships" : [ {
+            "id" : "53",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "60b94940-a315-4216-9310-c68038113cd4"
+            },
+            "sourceId" : "15",
+            "destinationId" : "12",
+            "description" : "Accesses functionalities of the editor."
+          }, {
+            "id" : "55",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d06676a4-290a-4215-89f9-630ed9ab770d"
+            },
+            "sourceId" : "15",
+            "destinationId" : "13",
+            "description" : "Accesses functionalities of the fault notifier."
+          }, {
+            "id" : "54",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "0cb902fb-218d-4742-b13f-31ccac64b7cc"
+            },
+            "sourceId" : "15",
+            "destinationId" : "11",
+            "description" : "Accesses functionalities of the viewer."
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "11",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "equipmentviewer"
+          },
+          "name" : "Equipment Viewer",
+          "description" : "Handles equipment data to be suitable for displaying.",
+          "relationships" : [ {
+            "id" : "56",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5fbaee91-c61b-4602-b366-7949b38479c6"
+            },
+            "sourceId" : "11",
+            "destinationId" : "14",
+            "description" : "Fetches data about equipment."
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "14",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "equipmentmanagerdatabasemanager"
+          },
+          "name" : "Database Manager",
+          "description" : "Fetches and updates data about equipment, validates and sanitizes it.",
+          "relationships" : [ {
+            "id" : "70",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "89f3db15-b7b8-4165-af68-c0601827b50d"
+            },
+            "sourceId" : "14",
+            "destinationId" : "25",
+            "description" : "Applies queries on the database and fetches results.",
+            "technology" : "SQL/TCP"
+          }, {
+            "id" : "72",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ad169b15-c703-498c-9ceb-67fea85891f8"
+            },
+            "sourceId" : "14",
+            "destinationId" : "21",
+            "description" : "Sends data for statistical analysis.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "13",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "equipmentfaultnotifier"
+          },
+          "name" : "Equipment Fault Notifier",
+          "description" : "Equipment Fault Notifier is responsible for notifying the maintenance team about faulty equipment.",
+          "relationships" : [ {
+            "id" : "58",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e910e5bd-b3d3-4731-a5f6-eb60d550f558"
+            },
+            "sourceId" : "13",
+            "destinationId" : "14",
+            "description" : "Fetches and updates data about equipment faults."
+          }, {
+            "id" : "59",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5f35d450-689b-44e6-84f7-13915ed19e3b"
+            },
+            "sourceId" : "13",
+            "destinationId" : "2",
+            "description" : "Sends notifications about faulty equipment to be displayed.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "12",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "equipmenteditor"
+          },
+          "name" : "Equipment Editor",
+          "description" : "Handles equipment adding/editing and fault reporting.",
+          "relationships" : [ {
+            "id" : "57",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5248a0fe-6f06-4d98-98e2-8a3b97dc5e09"
+            },
+            "sourceId" : "12",
+            "destinationId" : "14",
+            "description" : "Fetches and updates data about equipment."
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "25",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "Database",
+        "description" : "The database is used to store information about buildings, rooms and equipment.",
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "buildingmanager"
+        },
+        "name" : "Building Manager",
+        "description" : "Handles business logic around buildings and rooms within them, including room reservations.",
+        "relationships" : [ {
+          "id" : "66",
+          "sourceId" : "4",
+          "destinationId" : "25",
+          "description" : "Applies queries on the database and fetches results.",
+          "technology" : "SQL/TCP",
+          "linkedRelationshipId" : "65"
+        }, {
+          "id" : "69",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5e8e0a9e-9863-402c-8144-8dfce8e0a84d"
+          },
+          "sourceId" : "4",
+          "destinationId" : "23",
+          "description" : "Sends events to the logger.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "36",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e611e3c0-6893-4644-87f4-e3b370731671"
+          },
+          "sourceId" : "4",
+          "destinationId" : "22",
+          "description" : "Sends building and room management activity.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "68",
+          "sourceId" : "4",
+          "destinationId" : "21",
+          "description" : "Sends data for statistical analysis.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "67"
+        } ],
+        "components" : [ {
+          "id" : "9",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "buildingmanagerapi"
+          },
+          "name" : "Public API",
+          "description" : "Provides an API for usage by other containers.",
+          "relationships" : [ {
+            "id" : "47",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8fd36dd1-bcfd-4cf9-91d3-e9ea7e00883a"
+            },
+            "sourceId" : "9",
+            "destinationId" : "6",
+            "description" : "Accesses functionalities of the editor."
+          }, {
+            "id" : "48",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7e527ff7-0b74-4746-b6b5-3069b6f0c1d1"
+            },
+            "sourceId" : "9",
+            "destinationId" : "5",
+            "description" : "Accesses functionalities of the viewer."
+          }, {
+            "id" : "49",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2bc38af4-418d-406b-8dee-9b079587a496"
+            },
+            "sourceId" : "9",
+            "destinationId" : "7",
+            "description" : "Accesses functionalities of the room reserver."
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "6",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "buildingeditor"
+          },
+          "name" : "Building Editor",
+          "description" : "Handles building adding/editing and room adding/editing.",
+          "relationships" : [ {
+            "id" : "51",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "9b1b354f-b70e-40c7-b3f4-20eafc712df8"
+            },
+            "sourceId" : "6",
+            "destinationId" : "8",
+            "description" : "Fetches and updates data about buildings and rooms in them."
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "8",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "buildingmanagerdatabasemanager"
+          },
+          "name" : "Database Manager",
+          "description" : "Fetches and updates data about buildings and rooms in them, validates and sanitizes it.",
+          "relationships" : [ {
+            "id" : "65",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fdce9a9b-bf37-4c47-b0bd-9ab7cdcd367b"
+            },
+            "sourceId" : "8",
+            "destinationId" : "25",
+            "description" : "Applies queries on the database and fetches results.",
+            "technology" : "SQL/TCP"
+          }, {
+            "id" : "67",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "eede0b70-0e4f-40e4-9e65-441208f8a7a0"
+            },
+            "sourceId" : "8",
+            "destinationId" : "21",
+            "description" : "Sends data for statistical analysis.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "5",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "buildingviewer"
+          },
+          "name" : "Building Viewer",
+          "description" : "Handles building data to be suitable for displaying.",
+          "relationships" : [ {
+            "id" : "50",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6a256b10-6121-404b-b15c-335480f483f7"
+            },
+            "sourceId" : "5",
+            "destinationId" : "8",
+            "description" : "Fetches data about buildings and rooms in them."
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "7",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "roomreserver"
+          },
+          "name" : "Room Reserver",
+          "description" : "Handles logic around room reservations.",
+          "relationships" : [ {
+            "id" : "52",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "a8c0dad4-d0f1-4f0c-9125-e6ddd03dff35"
+            },
+            "sourceId" : "7",
+            "destinationId" : "8",
+            "description" : "Fetches and updates data about room reservations."
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "22",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "logger"
+        },
+        "name" : "Logger",
+        "description" : "Logger logs application events and keeps them as persistent data.",
+        "relationships" : [ {
+          "id" : "83",
+          "sourceId" : "22",
+          "destinationId" : "25",
+          "description" : "Sends logs to be stored in the database.",
+          "technology" : "SQL/TCP",
+          "linkedRelationshipId" : "82"
+        } ],
+        "components" : [ {
+          "id" : "24",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "eventlogger"
+          },
+          "name" : "Event Logger",
+          "description" : "Sends event logs to the database.",
+          "relationships" : [ {
+            "id" : "82",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "b29f86bf-7e2f-442d-be5b-d2f4b6577c87"
+            },
+            "sourceId" : "24",
+            "destinationId" : "25",
+            "description" : "Sends logs to be stored in the database.",
+            "technology" : "SQL/TCP"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "23",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "eventsniffer"
+          },
+          "name" : "Event Sniffer",
+          "description" : "Watches for events and sends them to the logger.",
+          "relationships" : [ {
+            "id" : "81",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5411e835-e02f-43fc-8913-768f3d77c7f2"
+            },
+            "sourceId" : "23",
+            "destinationId" : "24",
+            "description" : "Sends events to be logged.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "21",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "statisticalanalyzer"
+        },
+        "name" : "Statistical Analyzer",
+        "description" : "Statistical Analyzer is responsible for analyzing the data and providing statistics.",
+        "relationships" : [ {
+          "id" : "80",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "560ad61f-5f10-45e6-afbd-679c119c36cb"
+          },
+          "sourceId" : "21",
+          "destinationId" : "2",
+          "description" : "Sends statistics to be displayed.",
+          "technology" : "JSON/HTTP"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "2",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dashboard"
+        },
+        "name" : "Dashboard",
+        "description" : "The UI dashboard for the Buildings system.",
+        "relationships" : [ {
+          "id" : "33",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ade76952-21dc-4690-ac19-0193996d950c"
+          },
+          "sourceId" : "2",
+          "destinationId" : "16",
+          "description" : "Uses security services.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "31",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "696a557d-2005-49a3-8bf1-258782ff2ebc"
+          },
+          "sourceId" : "2",
+          "destinationId" : "4",
+          "description" : "Displays building and room management services, allows user input."
+        }, {
+          "id" : "34",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "cd22d63b-e0c9-4fcc-935a-066a163dc46a"
+          },
+          "sourceId" : "2",
+          "destinationId" : "22",
+          "description" : "Sends UI interaction activity.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "45",
+          "sourceId" : "2",
+          "destinationId" : "21",
+          "description" : "Fetches statistics.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "44"
+        }, {
+          "id" : "32",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e217f04e-7bca-4fc7-b756-8db03e7da7ca"
+          },
+          "sourceId" : "2",
+          "destinationId" : "10",
+          "description" : "Displays equipment management services, allows user input."
+        } ],
+        "components" : [ {
+          "id" : "3",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "webui"
+          },
+          "name" : "Web Application UI",
+          "description" : "Allows users to manage the school's buildings, rooms and equipment.",
+          "relationships" : [ {
+            "id" : "46",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6ea9c579-298b-4b88-94bc-7f6025b01f56"
+            },
+            "sourceId" : "3",
+            "destinationId" : "22",
+            "description" : "Logs user activity.",
+            "technology" : "JSON/HTTP"
+          }, {
+            "id" : "41",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5eb60d74-a009-4411-ada4-0ba5d19dc1fa"
+            },
+            "sourceId" : "3",
+            "destinationId" : "4",
+            "description" : "Sends user input to be handled by business logic.",
+            "technology" : "JSON/HTTP"
+          }, {
+            "id" : "42",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "857911e8-e949-4ee7-9fd6-ec97eb5500af"
+            },
+            "sourceId" : "3",
+            "destinationId" : "10",
+            "description" : "Sends user input to be handled by business logic.",
+            "technology" : "JSON/HTTP"
+          }, {
+            "id" : "43",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8b86a862-ccb4-437b-ac49-30f8df9c15b4"
+            },
+            "sourceId" : "3",
+            "destinationId" : "16",
+            "description" : "Fetches user information from the security manager.",
+            "technology" : "JSON/HTTP"
+          }, {
+            "id" : "44",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "74b4788e-0565-46b3-b7e6-ebd3b542d07d"
+            },
+            "sourceId" : "3",
+            "destinationId" : "21",
+            "description" : "Fetches statistics.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "16",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "securitymanager"
+        },
+        "name" : "Security Manager",
+        "description" : "Security Manager is responsible for authentication and authorization of users and their actions.",
+        "relationships" : [ {
+          "id" : "79",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c16717e5-da5c-4e72-ab46-07aa1db46b80"
+          },
+          "sourceId" : "16",
+          "destinationId" : "23",
+          "description" : "Sends events to the logger.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "37",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d5ff515f-78fa-4b6c-93d6-971332cf2acf"
+          },
+          "sourceId" : "16",
+          "destinationId" : "22",
+          "description" : "Sends security activity.",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "78",
+          "sourceId" : "16",
+          "destinationId" : "21",
+          "description" : "Sends data for statistical analysis.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "77"
+        }, {
+          "id" : "76",
+          "sourceId" : "16",
+          "destinationId" : "25",
+          "description" : "Applies queries on the database and fetches results.",
+          "technology" : "SQL/TCP",
+          "linkedRelationshipId" : "75"
+        } ],
+        "components" : [ {
+          "id" : "19",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "userdatabasemanager"
+          },
+          "name" : "User Database Manager",
+          "description" : "Fetches data about users from the database, validates and sanitizes it.",
+          "relationships" : [ {
+            "id" : "75",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "4bc396ac-61b1-478e-8013-9fa06679b0c1"
+            },
+            "sourceId" : "19",
+            "destinationId" : "25",
+            "description" : "Applies queries on the database and fetches results.",
+            "technology" : "SQL/TCP"
+          }, {
+            "id" : "77",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "67c7d289-deaf-4be7-8e09-7e716e49c409"
+            },
+            "sourceId" : "19",
+            "destinationId" : "21",
+            "description" : "Sends data for statistical analysis.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "20",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "securitymanagerapi"
+          },
+          "name" : "Public API",
+          "description" : "Provides an API for usage by other containers.",
+          "relationships" : [ {
+            "id" : "61",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5f0caf01-85b3-4b70-95ee-82f496791f2a"
+            },
+            "sourceId" : "20",
+            "destinationId" : "17",
+            "description" : "Accesses functionalities of the authenticator."
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "18",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authorizator"
+          },
+          "name" : "Authorizator",
+          "description" : "Authorizator is responsible for giving rights to users based on their role in the system.",
+          "relationships" : [ {
+            "id" : "64",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "972ad678-24d0-4d2b-8774-02034812d900"
+            },
+            "sourceId" : "18",
+            "destinationId" : "19",
+            "description" : "Fetches user rights from the database.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        }, {
+          "id" : "17",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authenticator"
+          },
+          "name" : "Authenticator",
+          "description" : "Authenticator is responsible for authenticating users.",
+          "relationships" : [ {
+            "id" : "63",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "3bcb7392-2f1b-4882-9340-505d3fe686a1"
+            },
+            "sourceId" : "17",
+            "destinationId" : "18",
+            "description" : "Sends authorization requests."
+          }, {
+            "id" : "62",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "bd421af2-b9e3-4652-85e3-16a38726796b"
+            },
+            "sourceId" : "17",
+            "destinationId" : "19",
+            "description" : "Fetches users from the database.",
+            "technology" : "JSON/HTTP"
+          } ],
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : {
+        "sections" : [ {
+          "content" : "## Roadmap\r\n\r\nThis document describes the architecture of the Buildings module in the school information system application.\r\nIt is intended primarily for the module's development team.",
+          "format" : "Markdown",
+          "filename" : "01-roadmap.md",
+          "order" : 1,
+          "title" : ""
+        }, {
+          "content" : "## Context\r\n\r\nThe buildings module is used to manage the school's buildings, the rooms within them and the equipment in the rooms.\r\nIt allows teachers to view and request reservations for time slots in room specific schedules.\r\nThe can also view the equipment in the rooms and report any issues with it.\r\nMaintenance staff can use the module to add or edit buildings belonging to the school, add or edit rooms in the buildings and add or edit equipment in these rooms.\r\nThe system also notifies maintenance staff of any issues reported by teachers.\r\nAn authorization mechanism is used to ensure that only maintenance staff can add or edit buildings, rooms and equipment.\r\n\r\nThe described buildings module context is displayed on the following [C4 model](https://c4model.com) [software system](https://c4model.com/#SystemContextDiagram) diagram.\r\n\r\n\r\n![](embed:SystemContextView)",
+          "format" : "Markdown",
+          "filename" : "02-context.md",
+          "order" : 2,
+          "title" : ""
+        }, {
+          "content" : "## Views\r\n\r\n### How are the views documented?\r\n\r\nThe software architecture of BuildingsModule is further documented according to the [C4 model](https://c4model.com/) using its 2 levels - [container](https://c4model.com/#ContainerDiagram) level and [component](https://c4model.com/#ComponentDiagram) level.\r\nThe documentation also uses supplementary diagrams - [deployment diagrams](https://c4model.com/#DeploymentDiagram) and [dynamic diagrams](https://c4model.com/#DynamicDiagram).\r\n\r\n\r\n### Buildings Module decomposition view\r\n\r\nAll users access the system through the Dashboard, where they are required to log in, being authorized by the Security Manager, before they may access its functionality.\r\nIf a teacher chooses to request or modify their room reservation, the request is sent to the Buildings Manager, which handles the related business logic. The result\r\nis then displayed to the user via the Dashboard.\r\nIf a teacher chooses to report faulty equipment, the request is sent to the Equipment Manager, which handles the related business logic and notifies maintenance staff\r\nabout the issue.\r\n\r\nIf a maintenance staff member chooses to add or modify a building or a room within a building, the request is sent to the Buildings Manager, which handles the related\r\nbusiness logic. The result is then displayed to the user via the Dashboard.\r\nIf a maintenance staff member chooses to add or modify equipment within a room, the request is sent to the Equipment Manager, which handles the related business logic.\r\nThe result is then displayed to the user via the Dashboard.\r\nIf a maintenance staff member chooses to view statistics, the request is sent to the Statistical Analyzer, which handles the related business logic. The result is then\r\ndisplayed to the user via the Dashboard.\r\n\r\nIf either user chooses to view building or room data, the request is sent to the Buildings Manager, which handles the related business logic. The result is then\r\ndisplayed to the user via the Dashboard.\r\nIf either user chooses to view equipment data, the request is sent to the Equipment Manager, which handles the related business logic. The result is then displayed to\r\nthe user via the Dashboard.\r\n\r\nThe Buildings Manager, the Equipment Manager and Security Manager communicate with the Database, persisting and retrieving data.\r\n\r\nAll of this activity is logged by the Logger, which stores the logs in a database.\r\n\r\nFurthermore, the Dashboard, Buildings Manager, Equipment Manager and Security Manager send their data to the Statistical Analyzer for analysis.\r\n\r\n![](embed:ContainerView)\r\n\r\n### Buildings Manager decomposition view\r\n\r\nThe Buildings Manager is responsible for handling all requests related to buildings and rooms within buildings. It is accessed by maintenance staff members and teachers.\r\n\r\nThe Building Viewer prepares data about buildings and rooms within buildings for the Dashboard. It is accessed by maintenance staff members and teachers.\r\n\r\nThe Building Editor, when accessed by a maintenance staff member, allows for adding/editing room and building data. These requests are sent to the Buildings Database Manager, where they are validated and processed. This means that queries will be applied to the Database. Then, information will be fetched about the process and sent back to the Building Editor, which will send the data to the Building Viewer, which will make the data displayable for the Dashboard\r\n\r\nThe Room Reserver, when accessed by a teacher, allows for reserving a room for a time period or viewing the reservation state of the room. This also sends requests to the Buildings Database Manager, where they are correctly handled (validated and processed). This means that queries will be applied to the Database. Then, information will be fetched about the process and sent back to the Room Reserver, which will make the data displayable for the dashboard.\r\n\r\nThe Public API is the mediator between the Dashboard and the Buildings Manager. It is responsible for handling requests from the Dashboard and sending them to the correct Component.\r\n\r\nIts internal architecture corresponds to its use cases and their processes.\r\n\r\n#### Teacher use case\r\nThe teacher can reserve a room or view the reservation state of a room:\r\n* The teacher's request is sent to the Public API, which forwards it to the Room Reserver.\r\n* The Room Reserver requests data via the Database Manager.\r\n* The Room Reserver provides available rooms.\r\n* The Room Reserver sends the request to the Database Manager.\r\n\r\n#### Maintenance staff use case\r\nThe maintenance staff can add or modify a building or a room:\r\n* The maintenance staff's request is sent to the Public API, which forwards it to the Building Editor.\r\n* The Building Editor requests data via the Database Manager.\r\n* The Building Editor provides available buildings and rooms.\r\n* The Building Editor sends the request to the Database Manager.\r\n\r\n#### Common use case\r\nThe user can view a building or room:\r\n* The user's request is sent to the Public API, which forwards it to the Building Viewer.\r\n* The Building Viewer requests data via the Database Manager.\r\n* The Building Viewer provides available buildings and rooms.\r\n\r\nIn any case, the user is updated about the process via the Dashboard, the data is sent to the Statistical Analyzer for analysis and the process is logged by the Logger.\r\n\r\n![](embed:BuildingManagerComponentView)\r\n\r\n### Equipment manager decomposition view\r\n\r\nThe Equipment Manager is responsible for handling all requests related to equipment. It is accessed by maintenance staff members and teachers.\r\n\r\nThe Equipment Viewer prepares data about equipment for displaying in the Dashboard. It is accessed by maintenance staff members and teachers.\r\n\r\nThe Equipment Editor, when accessed by a maintenance staff member, allows for adding/modifying equipment data. These requests are sent to the Equipment Database Manager, where they are validated and processed. This means that queries will be applied to the Database. Then, information will be fetched about the process and sent back to the Equipment Editor, which will send the data to the Equipment Viewer, which will make the data displayable for the dashboard.\r\n\r\nThe Equipment Fault Notifier, when accessed by a teacher, allows for reporting equipment states - especially faults with the equipment. The requests are sent to the Equipment Database Manager, where they are properly handled. The information sent back from the database is then collected by the Equipment Fault Notifier, which will then notify maintenance staff members via e-mail/SMS or directly to the Dashboard.\r\n\r\nThe Public API is the mediator between the Dashboard and the Equipment Manager. It is responsible for handling requests from the Dashboard and sending them to the correct Component.\r\n\r\nIts internal architecture corresponds to its use cases and their processes.\r\n\r\n#### Teacher use case\r\nThe teacher can report a fault with the equipment:\r\n* The teacher's request is sent to the Public API, which forwards it to the Equipment Fault Notifier.\r\n* The Equipment Fault Notifier requests data via the Database Manager.\r\n* The Equipment Fault Notifier provides available equipment.\r\n* The Equipment Fault Notifier sends the request to the Database Manager.\r\n\r\n#### Maintenance staff use case\r\nThe maintenance staff can add or modify equipment:\r\n* The maintenance staff's request is sent to the Public API, which forwards it to the Equipment Editor.\r\n* The Equipment Editor requests data via the Database Manager.\r\n* The Equipment Editor provides available equipment.\r\n* The Equipment Editor sends the request to the Database Manager.\r\n\r\n#### Common use case\r\nThe user can view equipment:\r\n* The user's request is sent to the Public API, which forwards it to the Equipment Viewer.\r\n* The Equipment Viewer requests data via the Database Manager.\r\n* The Equipment Viewer provides available equipment.\r\n\r\nIn any case, the user is updated about the process via the Dashboard, the data is sent to the Statistical Analyzer for analysis and the process is logged by the Logger.\r\n\r\n![](embed:EquipmentManagerComponentView)\r\n\r\n### Security manager decomposition view\r\n\r\nThe Security Manager is responsible for handling all requests related to user authentication. The Dashboard requests authentication of a user via the Public API. This request is sent to the Authenticator which in turn sends the request to the Authentizator, which requests user rights from the User Database Manager which fetches the data from the Database. The Authorizator is responsible for authorizing users.\r\n\r\n![](embed:SecurityManagerComponentView)\r\n\r\n### Logger decomposition view\r\n\r\nThe Logger is responsible for logging the user's requests. The Logger is notified by the Dashboard, the Buildings Manager, the Equipment Manager and the Security Manager about the user's actions. More specifically, the Event Sniffer is notified and then sends the data to the Event Logger, which stores the data in the Database for persistence.\r\n\r\nLogger does NOT log database events - that is managed by the database itself.\r\n\r\n![](embed:LoggerComponentView)\r\n\r\n### Dashboard decomposition view\r\n\r\nThe Dashboard is responsible for displaying data to the user. It is accessed by teachers and maintenance staff members. When the user requests to view or modify any data, The correct Container is called and the data is displayed to the user. The Dashboard also sends the data to the Statistical Analyzer for analysis and the Logger for logging.\r\n\r\n![](embed:DashboardComponentView)",
+          "format" : "Markdown",
+          "filename" : "03-views.md",
+          "order" : 3,
+          "title" : ""
+        } ]
+      }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "84",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "f0a2ad80-648e-4ba3-9269-3578da6f1582"
+      },
+      "name" : "User's web browser",
+      "environment" : "Production",
+      "technology" : "HTML 5",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "85",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dashboardinstance"
+        },
+        "relationships" : [ {
+          "id" : "102",
+          "sourceId" : "85",
+          "destinationId" : "98",
+          "description" : "Fetches statistics.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "45"
+        }, {
+          "id" : "93",
+          "sourceId" : "85",
+          "destinationId" : "92",
+          "description" : "Displays building and room management services, allows user input.",
+          "linkedRelationshipId" : "31"
+        }, {
+          "id" : "96",
+          "sourceId" : "85",
+          "destinationId" : "95",
+          "description" : "Uses security services.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "33"
+        }, {
+          "id" : "114",
+          "sourceId" : "85",
+          "destinationId" : "111",
+          "description" : "Sends UI interaction activity.",
+          "technology" : "JSON/HTTP",
+          "linkedRelationshipId" : "34"
+        }, {
+          "id" : "91",
+          "sourceId" : "85",
+          "destinationId" : "89",
+          "description" : "Displays equipment management services, allows user input.",
+          "linkedRelationshipId" : "32"
+        } ],
+        "environment" : "Production",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "2"
+      } ]
+    }, {
+      "id" : "86",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ab719922-6065-4177-a95d-f59d1fec3cf3"
+      },
+      "name" : "Buildings module",
+      "environment" : "Production",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "104",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e34e0d8a-0c34-4c1d-a7f9-40fdc52c73f0"
+        },
+        "name" : "Database Server",
+        "environment" : "Production",
+        "technology" : "SUSE Linux Enterprise 15",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "110",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ca8cba4c-f7e9-4e7b-b0ae-4f6ad05f92aa"
+          },
+          "name" : "Log storage",
+          "environment" : "Production",
+          "technology" : "Elasticsearch 7.13",
+          "instances" : "1",
+          "containerInstances" : [ {
+            "id" : "111",
+            "tags" : "Container Instance",
+            "properties" : {
+              "structurizr.dsl.identifier" : "loggerinstance"
+            },
+            "relationships" : [ {
+              "id" : "115",
+              "sourceId" : "111",
+              "destinationId" : "106",
+              "description" : "Sends logs to be stored in the database.",
+              "technology" : "SQL/TCP",
+              "linkedRelationshipId" : "83"
+            } ],
+            "environment" : "Production",
+            "deploymentGroups" : [ "Default" ],
+            "instanceId" : 1,
+            "containerId" : "22"
+          } ]
+        }, {
+          "id" : "105",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "fb4a7af7-efc0-4ecf-8513-986586a3f8de"
+          },
+          "name" : "Relational DB server",
+          "environment" : "Production",
+          "technology" : "Oracle 19.1.0",
+          "instances" : "1",
+          "containerInstances" : [ {
+            "id" : "106",
+            "tags" : "Container Instance",
+            "properties" : {
+              "structurizr.dsl.identifier" : "databaseinstance"
+            },
+            "environment" : "Production",
+            "deploymentGroups" : [ "Default" ],
+            "instanceId" : 1,
+            "containerId" : "25"
+          } ]
+        } ]
+      }, {
+        "id" : "87",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2a05f397-376e-4650-b4f9-d1b7a8a70a91"
+        },
+        "name" : "Application Server",
+        "environment" : "Production",
+        "technology" : "SUSE Linux Enterprise 15",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "88",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "85d57eb4-e6f3-4a56-8346-c1efecdd6af8"
+          },
+          "name" : "Web server",
+          "environment" : "Production",
+          "technology" : "Apache Tomcat 10.1.15",
+          "instances" : "1",
+          "containerInstances" : [ {
+            "id" : "89",
+            "tags" : "Container Instance",
+            "properties" : {
+              "structurizr.dsl.identifier" : "equipmentmanagerinstance"
+            },
+            "relationships" : [ {
+              "id" : "90",
+              "sourceId" : "89",
+              "destinationId" : "85",
+              "description" : "Sends notifications about faulty equipment to be displayed.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "60"
+            }, {
+              "id" : "107",
+              "sourceId" : "89",
+              "destinationId" : "106",
+              "description" : "Applies queries on the database and fetches results.",
+              "technology" : "SQL/TCP",
+              "linkedRelationshipId" : "71"
+            }, {
+              "id" : "112",
+              "sourceId" : "89",
+              "destinationId" : "111",
+              "description" : "Sends equipment management activity.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "35"
+            }, {
+              "id" : "99",
+              "sourceId" : "89",
+              "destinationId" : "98",
+              "description" : "Sends data for statistical analysis.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "73"
+            } ],
+            "environment" : "Production",
+            "deploymentGroups" : [ "Default" ],
+            "instanceId" : 1,
+            "containerId" : "10"
+          }, {
+            "id" : "92",
+            "tags" : "Container Instance",
+            "properties" : {
+              "structurizr.dsl.identifier" : "buildingmanagerinstance"
+            },
+            "relationships" : [ {
+              "id" : "100",
+              "sourceId" : "92",
+              "destinationId" : "98",
+              "description" : "Sends data for statistical analysis.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "68"
+            }, {
+              "id" : "113",
+              "sourceId" : "92",
+              "destinationId" : "111",
+              "description" : "Sends building and room management activity.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "36"
+            }, {
+              "id" : "108",
+              "sourceId" : "92",
+              "destinationId" : "106",
+              "description" : "Applies queries on the database and fetches results.",
+              "technology" : "SQL/TCP",
+              "linkedRelationshipId" : "66"
+            } ],
+            "environment" : "Production",
+            "deploymentGroups" : [ "Default" ],
+            "instanceId" : 1,
+            "containerId" : "4"
+          } ]
+        }, {
+          "id" : "97",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "64eb00bd-f460-4f08-9b29-06dc913631cc"
+          },
+          "name" : "Statistical Server",
+          "environment" : "Production",
+          "technology" : "SUSE Linux Enterprise 15",
+          "instances" : "1",
+          "containerInstances" : [ {
+            "id" : "98",
+            "tags" : "Container Instance",
+            "properties" : {
+              "structurizr.dsl.identifier" : "statisticalanalyzerinstance"
+            },
+            "relationships" : [ {
+              "id" : "101",
+              "sourceId" : "98",
+              "destinationId" : "85",
+              "description" : "Sends statistics to be displayed.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "80"
+            } ],
+            "environment" : "Production",
+            "deploymentGroups" : [ "Default" ],
+            "instanceId" : 1,
+            "containerId" : "21"
+          } ]
+        }, {
+          "id" : "94",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "41a3992c-0d58-4611-a723-0b13e78d0155"
+          },
+          "name" : "Security server",
+          "environment" : "Production",
+          "technology" : "Apache Tomcat 10.1.15",
+          "instances" : "1",
+          "containerInstances" : [ {
+            "id" : "95",
+            "tags" : "Container Instance",
+            "properties" : {
+              "structurizr.dsl.identifier" : "securitymanagerinstance"
+            },
+            "relationships" : [ {
+              "id" : "116",
+              "sourceId" : "95",
+              "destinationId" : "111",
+              "description" : "Sends security activity.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "37"
+            }, {
+              "id" : "109",
+              "sourceId" : "95",
+              "destinationId" : "106",
+              "description" : "Applies queries on the database and fetches results.",
+              "technology" : "SQL/TCP",
+              "linkedRelationshipId" : "76"
+            }, {
+              "id" : "103",
+              "sourceId" : "95",
+              "destinationId" : "98",
+              "description" : "Sends data for statistical analysis.",
+              "technology" : "JSON/HTTP",
+              "linkedRelationshipId" : "78"
+            } ],
+            "environment" : "Production",
+            "deploymentGroups" : [ "Default" ],
+            "instanceId" : 1,
+            "containerId" : "16"
+          } ]
+        } ]
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContextView",
+      "order" : 1,
+      "softwareSystemId" : "1",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "29"
+      }, {
+        "id" : "28"
+      }, {
+        "id" : "30"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "27",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "ContainerView",
+      "order" : 2,
+      "softwareSystemId" : "1",
+      "dimensions" : {
+        "width" : 4450,
+        "height" : 3391
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "83"
+      }, {
+        "id" : "80",
+        "vertices" : [ {
+          "x" : 2965,
+          "y" : 1697
+        } ]
+      }, {
+        "id" : "71",
+        "vertices" : [ {
+          "x" : 3162,
+          "y" : 899
+        }, {
+          "x" : 3303,
+          "y" : 2199
+        }, {
+          "x" : 3303,
+          "y" : 2499
+        } ]
+      }, {
+        "id" : "60",
+        "vertices" : [ {
+          "x" : 2698,
+          "y" : 696
+        } ]
+      }, {
+        "id" : "40"
+      }, {
+        "id" : "73",
+        "vertices" : [ {
+          "x" : 3083,
+          "y" : 899
+        }, {
+          "x" : 3083,
+          "y" : 1299
+        } ]
+      }, {
+        "id" : "76",
+        "vertices" : [ {
+          "x" : 1937,
+          "y" : 2199
+        } ]
+      }, {
+        "id" : "32",
+        "vertices" : [ {
+          "x" : 2979,
+          "y" : 801
+        } ]
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "35",
+        "vertices" : [ {
+          "x" : 1199,
+          "y" : 1599
+        }, {
+          "x" : 1199,
+          "y" : 1899
+        } ]
+      }, {
+        "id" : "34",
+        "vertices" : [ {
+          "x" : 1274,
+          "y" : 1599
+        }, {
+          "x" : 1274,
+          "y" : 1899
+        } ]
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "78"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "45",
+        "vertices" : [ {
+          "x" : 2670,
+          "y" : 1750
+        } ]
+      }, {
+        "id" : "68"
+      }, {
+        "id" : "38",
+        "vertices" : [ {
+          "x" : 628,
+          "y" : 599
+        } ]
+      }, {
+        "id" : "39",
+        "vertices" : [ {
+          "x" : 3602,
+          "y" : 1099
+        }, {
+          "x" : 3155,
+          "y" : 1099
+        } ]
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 1337,
+        "y" : 2199
+      }, {
+        "id" : "2",
+        "x" : 2483,
+        "y" : 949
+      }, {
+        "id" : "25",
+        "x" : 2020,
+        "y" : 2799
+      }, {
+        "id" : "4",
+        "x" : 2174,
+        "y" : 1599
+      }, {
+        "id" : "26",
+        "x" : 199,
+        "y" : 199
+      }, {
+        "id" : "16",
+        "x" : 1424,
+        "y" : 1599
+      }, {
+        "id" : "27",
+        "x" : 3849,
+        "y" : 899
+      }, {
+        "id" : "10",
+        "x" : 2745,
+        "y" : 249
+      }, {
+        "id" : "21",
+        "x" : 2703,
+        "y" : 2199
+      } ]
+    } ],
+    "componentViews" : [ {
+      "key" : "DashboardComponentView",
+      "order" : 3,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "2",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "37"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "73"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "43"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "78"
+      }, {
+        "id" : "46"
+      }, {
+        "id" : "68"
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "SecurityManagerComponentView",
+      "order" : 6,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "16",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "61"
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "62"
+      }, {
+        "id" : "75"
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "77"
+      } ],
+      "elements" : [ {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "18",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "19",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "20",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "LoggerComponentView",
+      "order" : 7,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "22",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "82"
+      }, {
+        "id" : "81"
+      }, {
+        "id" : "71"
+      }, {
+        "id" : "74"
+      }, {
+        "id" : "76"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "69"
+      }, {
+        "id" : "79"
+      } ],
+      "elements" : [ {
+        "id" : "23",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "24",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "BuildingManagerComponentView",
+      "order" : 4,
+      "dimensions" : {
+        "width" : 2390,
+        "height" : 2520
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "4",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "50"
+      }, {
+        "id" : "51"
+      }, {
+        "id" : "52"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "67"
+      }, {
+        "id" : "47"
+      }, {
+        "id" : "48"
+      }, {
+        "id" : "49"
+      } ],
+      "elements" : [ {
+        "id" : "25",
+        "x" : 594,
+        "y" : 2020
+      }, {
+        "id" : "5",
+        "x" : 219,
+        "y" : 820
+      }, {
+        "id" : "6",
+        "x" : 969,
+        "y" : 820
+      }, {
+        "id" : "7",
+        "x" : 1719,
+        "y" : 820
+      }, {
+        "id" : "8",
+        "x" : 969,
+        "y" : 1420
+      }, {
+        "id" : "9",
+        "x" : 969,
+        "y" : 220
+      }, {
+        "id" : "21",
+        "x" : 1344,
+        "y" : 2020
+      } ]
+    }, {
+      "key" : "EquipmentManagerComponentView",
+      "order" : 5,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "10",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "70"
+      }, {
+        "id" : "80"
+      }, {
+        "id" : "72"
+      }, {
+        "id" : "53"
+      }, {
+        "id" : "54"
+      }, {
+        "id" : "55"
+      }, {
+        "id" : "56"
+      }, {
+        "id" : "45"
+      }, {
+        "id" : "57"
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "59"
+      } ],
+      "elements" : [ {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "15",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "dynamicViews" : [ {
+      "key" : "StatisticalReports",
+      "order" : 12,
+      "dimensions" : {
+        "width" : 2390,
+        "height" : 2611
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "1",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "45",
+        "description" : "User selects which kind of statistics to view",
+        "order" : "1",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1345,
+          "y" : 1270
+        } ]
+      }, {
+        "id" : "80",
+        "description" : "Analyzer computes statistics and sends them to the dashboard",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1045,
+          "y" : 1270
+        } ]
+      }, {
+        "id" : "68",
+        "description" : "Analyzer fetches data from the database",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "73",
+        "description" : "Analyzer fetches data from the database",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "78",
+        "description" : "Analyzer fetches data from the database",
+        "order" : "5",
+        "response" : false
+      }, {
+        "id" : "34",
+        "description" : "UI interaction activity is logged (e.g. most viewed building)",
+        "order" : "6",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 970,
+        "y" : 2020
+      }, {
+        "id" : "2",
+        "x" : 970,
+        "y" : 1420
+      }, {
+        "id" : "4",
+        "x" : 220,
+        "y" : 220
+      }, {
+        "id" : "16",
+        "x" : 970,
+        "y" : 220
+      }, {
+        "id" : "21",
+        "x" : 970,
+        "y" : 820
+      }, {
+        "id" : "10",
+        "x" : 1720,
+        "y" : 220
+      } ]
+    }, {
+      "key" : "FaultEvidenceAndReporting",
+      "order" : 10,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "1",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "38",
+        "description" : "Teacher reports faulty equipment",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "32",
+        "description" : "Information about the fault is sent to the equipment manager",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "35",
+        "description" : "Equipment activity is logged",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "71",
+        "description" : "Updates made by the user are saved in the database",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "60",
+        "description" : "Faulty equipment is reported to maintenance",
+        "order" : "5",
+        "response" : false
+      }, {
+        "id" : "39",
+        "description" : "Maintenance member views what equipment needs to be fixed",
+        "order" : "6",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "27",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "LoginSystemRightsDifferentiation",
+      "order" : 13,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "1",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "38",
+        "description" : "Teacher logs in",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "39",
+        "description" : "Maintenance logs in",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "34",
+        "description" : "UI interaction activity is logged",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "33",
+        "description" : "Dashboard sends login request",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "33",
+        "description" : "Dashboard receives user information",
+        "order" : "5",
+        "response" : true
+      }, {
+        "id" : "37",
+        "description" : "Security activity is logged",
+        "order" : "6",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "27",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "RoomReservations",
+      "order" : 11,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "1",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "38",
+        "description" : "Teacher reserves a room",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "31",
+        "description" : "Information about the reservation is sent to the room reserver",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "34",
+        "description" : "UI interaction activity is logged",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "36",
+        "description" : "Room management activity is logged",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "66",
+        "description" : "Room reservations made are saved in the database",
+        "order" : "5",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "RegisteringAndEditingRoomsAndBuildings",
+      "order" : 9,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "1",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "39",
+        "description" : "Maintenance member registers a new building",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "34",
+        "description" : "UI interaction activity is logged",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "31",
+        "description" : "Information about the building is sent to the building manager",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "36",
+        "description" : "Building and room management adding/editing activity is logged",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "66",
+        "description" : "Additions made are saved in the database",
+        "order" : "5",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "27",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "DeploymentView",
+      "order" : 8,
+      "softwareSystemId" : "1",
+      "dimensions" : {
+        "width" : 4177,
+        "height" : 3034
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "environment" : "Production",
+      "relationships" : [ {
+        "id" : "93",
+        "vertices" : [ {
+          "x" : 2593,
+          "y" : 657
+        } ]
+      }, {
+        "id" : "91",
+        "vertices" : [ {
+          "x" : 2818,
+          "y" : 745
+        } ]
+      }, {
+        "id" : "96",
+        "vertices" : [ {
+          "x" : 1814,
+          "y" : 657
+        } ]
+      }, {
+        "id" : "90",
+        "vertices" : [ {
+          "x" : 3118,
+          "y" : 745
+        } ]
+      }, {
+        "id" : "108",
+        "vertices" : [ {
+          "x" : 1168,
+          "y" : 2124
+        } ]
+      }, {
+        "id" : "107",
+        "vertices" : [ {
+          "x" : 2564,
+          "y" : 1407
+        }, {
+          "x" : 1618,
+          "y" : 2124
+        } ]
+      }, {
+        "id" : "109",
+        "vertices" : [ {
+          "x" : 889,
+          "y" : 2124
+        } ]
+      }, {
+        "id" : "100"
+      }, {
+        "id" : "99"
+      }, {
+        "id" : "102",
+        "vertices" : [ {
+          "x" : 3373,
+          "y" : 657
+        }, {
+          "x" : 3373,
+          "y" : 1374
+        } ]
+      }, {
+        "id" : "113",
+        "vertices" : [ {
+          "x" : 1860,
+          "y" : 1374
+        } ]
+      }, {
+        "id" : "101",
+        "vertices" : [ {
+          "x" : 3877,
+          "y" : 1374
+        }, {
+          "x" : 3877,
+          "y" : 657
+        } ]
+      }, {
+        "id" : "112",
+        "vertices" : [ {
+          "x" : 2593,
+          "y" : 1374
+        }, {
+          "x" : 2268,
+          "y" : 1407
+        } ]
+      }, {
+        "id" : "115"
+      }, {
+        "id" : "103",
+        "vertices" : [ {
+          "x" : 1814,
+          "y" : 1374
+        } ]
+      }, {
+        "id" : "114",
+        "vertices" : [ {
+          "x" : 1052,
+          "y" : 657
+        } ]
+      }, {
+        "id" : "116"
+      } ],
+      "elements" : [ {
+        "id" : "88",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "89",
+        "x" : 2743,
+        "y" : 970
+      }, {
+        "id" : "110",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "111",
+        "x" : 260,
+        "y" : 1616
+      }, {
+        "id" : "104",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "105",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "106",
+        "x" : 260,
+        "y" : 2261
+      }, {
+        "id" : "92",
+        "x" : 1993,
+        "y" : 970
+      }, {
+        "id" : "94",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "84",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "95",
+        "x" : 1231,
+        "y" : 970
+      }, {
+        "id" : "85",
+        "x" : 2743,
+        "y" : 220
+      }, {
+        "id" : "97",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "86",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "98",
+        "x" : 2743,
+        "y" : 1616
+      }, {
+        "id" : "87",
+        "x" : 175,
+        "y" : 175
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Software System",
+          "background" : "#32cd32",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Database",
+          "background" : "#808080",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Container",
+          "background" : "#63cd32",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Component",
+          "background" : "#92cd32",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Existing System",
+          "background" : "#999999",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Web Front-End",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "Infrastructure",
+          "shape" : "Pipe"
+        }, {
+          "tag" : "Logic",
+          "shape" : "Component"
+        }, {
+          "tag" : "Model",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Person",
+          "shape" : "Person"
+        }, {
+          "tag" : "Public",
+          "background" : "#999999",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Gov",
+          "background" : "#006400",
+          "color" : "#ffffff"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "ContainerView"
+    }
+  }
+}
