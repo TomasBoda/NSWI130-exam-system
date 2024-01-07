@@ -40,9 +40,15 @@ workspace "Buildings" "This workspace documents the architecture of the Building
          }
          
          # database containers
+         databaseRouter = container "Database Router" "Database Router is responsible for routing queries to the primary database."
          database = container "Database" "The database is used to store information about buildings, rooms and equipment." "" "Database"
+         secondaryDatabase = container "Backup Database" "The database is used to replicate information about buildings, rooms and equipment." "" "Database"
+         logDatabase = container "Log Database" "This database is used to store data from the logger." "" "Database"
          
          !docs docs
+         
+         databaseRouter -> database "Routes queries to the primary database."
+         databaseRouter -> secondaryDatabase "Routes queries to the secondary database."
       }
       
       # stakeholders
@@ -99,23 +105,25 @@ workspace "Buildings" "This workspace documents the architecture of the Building
       authenticator -> authorizator "Sends authorization requests."
       authorizator -> userDatabaseManager "Fetches user rights from the database." "JSON/HTTP"
 
-      buildingManagerDatabaseManager -> database "Applies queries on the database and fetches results." "SQL/TCP"
+      buildingManagerDatabaseManager -> databaseRouter "Applies queries on the database and fetches results." "SQL/TCP"
       buildingManagerDatabaseManager -> statisticalAnalyzer "Sends data for statistical analysis." "JSON/HTTP"
       buildingManager -> eventSniffer "Sends events to the logger." "JSON/HTTP"
       
-      equipmentManagerDatabaseManager -> database "Applies queries on the database and fetches results." "SQL/TCP"
+      equipmentManagerDatabaseManager -> databaseRouter "Applies queries on the database and fetches results." "SQL/TCP"
       equipmentManagerDatabaseManager -> statisticalAnalyzer "Sends data for statistical analysis." "JSON/HTTP"
       equipmentManager -> eventSniffer "Sends events to the logger." "JSON/HTTP"
 
-      userDatabaseManager -> database "Applies queries on the database and fetches results." "SQL/TCP"
+      userDatabaseManager -> databaseRouter "Applies queries on the database and fetches results." "SQL/TCP"
       userDatabaseManager -> statisticalAnalyzer "Sends data for statistical analysis." "JSON/HTTP"
       securityManager -> eventSniffer "Sends events to the logger." "JSON/HTTP"
       
       statisticalAnalyzer -> dashboard "Sends statistics to be displayed." "JSON/HTTP"
 
       eventSniffer -> eventLogger "Sends events to be logged." "JSON/HTTP"
-      eventLogger -> database "Sends logs to be stored in the database." "SQL/TCP"
+      eventLogger -> logDatabase "Sends logs to be stored in the database." "SQL/TCP"
 
+      secondaryDatabase -> database "Replicates data from the primary database." "SQL/TCP"
+   
 
       # Deployment environment
       deploymentEnvironment "Production"    {
@@ -134,18 +142,34 @@ workspace "Buildings" "This workspace documents the architecture of the Building
                   deploymentNode "Statistical Server" "" "SUSE Linux Enterprise 15"   {
                      statisticalAnalyzerInstance = containerInstance statisticalAnalyzer
                   }
-               }
-               deploymentNode "Database Server" "" "SUSE Linux Enterprise 15"   {
-                  deploymentNode "Relational DB server" "" "Oracle 19.1.0" {
-                     databaseInstance = containerInstance database
-                  }
-                  deploymentNode "Log storage" "" "Elasticsearch 7.13"  {
+
+                  deploymentNode "Logger Server" "" "SUSE Linux Enterprise 15" {
                      loggerInstance = containerInstance logger
+                  }
+
+               }
+
+               deploymentNode "Datacenter"  {
+                  deploymentNode "DatabaseRouter" "" "SUSE Linux Enterprise 15" {
+                     routerInstance = containerInstance databaseRouter
+                  }
+                  deploymentNode "Database Server - 01" "" "SUSE Linux Enterprise 15"   {
+                     deploymentNode "Relational DB server - primary" "" "Oracle 19.1.0" {
+                        databaseInstance = containerInstance database
+                     }
+                     deploymentNode "Log storage" "" "Elasticsearch 7.13"  {
+                        loggerDatabaseInstance = containerInstance logDatabase
+                     }
+                  }
+
+                  deploymentNode "Database Server - 02" "" "SUSE Linux Enterprise 15"   {
+                     deploymentNode "Relational DB server - secondary" "" "Oracle 19.1.0" {
+                        secondaryDatabaseInstance = containerInstance secondaryDatabase
+                     }
                   }
                }
             }
         }
-      
    }
    
    views {
@@ -195,7 +219,7 @@ workspace "Buildings" "This workspace documents the architecture of the Building
          dashboard -> logger "UI interaction activity is logged"
          dashboard -> buildingManager "Information about the building is sent to the building manager"
          buildingManager -> logger "Building and room management adding/editing activity is logged"
-         buildingManager -> database "Additions made are saved in the database"
+         buildingManager -> databaseRouter "Additions made are saved in the database"
          
          autoLayout
       }
@@ -204,7 +228,7 @@ workspace "Buildings" "This workspace documents the architecture of the Building
          teacher -> dashboard "Teacher reports faulty equipment"
          dashboard -> equipmentManager "Information about the fault is sent to the equipment manager"
          equipmentManager -> logger "Equipment activity is logged"
-         equipmentManager -> database "Updates made by the user are saved in the database"
+         equipmentManager -> databaseRouter "Updates made by the user are saved in the database"
          equipmentManager -> dashboard "Faulty equipment is reported to maintenance"
          maintenance -> dashboard "Maintenance member views what equipment needs to be fixed"
          
@@ -216,7 +240,7 @@ workspace "Buildings" "This workspace documents the architecture of the Building
          dashboard -> buildingManager "Information about the reservation is sent to the room reserver"
          dashboard -> logger "UI interaction activity is logged"
          buildingManager -> logger "Room management activity is logged"
-         buildingManager -> database "Room reservations made are saved in the database"
+         buildingManager -> databaseRouter "Room reservations made are saved in the database"
          
          autoLayout
       }

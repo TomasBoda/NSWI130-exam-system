@@ -11,6 +11,8 @@ Building Manager
 The database schema is modified, Building Editor and Building Viewer is extended by the new attribute and corresponding functionality is implemented
 ### Measure
 3 man-days to implement
+#### Modification to the system
+None needed
 
 ## Scenario 2
 ### Source
@@ -23,8 +25,11 @@ Security Manager, Building Manager, Equipment Manager
 The database schema is modified, the Security Manager is extended by the new user role and the Building Manager and Equipment Manager containers are extended by the new authorization rules for data request restrictions
 ### Measure
 8 man-days to implement
+#### Modification to the system
+None needed
 
 # Performance
+
 ## Scenario 1
 ### Source
 Security Manager
@@ -52,6 +57,7 @@ All request must be processed
 With an average latency of 0.5 sec
 
 # Scalability
+
 ## Scenario 1
 ### Source
 Teachers
@@ -78,9 +84,10 @@ Database is divided
 ### Measure
 Performance and availability are not affected
 #### Modification to the system
-Single database is tranformed into multiple instances divided by functionality (log database, building and equipment database)
+Log database is separated from the main database.
 
 # Security
+
 ## Scenario 1
 ### Source
 Users
@@ -109,8 +116,8 @@ Performance and availability will be increased, since logging could affect perfo
 #### Modification to the system
 There will be 2 databases - database for logs, technical updates..., database for actual data users need
 
-
 # Testability
+
 ## Scenario 1
 We want to test if the statistical analyzer correctly calculates the statistics.
 ### Source
@@ -145,8 +152,8 @@ Tester can easily send the request to the public API of the Equipment Manager an
 #### Modification to the system
 None needed. Request can be easily sent to the API, if the system works correctly the equipment can be easily seen in the database and in case of an error, the logger can be used to find the problem.
 
-
 # Availability
+
 ## Scenario 1
 ### Source
 Building manager
