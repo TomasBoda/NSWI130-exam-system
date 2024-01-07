@@ -1,3 +1,19 @@
+# Modifiability
+
+## Scenario 2
+### Source
+Developer of the system
+### Stimulus
+Add new user role
+### Artifact
+Security Manager, Building Manager, Equipment Manager
+### Response
+The database schema is modified, the Security Manager is extended by the new user role and the Building Manager and Equipment Manager containers are extended by the new authorization rules for data request restrictions
+### Measure
+8 man-days to implement
+#### Modification to the system
+None needed
+
 # Performance
 
 ## Scenario 1
