@@ -98,7 +98,7 @@ Individual managers of the system (Equipment manager...)
 ### Response
 Input data are always sanitized from special characters to prevent for example sql injection, javascript injection and others
 ### Measure
-Performance and other quality requirements will not be affected because it will only do few operations with strings which are not computationally intensive
+Performance and other quality requirements will be affected in max 5 miliseconds. Application will be secure against injection attacks.
 #### Modification to the system
 Introduce a small segment of code into managers to sanitize their input fields.
 
@@ -112,7 +112,7 @@ Database
 ### Response
 Database is divided
 ### Measure
-Performance and availability will be increased, since logging could affect performance of the database
+Users will not have access to log datase.
 #### Modification to the system
 There will be 2 databases - database for logs, technical updates..., database for actual data users need
 
