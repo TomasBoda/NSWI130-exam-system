@@ -112,7 +112,7 @@ Database
 ### Response
 Database is divided
 ### Measure
-Users will not have access to log datase.
+Users will not have access to log database.
 #### Modification to the system
 There will be 2 databases - database for logs, technical updates..., database for actual data users need
 
