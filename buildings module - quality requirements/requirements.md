@@ -131,8 +131,7 @@ Building Manager, Statistical Analyzer, Tester manually fetches data from the an
 ### Response
 Tester can see the raw data from the intercepted response.
 ### Measure
-Since Building Manager provides an API, it should be easy to send the requests. Tester can easily compare the expected output with the actual output.
-Any mistake in the system can be easily found if tester has correctly prepared data. Analyzer is dependent on the manager to provide the data.
+1-2 man-days to prepare test data, 2 man-days to prepare test environment, send requests and check the results.
 #### Modification to the system
 Provide API for the Analyzer to better input the data -> better testability and easier extendability.
 
@@ -148,7 +147,7 @@ Equipment Manager, Database, Logger
 ### Response
 Tester can see the equipment in the database or in case of an error, the logger can be used to find the problem.
 ### Measure
-Tester can easily send the request to the public API of the Equipment Manager and can easily see if the equipment was correctly added to the database. Error should be quite easily findable using the logger.
+1 man-day to prepare environment, 2 man-days to send requests and check the results.
 #### Modification to the system
 None needed. Request can be easily sent to the API, if the system works correctly the equipment can be easily seen in the database and in case of an error, the logger can be used to find the problem.
 
