@@ -88,6 +88,6 @@ Individual managers of the system (Equipment manager, ...)
 ### Response
 Input data are always sanitized from special characters to prevent for example SQL injection, javascript injection and others
 ### Measure
-Performance and other quality requirements will not be affected because it will only do few operations with strings which are not computationally intensive
+Application will be secure against injection attacks.
 #### Modification to the system
 Introduce a small segment of code into managers to sanitize their input fields.
